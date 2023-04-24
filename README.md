@@ -43,7 +43,7 @@ So we want to tell Django to find settings as shows:
 .
 ```
 
-In `base.py` we determinate which configuration will be used for each environment:
+In `manage.py` we determinate which configuration will be used for each environment:
 
 ```python
 def main():
