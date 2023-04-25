@@ -88,16 +88,15 @@ function Home({ services }) {
         <div>
             hello
             {services.map((service) => (
-                <div>
+                <div key={service.id}>
                     <svg width="100" height="100">{service.icon}</svg>
-                <a href='{service.id}'>
-                    
-                    
-                    {service.title}
-                    {service.smalldesc}
-                </a>
-                </div>
-                
+                    <a href='{service.id}'>
+                        
+                        
+                        {service.title}
+                        {service.smalldesc}
+                    </a>
+                </div>            
             ))}
         </div>
 
