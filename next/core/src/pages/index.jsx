@@ -56,7 +56,6 @@ function Home({ services }) {
                         <li className='border border-primary rounded-xl'>
                             <div className='flex flex-col pt-10 pb-7'>
                                 <div className='bg-primary h-32 w-32 mx-auto rounded-xl'>
-                                    <img src="" alt="" />*
                                 </div>
                                 <div>
                                     <h4 className='p-5 font-Lexend text-lg text-primary'>Avaliação da Personalidade</h4>
