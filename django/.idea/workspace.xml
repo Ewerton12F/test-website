@@ -34,11 +34,15 @@
     "last_opened_file_path": "//wsl$/Ubuntu/home/ewerton/Linux Desktop/testweb/django",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "watcher.settings"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\ewerton\Linux Desktop\testweb\django" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\ewerton\Linux Desktop\testweb\django\website\static\servicos" />
       <recent name="\\wsl$\Ubuntu\home\ewerton\Linux Desktop\testweb\django\core\settings" />
     </key>
   </component>
@@ -74,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682291757585</updated>
-      <workItem from="1682291774952" duration="11843000" />
+      <workItem from="1682291774952" duration="23349000" />
     </task>
     <servers />
   </component>
