@@ -42,7 +42,7 @@ function Home({ services }) {
                     </h3>
                 </div>
 
-                <div className='bg-old-paper m-10 rounded-xl text-center'>
+                <div className='bg-old-paper m-10 text-center'>
                     <div className='p-7'>
                         <h2 className='text-2xl pb-3 font-DM text-primary'>
                             Offered Services
@@ -55,12 +55,24 @@ function Home({ services }) {
                     <ul className='px-10'>
                         <li className='border border-primary rounded-xl'>
                             <div className='flex flex-col pt-10 pb-7'>
-                                <div className='bg-primary h-32 w-32 mx-auto rounded-xl'>
-                                </div>
-                                <div>
-                                    <h4 className='p-5 font-Lexend text-lg text-primary'>Avaliação da Personalidade</h4>
-                                    <p className='text-sm mx-5 font-Lexend font-extralight text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit, minima ea sapiente harum impedit, quo quisquam voluptatum.</p>
-                                </div>
+                                  <div>
+                                      {services.map((service) => (
+                                          <div key={service.id}>
+                                              <div className='bg-primary h-32 w-32 mx-auto rounded-xl'>
+                                              <svg width="100" height="100">{service.icon}</svg>
+                                              </div>
+                                              <a href='{service.id}'>
+
+                                                  <h4 className='p-5 font-Lexend text-lg text-primary'>
+                                                  {service.title}
+                                                  </h4>
+                                                  <p className='text-sm mx-5 font-Lexend font-extralight text-gray-600'>
+                                                  {service.smalldesc}
+                                                  </p>
+                                              </a>
+                                          </div>
+                                      ))}
+                                  </div>
                             </div>
                         </li>
                     </ul>
@@ -85,20 +97,7 @@ function Home({ services }) {
                 </div>
 
             </section>
-        <div>
-            hello
-            {services.map((service) => (
-                <div key={service.id}>
-                    <svg width="100" height="100">{service.icon}</svg>
-                    <a href='{service.id}'>
-                        
-                        
-                        {service.title}
-                        {service.smalldesc}
-                    </a>
-                </div>            
-            ))}
-        </div>
+        
 
         </main>
     </>
@@ -107,7 +106,7 @@ function Home({ services }) {
 }
 
 export async function getStaticProps(){
-    const res = await fetch("http://127.0.0.1:8000/api/")
+    const res = await fetch("http://localhost:8000/api/")
     const services = await res.json();
     
     return {
