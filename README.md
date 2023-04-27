@@ -1,120 +1,38 @@
-# <p align="center">🚧 Under construction 🚧</p>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-<p align="center">I will be updating this page during the week.</p>
+## Getting Started
 
---- 
-
-# Hello!
-
-I deployed this website on a Vercel server. You can access [here][vercel].
-
-The back-end is developed using Django Rest Framework to provide an API which will be consumed by the Next.JS front-end application.
-
----
-
-# Django
-
-@ Phase 1 - Design, Implement and iterate over a complex database schema
-
-@ Phase 2 - Implement Routers Vieewsets and Serializers to create API endpoints for clients interactions
-
-@ Phase 3 - Implement serializer custumizations to customize data output
-
-@ Phase 4 - Buid unit and end-to-end tests to ensure the application works as intended
-
-@ Phase 5 - Document the API endpoints to support frontend interactions 
-
-## Modularizing Django Settings
-
-The settings will be divided in other files because this application will be runing in ours machines and a server when deployed.
-
-We have different environments with different configurations so we have to be prepared for that.
-
-We can create a modular approuch and have different settings files for different environments for our Django application to work within. For example, we can use `DEBUG = True` when we work locally.
-
-So we want to tell Django to find settings as shows:
+First, run the development server:
 
 ```bash
-.
-├── settings
-│   ├── base.py
-│   ├── local.py
-│   └── production.py 
-.
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-In `manage.py` we determinate which configuration will be used for each environment:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```python
-def main():
-    if base.DEBUG:
-        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings.local")
-    else:
-        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings.production")
-```
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-### `local.py`
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-Settings related to local development
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-### `production.py`
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Settings related to deployed application
+## Learn More
 
-## Secret Key Generation
+To learn more about Next.js, take a look at the following resources:
 
-We are gona add our own secret key. Python brings a built-in tool which enables us to generate a secret key.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-In [Django Github repository][django-repo] we can find a function that`s going to provide a way of generating a random key.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-To create we nedd to access the python shell using the comman:
+## Deploy on Vercel
 
-```bash
-$ python manage.py shell
-```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-and then:
-
-```bash
-$ from django.core.management.utils import get_random_secret_key
-$ print(get_random_secret_key())
-```
-
-## Configuring Environment Variables
-
-We gona use `python-dotenv` package to manage our environment variables.
-
-In `base.py` file we will set this configuration:
-
-```python
-from dotenv import load_dotenv
-
-load_dotenv()
-
-SECRET_KEY = os.environ.get('SECRET_KEY')
-DEBUG = os.environ.get('DEBUG')
-```
-
-The key will that we generated will be placed in our `.env` file.
-
-## Tests
-
-- pytest
-- pytest_django
-
----
-
-# Design
-
-If you access the link above you'll see that it's a mobile version of the layout 
-below. This happened because in the middle of the development I understood the
-concept of "Mobile First". 
-
-I'm using Figma to design the layout of this website.
-
-![Desktop Layout](Frame-Website.png "Desktop Layout")
-
-
-
-[django-repo]: https://github.com/django/django
-[vercel]: https://test-website-rho-three.vercel.app/
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
