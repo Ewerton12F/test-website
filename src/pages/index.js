@@ -69,7 +69,6 @@ function Home({services}) {
                                                         {service.title}
                                                     </h4>
                                                     <p className='text-sm mx-5 font-Lexend font-extralight text-gray-600'>
-                                                        {service.smalldesc}
                                                     </p>
                                                 </a>
                                             </div>
@@ -112,13 +111,18 @@ function Home({services}) {
 }
 
 export async function getStaticProps() {
-    const res = await fetch(servicesListUrl);
-    const services = await res.json();
-
 
     return {
         props: {
-            services,
+            services: [
+                {
+                    "id": 1,
+                    "title": "Serviço 1",
+                    "smalldesc": "Descrição curta: 1",
+                    "largedesc": "Descrição longa: 1",
+                    "icon": "http://127.0.0.1:8000/media/services/minimal-svgrepo-com.svg"
+                }
+            ]
         },
     }
 }
