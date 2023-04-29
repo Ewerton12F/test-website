@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "nextjs/package.json",
-      "use": "@vercel/static"
-    }
-  ]
-}
