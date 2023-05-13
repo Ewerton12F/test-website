@@ -3,7 +3,7 @@
 import Service from "./service";
 import { motion } from "framer-motion";
 
-export default function ServiceTable() {
+export default function ServiceTable(props: any) {
   return (
     <>
       <ul className="flex flex-wrap justify-center mx-4">
