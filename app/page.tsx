@@ -6,7 +6,7 @@ import Hero from "@/components/main/hero";
 import Profile from "@/components/main/profile";
 import ServicesCard from "@/components/main/services/services_card";
 import ServiceTable from "@/components/main/services/service_table";
-import Service from "@/components/main/services/service";
+import Footer from "@/components/main/footer";
 
 const Home: NextPage = () => {
 
@@ -19,18 +19,22 @@ const Home: NextPage = () => {
       <header className="bg-primary px-5">
         <Navbar />
       </header>
-      <main className="bg-gradient-to-b from-primary to-white flex justify-center">
-        <section className="max-w-xs h-[1300px] ">
+      <main className={`
+        flex justify-center
+        bg-gradient-to-b 
+        from-primary from-35% 
+        to-zinc-100 to-0% 
+      `}>
+        <section className="max-w-xs">
           <Hero />
           <ServicesCard>
-            <ServiceTable>
               {/* @ts-expect-error Async Server Component */}
-              <Service />
-            </ServiceTable>
+            <ServiceTable/>
           </ServicesCard>
           <Profile />
         </section>
       </main>
+      <Footer/>
     </>
   );
 };

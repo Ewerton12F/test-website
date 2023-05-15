@@ -10,12 +10,12 @@ I deployed the Django+Postgres on a Railway server. You can access the API [here
 
 # Index
 
-* [DRY](#)
-
-* Fetching data
-
+* [DRY](#dry)
+* [Fetching data](#fetching-data)
 * [TypeScript](#typescript)
 * [The TypeScript Plugin](#the-typeScript-plugin)
+* [Swiper](#swiper)
+* [Framer Motion](#framer-motion)
 
 ## TypeScript
 

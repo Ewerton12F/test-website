@@ -8,18 +8,21 @@ import getAllServices from "@/lib/getAllServices";
 export default async function Service() {
   const servicesData = getAllServices();
   const services = await servicesData;
-  const br: string[][] = [["br"], ["bl"], ["tr"], ["tl"]];
+  const coners: string[][] = [["br"], ["bl"], ["tr"], ["tl"]];
 
   return (
     <>
       {services.map((service) => (
-        <li key={service.id} className={`w-1/2`}>
+        <li
+          key={service.id}
+          className={`w-1/2`}
+        >
           <div
             className={`
             m-2 pt-5
             border border-primary 
-            rounded-xl
-            rounded-${br[service.id % br.length]}-none
+            rounded-${coners[service.id % coners.length]}-none
+            rounded-lg
           `}
           >
             <div
