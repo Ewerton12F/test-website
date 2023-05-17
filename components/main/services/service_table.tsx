@@ -57,21 +57,21 @@ export default async function ServiceTable(props: any) {
       >
         {fourservices.map((services: any) => (
           <SwiperSlide key={services} className="mb-8">
-            <ul className={`flex flex-row flex-wrap mx-3`}>
+            <ul className={`mx-3 flex flex-row flex-wrap`}>
               {services.map((service: any) => (
                 <li key={service.id} className={`w-1/2`}>
                   <div
                     className={`
-                      m-2 pt-5
-                      border border-primary 
+                      m-2 border
+                      border-primary pt-5 
                       rounded-${coners[service.id % coners.length]}-none
                       rounded-lg
                     `}
                   >
                     <div
                       className={`
-                        flex justify-center items-center
-                        w-14 h-14 mx-auto 
+                        mx-auto flex h-14
+                        w-14 items-center justify-center 
                         rounded-xl bg-primary
                       `}
                     >
@@ -83,24 +83,24 @@ export default async function ServiceTable(props: any) {
                     </div>
                     <div
                       className={`
-                        w-auto h-14 
-                        flex items-center justify-center
+                        flex h-14 
+                        w-auto items-center justify-center
                       `}
                     >
                       <a href="#">
                         <h4
                           className={`
-                            mx-auto leading-tight 
-                            font-Lexend text-sm text-primary
+                            mx-auto font-jost 
+                            text-sm leading-tight text-primary
                           `}
                         >
                           {service.title}
                         </h4>
                         <p
                           className={`
-                            mx-5
-                            text-sm 
-                            font-Lexend font-extralight text-gray-600
+                            font-Lexend
+                            mx-5 
+                            text-sm font-extralight text-gray-600
                           `}
                         ></p>
                       </a>

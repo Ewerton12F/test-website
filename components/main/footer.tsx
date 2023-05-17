@@ -3,7 +3,7 @@ export default function Footer(){
     <footer className="bg-primary">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm font-jost text-gray-500 sm:text-center dark:text-gray-400">
             Developed by Ewerton
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0 items-center">
