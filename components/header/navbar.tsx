@@ -1,23 +1,18 @@
 export default function Navbar() {
-    return (
-        <nav className={`
-            py-5 
-            flex justify-between items-center 
+  return (
+    <nav
+      className={`
+            flex 
+            items-center justify-between py-5 
             text-white
-        `}>
-            <div className='flex'>
-                <p className='font-Oswald'>
-                    Freud
-                </p>
-                <p className='mx-1'>
-                    |
-                </p>
-                <p className='font-DM text-secondary'>
-                    Psychoanalysis
-                </p>
-            </div>
-            <ul>
-            </ul>
-        </nav>
-    )
+        `}
+    >
+      <div className="flex">
+        <p className="font-oswald">Freud</p>
+        <p className="mx-1">|</p>
+        <p className="font-serif text-secondary">Psychoanalysis</p>
+      </div>
+      <ul></ul>
+    </nav>
+  );
 }
