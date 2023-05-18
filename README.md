@@ -15,6 +15,7 @@ I deployed the Django+Postgres on a Railway server. You can access the API [here
 This is the version 1.0.
 
 ![Screenshot](localhost.png "Mobile layout")
+![Screenshot](localhost_desktop.png "Desktop layout")
 
 [django-repo]: https://github.com/Ewerton12F/teste-server
 [next-repo]: https://github.com/Ewerton12F/test-website
