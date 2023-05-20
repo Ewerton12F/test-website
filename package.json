@@ -9,7 +9,7 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "eslint --fix",
+      "npm run style:eslint",
       "git add"
     ]
   },
