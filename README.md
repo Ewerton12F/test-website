@@ -1,23 +1,60 @@
-# 🚧 Documentation under construction 🚧
+configuring
+start configuring eslint
 
-## Hello
+```bash
+npm init @eslint/config
+```
 
-This is the basis of a Django+Postgres+Next.js private project. You can use for building you own app. Give a look above for more details.
+---
 
-### Railway + Vercel
+eslint-plugin-react-hooks
 
-I deployed the Next.js website on a Vercel server. You can access [here][vercel]. 
+```bash
+npm install eslint-plugin-react-hooks --save-dev
+```
 
-I deployed the Django+Postgres on a Railway server. You can access the API [here][railway]. The Github repository can be found [here][django-repo].
+Custom Configuration
 
-### Interface 
+```json
+{
+  "plugins": [
+    // ...
+    "react-hooks"
+  ],
+  "rules": {
+    // ...
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}
+```
 
-This is the version 1.0.
+Prettier
 
-![Screenshot](localhost.png "Mobile layout")
-![Screenshot](localhost_desktop.png "Desktop layout")
+```bash
+npm install --save-dev --save-exact prettier
+```
 
-[django-repo]: https://github.com/Ewerton12F/teste-server
-[next-repo]: https://github.com/Ewerton12F/test-website
-[railway]: https://teste-server-production.up.railway.app/api/services-list
-[vercel]: https://test-website-ewerton12F.vercel.app/
+eslint-config-prettier + eslint-plugin-prettier
+
+```bash
+npm install --save-dev eslint-config-prettier eslint-plugin-prettier
+```
+
+```json
+{
+  "extends": ["plugin:prettier/recommended", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
+```
+
+```bash
+
+```
+
+```bash
+
+```
