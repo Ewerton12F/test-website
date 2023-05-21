@@ -21,11 +21,11 @@
     "prepare": "husky install",
     "style:eslint": "eslint '*/**/*.{js, jsx,ts,tsx}' --quiet --fix",
     "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
-    "pre-commit": "npm run style:prettier && npm run style:eslint && npm run lint",
+    "pre-commit": "npm run style:eslint && npm run style:prettier && npm run lint && npm run test:staged",
     "test": "jest --passWithNoTests",
     "test:watch": "npm run test --watch",
     "test:staged": "npm run test --findRelatedTests",
-    "test:coverage": " test --coverage"
+    "test:push": "npm run test --coverage"
   },
   "dependencies": {
     "@types/node": "20.2.1",
