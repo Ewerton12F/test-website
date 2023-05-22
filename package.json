@@ -9,8 +9,7 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "npm run pre-commit",
-      "npm run test:push"
+      "npm run pre-commit"
     ]
   },
   "scripts": {
@@ -21,11 +20,11 @@
     "prepare": "husky install",
     "style:eslint": "eslint '*/**/*.{js, jsx,ts,tsx}' --quiet --fix",
     "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
-    "pre-commit": "npm run style:eslint && npm run style:prettier && npm run lint && npm run test:staged",
+    "pre-commit": "npm run style:eslint && npm run style:prettier && npm run lint",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "test:staged": "test --findRelatedTests",
-    "test:push": "jest --coverage",
+    "test:coverage": "jest --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
