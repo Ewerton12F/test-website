@@ -23,5 +23,5 @@ jobs:
       - name: 📦 Install dependencies
         run: npm install
 
-      - name: Build project assets
-        run: npm run build
+      - name: ⚗️ Testing
+        run: npm run test
