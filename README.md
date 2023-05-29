@@ -58,3 +58,17 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 ```bash
 
 ```
+
+### Tests
+
+- Unitary tests:
+
+  - Components, functions
+
+- Integration tests:
+
+  - How components and functions should behave together
+  - API mocking
+
+- E2E (end-to-end) tests:
+  - Simulates simple user interaction
