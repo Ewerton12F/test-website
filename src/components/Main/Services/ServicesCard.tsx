@@ -12,7 +12,6 @@ export default function ServicesCard(props: any) {
           pelo Whatsapp
         </p>
       </div>
-      {/* @ts-expect-error Async Server Component */}
       <ServiceTable />
     </div>
   );
