@@ -1,17 +1,11 @@
 'use client';
 // register Swiper custom elements
-register();
 
 import getAllServices from '../../../../lib/getAllServices';
 
-import { IconArrowLeft, Icon3dCubeSphere } from '@tabler/icons-react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import { register } from 'swiper/element/bundle';
+import { Icon3dCubeSphere } from '@tabler/icons-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper.min.css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import 'swiper/swiper.css';
 
 export default async function ServiceTable(props: any) {
   const servicesData = getAllServices();
@@ -41,20 +35,8 @@ export default async function ServiceTable(props: any) {
     <>
       <Swiper
         // install Swiper modules
-        modules={[Pagination]}
         spaceBetween={50}
         slidesPerView={1}
-        pagination={{ clickable: true }}
-        style={{
-          // @ts-expect-error TODO
-          '--swiper-pagination-color': '#02142E',
-          '--swiper-pagination-bullet-inactive-color': '#999999',
-          '--swiper-pagination-bullet-inactive-opacity': '1',
-          '--swiper-pagination-bullet-size': '8px',
-          '--swiper-pagination-bullet-horizontal-gap': '6px',
-          '--swiper-padding': '16px',
-          '--swiper-pagination-bottom': '0px'
-        }}
       >
         {fourservices.map((services: any) => (
           <SwiperSlide key={services} className="mb-8">

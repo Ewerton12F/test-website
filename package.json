@@ -21,7 +21,7 @@
     "style:eslint": "eslint '*/**/*.{js, jsx,ts,tsx}' --quiet --fix",
     "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
     "style:prettier-write": "prettier --write .",
-    "pre-commit": "npm run style:eslint && npm run style:prettier && npm run style:prettier-write && npm run lint",
+    "pre-commit": "npm run style:eslint && npm run style:prettier-write && npm run style:prettier && npm run lint",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "test:staged": "test --findRelatedTests",
