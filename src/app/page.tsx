@@ -22,7 +22,6 @@ export default function Home() {
         </header>
         <section>
           <ServicesCard>
-            {/* @ts-expect-error Async Server Component */}
             <ServiceTable />
           </ServicesCard>
         </section>
