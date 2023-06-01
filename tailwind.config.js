@@ -6,10 +6,6 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
-    screens: {
-      'mobileL': '425px',
-      'md': '768px'
-    },
     extend: {
       fontFamily: {
         serif: 'var(--font-dmsd)',
