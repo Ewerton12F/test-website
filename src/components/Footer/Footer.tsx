@@ -9,9 +9,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:justify-between gap-10 mx-5 py-10 md:mx-auto md:w-3/4 md:max-w-7xl">
           <div className="">
             <Link id="navbar-link-home" href="/">
-              <h1 className="flex flex-col items-start text-2xl font-oswald">
+              <h1 className="flex flex-col items-start text-[2.35rem] font-oswald">
                 Róbson
-                <hr className="w-14" />
+                <hr className="w-[6.15rem]" />
                 <span className="text-xl font-serif text-secondary">
                   Psicanálise
                 </span>
@@ -96,9 +96,9 @@ export default function Footer() {
               </dt>
               <dd>
                 <p className="text-sm font-lexend">
-                  OTC - Office Tower Center, 45 (sala 1513).
+                  OTC - Office Tower Center, (sala 1513).
                   <br />
-                  Rua Promotor Manoel Alves Pessoa Neto,
+                  Rua Promotor Manoel Alves Pessoa Neto, 45
                   <br />
                   Candelária, Natal-RN.
                 </p>

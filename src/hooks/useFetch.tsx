@@ -1,9 +1,14 @@
-import { Service } from '../../types';
+import React, { useEffect, useState } from 'react';
 
-export default async function useFetch(): Promise<Service[]> {
-  const res = await fetch('https://teste-server.vercel.app/api/services-list');
+export default function useFetch<T = unknown>(url: string) {
+  const [data, setData] = useState<T | unknown>(null);
+  const [isOpen, setIsOpen] = useState(false);
 
-  if (!res.ok) throw new Error('failed to fetch data');
+  useEffect(() => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
 
-  return res.json();
+  return { data };
 }

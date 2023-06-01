@@ -10,12 +10,12 @@ export default function Blog() {
   const constructRef = useRef<LottieRefCurrentProps>(null);
 
   return (
-    <div className="bg-white mx-5 my-8">
+    <div className="bg-white mx-5 my-14">
       <div className="">
-        <h2 className="text-center font-serif pb-3 text-2xl md:text-4xl text-primary">
+        <h2 className="text-center font-serif pb-3 text-3xl md:text-4xl text-primary">
           Artigos & Publicações
         </h2>
-        <hr className="mx-auto w-12 h-px md:h-1 md:w-24 border-secondary md:bg-secondary mb-4 md:mb-5" />
+        <hr className="mx-auto w-24 h-px md:h-1 border-secondary md:bg-secondary mb-4 md:mb-5" />
       </div>
       <div className="flex gap-10 md:gap-32 my-10 items-center justify-center">
         <h3 className="text-3xl md:text-5xl md:leading-[4rem] text-primary font-jost">

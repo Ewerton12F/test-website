@@ -6,6 +6,10 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
+    screens: {
+      'mobileL': '425px',
+      'md': '768px'
+    },
     extend: {
       fontFamily: {
         serif: 'var(--font-dmsd)',
@@ -16,6 +20,7 @@ module.exports = {
       },
       colors: {
         primary: '#02142E',
+        pshadow: '#182C47',
         secondary: '#FFC759',
         'old-paper': '#FFF4DE'
       }
