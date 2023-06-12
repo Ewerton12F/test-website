@@ -19,7 +19,7 @@ module.exports = {
         pshadow: '#182C47',
         secondary: '#FFC759',
         'old-paper': '#FFF4DE',
-        'zap': '#25D366'
+        zap: '#25D366'
       }
     }
   },
