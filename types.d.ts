@@ -4,4 +4,4 @@ export type Service = {
   smalldesc: string;
   largedesc: string;
   icon: string;
-}
+};
