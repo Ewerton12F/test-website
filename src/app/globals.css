@@ -13,7 +13,6 @@ body {
   margin: 0;
 }
 
-#swiper {
-  margin: 0 1rem;
-  padding-bottom: 2.5rem;
+.swiper-wrapper {
+  padding-bottom: 3rem;
 }

@@ -2,8 +2,7 @@ import Footer from '@/components/Footer/Footer';
 import Blog from '@/components/Main/Blog/Blog';
 import Hero from '@/components/Main/Hero/Hero';
 import Profile from '@/components/Main/Profile/Profile';
-import ServicesCard from '@/components/Main/Services/ServicesCard';
-import ServiceTable from '@/components/Main/Services/ServiceTable';
+import Services from '@/components/Main/Services/Services';
 import Navbar from '@/components/Navbar/Navbar';
 
 export default function Home() {
@@ -21,9 +20,7 @@ export default function Home() {
           <Hero />
         </header>
         <section>
-          <ServicesCard>
-            <ServiceTable />
-          </ServicesCard>
+          <Services />
         </section>
         <section>
           <Profile />
