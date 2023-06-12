@@ -5,7 +5,7 @@ import {
   IconBrandWhatsapp,
   IconX
 } from '@tabler/icons-react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface ServiceModalProps {
   service: Service;
@@ -19,7 +19,7 @@ export default function ServiceModal({
   setIsOpen
 }: ServiceModalProps) {
   return (
-    <AnimatePresence>
+    <>
       {isOpen && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -39,14 +39,7 @@ export default function ServiceModal({
                     max-w-2xl min-[375px]:mx-2 md:mx-10 lg:mx-auto
             "
           >
-            <motion.div
-              transition={{ layout: { duration: 0.5, type: 'spring' } }}
-              layout
-              whileHover={{
-                transition: { duration: 0.1 }
-              }}
-              whileTap={{}}
-              whileInView={{ opacity: 1 }}
+            <div
               className={`
                       md:flex h-[100%] m-2 md:m-0 max-h-full 
                       p-4 min-[375px]:p-6 md:p-8 lg:p-10
@@ -68,15 +61,14 @@ export default function ServiceModal({
               >
                 <IconX size={20} strokeWidth={1} />
               </div>
-              <motion.div
+              <div
                 className={`
                           flex flex-col h-[100%]
                           justify-around
                     `}
               >
                 <div className="flex gap-2 min-[375px]:gap-4 md:gap-8 w-full">
-                  <motion.div
-                    layout="position"
+                  <div
                     className={`
                               self-end flex-none
                               flex items-center justify-center  
@@ -92,10 +84,9 @@ export default function ServiceModal({
                       size={48}
                       strokeWidth={1}
                     />
-                  </motion.div>
+                  </div>
                   <div className="flex justify-between w-full">
-                    <motion.h4
-                      layout="position"
+                    <h4
                       className={`
                               self-end min-[425px]:self-center
                               text-start text-xl md:text-4xl leading-tight
@@ -103,18 +94,18 @@ export default function ServiceModal({
                       `}
                     >
                       {service.title}
-                    </motion.h4>
+                    </h4>
                   </div>
                 </div>
 
-                <motion.div
+                <div
                   className="
                             mx-auto text-sm md:text-lg 
                             font-jost text-left text-white
                     "
                 >
                   {service.largedesc}
-                </motion.div>
+                </div>
                 <button
                   className="
                             flex gap-2 items-center py-2 px-4 mx-auto
@@ -126,11 +117,11 @@ export default function ServiceModal({
                   <IconBrandWhatsapp size={24} strokeWidth={2} />
                   <p>Whatsapp</p>
                 </button>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
         </motion.div>
       )}
-    </AnimatePresence>
+    </>
   );
 }
