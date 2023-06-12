@@ -10,15 +10,15 @@ export default function Profile() {
         Sobre o Psicanalista
       </h2>
       <hr className="w-20 md:w-24 h-1 border-secondary md:bg-secondary mt-2 md:mt-3 mb-7 md:mb-5" />
-      <div className="md:flex md:gap-10">
+      <div className="grid md:gap-10 grid-cols-1 lg:grid-cols-2">
         <Image
-          className="mx-auto md:mx-0 shadow-lg"
+          className="mx-auto lg:mx-0 shadow-lg"
           src="https://upload.wikimedia.org/wikipedia/commons/1/12/Sigmund_Freud_LIFE.jpg"
-          width={500}
-          height={500}
+          width={700}
+          height={700}
           alt="Picture of the author"
         />
-        <div className="my-8 md:my-0 mx-3 md:mx-0">
+        <div className="my-8 md:my-0 min-[425px]:mx-3 md:mx-0">
           <p className="my-3 md:my-0 text-base md:text-xl font-jost text-primary">
             Róbson Batista é psicólogo, psicanalista e doutor em filosofia pela
             Universidade Federal do Rio Grande do Norte. Especialista em
@@ -62,7 +62,7 @@ export default function Profile() {
           </p>
         </div>
       </div>
-      <div className="flex gap-3 items-center justify-center mt-10 md:my-16 text-primary">
+      <div className="flex gap-3 items-center justify-center md:my-16 text-primary">
         <Link href="/" className="font-jost">
           Curriculo Lattes e mais
         </Link>

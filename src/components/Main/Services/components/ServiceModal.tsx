@@ -35,7 +35,7 @@ export default function ServiceModal({
           <div
             className="
                     flex
-                    h-[90%] translate-y-[5%]
+                    h-[90%] translate-y-[4.5%]
                     max-w-2xl min-[375px]:mx-2 md:mx-10 lg:mx-auto
             "
           >
@@ -49,7 +49,7 @@ export default function ServiceModal({
               whileInView={{ opacity: 1 }}
               className={`
                       md:flex h-[100%] m-2 md:m-0 max-h-full 
-                      p-4 min-[375px]:p-6 md:p-10
+                      p-4 min-[375px]:p-6 md:p-8 lg:p-10
                       bg-primary bg-opacity-70 backdrop-blur-lg
                       border border-pshadow rounded-lg
                       overflow-hidden
@@ -59,7 +59,7 @@ export default function ServiceModal({
                 className="
                         fixed top-4 right-4 
                         min-[375px]:top-6 min-[375px]:right-6 
-                        md:top-10 md:right-10 
+                        md:top-8 md:right-8 lg:top-10 lg:right-10 
                         flex justify-center items-center 
                         h-6 w-6 md:h-10 md:w-10 
                         border rounded-full cursor-pointer
@@ -97,9 +97,9 @@ export default function ServiceModal({
                     <motion.h4
                       layout="position"
                       className={`
-                              self-end 
+                              self-end min-[425px]:self-center
                               text-start text-xl md:text-4xl leading-tight
-                              font-jost capitalize text-white
+                              font-lexend capitalize text-white
                       `}
                     >
                       {service.title}
@@ -118,7 +118,7 @@ export default function ServiceModal({
                 <button
                   className="
                             flex gap-2 items-center py-2 px-4 mx-auto
-                            font-Lexend cursor-pointer
+                            font-lexend cursor-pointer
                             text-lg normal-case text-zap
                             border border-zap rounded-lg
                     "
