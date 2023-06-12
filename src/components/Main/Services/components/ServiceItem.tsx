@@ -1,8 +1,6 @@
 import { Service } from '../../../../../types';
 
 import { Icon3dCubeSphere } from '@tabler/icons-react';
-import { motion } from 'framer-motion';
-
 interface ServiceItemProps {
   service: Service;
   isOpen: boolean;
@@ -16,14 +14,7 @@ export default function ServiceItem({
   setSelected
 }: ServiceItemProps) {
   return (
-    <motion.div
-      transition={{ layout: { duration: 0.5, type: 'spring' } }}
-      layout
-      whileHover={{
-        transition: { duration: 0.01 }
-      }}
-      whileTap={{ scale: 0.9 }}
-      whileInView={{ opacity: 1 }}
+    <div
       onClick={() => {
         setSelected(service);
         setIsOpen(service.id);
@@ -37,8 +28,7 @@ export default function ServiceItem({
                 hover:shadow-lg transition-all duration-200
         `}
     >
-      <motion.div
-        layout="position"
+      <div
         className={`
                   flex mx-auto md:m-0 md:min-w-[96px]
                   h-14 w-14 md:h-24 md:w-24
@@ -47,16 +37,15 @@ export default function ServiceItem({
         `}
       >
         <Icon3dCubeSphere color="#FFC759" size={48} strokeWidth={1} />
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         className={`
                   flex lg:flex-col
                   h-14 md:h-auto
                   items-center md:items-start
                   justify-center md:justify-start`}
       >
-        <motion.h4
-          layout="position"
+        <h4
           className={`
                       leading-tight text-base 
                       sm:text-lg md:text-2xl md:text-left
@@ -64,8 +53,8 @@ export default function ServiceItem({
             `}
         >
           {service.title}
-        </motion.h4>
-        <motion.p
+        </h4>
+        <p
           className={`
                         hidden xl:block
                         font-Lexend text-left 
@@ -73,8 +62,8 @@ export default function ServiceItem({
               `}
         >
           {service.smalldesc}
-        </motion.p>
-      </motion.div>
-    </motion.div>
+        </p>
+      </div>
+    </div>
   );
 }
