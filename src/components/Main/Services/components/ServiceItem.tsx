@@ -20,45 +20,46 @@ export default function ServiceItem({
         setIsOpen(service.id);
       }}
       className={`
-                md:flex md:gap-4 md:justify-start md:items-center
-                m-2 pt-5 md:py-8 md:px-6
-                border border-pshadow overflow-hidden
-                rounded-lg cursor-pointer
-                bg-white bg-opacity-20 backdrop-blur-lg 
-                hover:shadow-lg transition-all duration-200
+                m-2 py-4 min-[375px]:px-2 md:px-20 lg:py-5 lg:px-5
+                md:flex md:flex-col md:gap-2 lg:gap-4 lg:flex-row
+                md:items-center lg:justify-start lg:items-start
+                h-36 md:h-40 lg:h-44 
+                bg-pshadow hover:bg-secondary hover:text-primary
+                rounded-md cursor-pointer overflow-hidden
+                hover:shadow-xl transition-all duration-300
         `}
     >
       <div
         className={`
-                  flex mx-auto md:m-0 md:min-w-[96px]
-                  h-14 w-14 md:h-24 md:w-24
+                  flex mx-auto lg:m-0
+                  h-14 w-14
                   items-center justify-center 
-                  rounded-xl bg-pshadow 
+                  
         `}
       >
-        <Icon3dCubeSphere color="#FFC759" size={48} strokeWidth={1} />
+        <Icon3dCubeSphere size={48} strokeWidth={1} />
       </div>
       <div
         className={`
                   flex lg:flex-col
                   h-14 md:h-auto
-                  items-center md:items-start
-                  justify-center md:justify-start`}
+                  items-center lg:items-start
+                  justify-center lg:justify-start`}
       >
         <h4
           className={`
-                      leading-tight text-base 
-                      sm:text-lg md:text-2xl md:text-left
-                      font-jost capitalize text-pshadow
+                      leading-tight text-base
+                      sm:text-lg md:text-2xl lg:text-left
+                      font-jost capitalize 
             `}
         >
           {service.title}
         </h4>
         <p
           className={`
-                        hidden xl:block
+                        hidden lg:block 
                         font-Lexend text-left 
-                        text-sm normal-case text-pshadow
+                        text-sm normal-case
               `}
         >
           {service.smalldesc}

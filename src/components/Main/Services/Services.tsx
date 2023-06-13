@@ -8,7 +8,7 @@ export default function Services() {
           <h2 className="font-serif pb-3 text-2xl md:text-3xl text-primary">
             Serviços Oferecidos
           </h2>
-          <p className="font-lexend px-2 text-[12px] md:text-[16px] md:my-2 leading-[14px] text-gray-600">
+          <p className="font-lexend px-2 text-[12px] md:text-[16px] md:my-2 leading-[14px] text-primary">
             Selecione um serviço para saber mais e entrar em contato diretamente
             pelo Whatsapp
           </p>

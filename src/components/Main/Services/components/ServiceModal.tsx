@@ -54,8 +54,8 @@ export default function ServiceModal({
                         md:top-8 md:right-8 lg:top-10 lg:right-10 
                         flex justify-center items-center 
                         h-6 w-6 md:h-8 md:w-8 
-                        border rounded-full cursor-pointer
-                        hover:text-red-500 hover:border-red-500 duration-300
+                        rounded-full cursor-pointer
+                        hover:bg-red-600 duration-300
                         hover:drop-shadow-2xl
                         bg-white bg-opacity-20
 
@@ -117,8 +117,8 @@ export default function ServiceModal({
                   className="
                             flex gap-2 items-center py-2 px-4 mx-auto
                             font-lexend cursor-pointer
-                            text-lg normal-case text-white hover:text-zap
-                            border border-white hover:border-zap rounded-lg duration-300
+                            text-lg normal-case text-white 
+                            hover:bg-zap rounded-xl duration-300
                             bg-white bg-opacity-20
 
                     "

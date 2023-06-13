@@ -18,7 +18,7 @@ module.exports = {
         primary: '#02142E',
         pshadow: '#182C47',
         secondary: '#FFC759',
-        'old-paper': '#FFF4DE',
+        'old-paper': '#FFE1A6',
         zap: '#25D366'
       }
     }
