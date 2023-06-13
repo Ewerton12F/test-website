@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import { Service } from '../../../../../types';
 import ServiceItem from './ServiceItem';
+import ServiceItemSkel from './ServiceItem_skel';
 import ServiceModal from './ServiceModal';
 
 import useFetch from '@/hooks/useFetch';
@@ -71,7 +72,12 @@ export default function ServicesList() {
           '--swiper-pagination-bullet-horizontal-gap': '6px'
         }}
       >
-        {isFetching && <p className="text-primary">Carregando...</p>}
+        {isFetching &&
+          [1, 2, 3, 4].map((skel) => (
+            <SwiperSlide key={skel}>
+              <ServiceItemSkel />
+            </SwiperSlide>
+          ))}
         {services?.map((service) => (
           <SwiperSlide key={service.id}>
             <ServiceItem

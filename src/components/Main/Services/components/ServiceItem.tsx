@@ -20,10 +20,10 @@ export default function ServiceItem({
         setIsOpen(service.id);
       }}
       className={`
-                m-2 py-4 min-[375px]:px-2 md:px-20 lg:py-5 lg:px-5
+                m-2 py-4 px-2 min-[375px]:px-10 md:px-20 lg:py-5 lg:px-5
                 md:flex md:flex-col md:gap-2 lg:gap-4 lg:flex-row
                 md:items-center lg:justify-start lg:items-start
-                h-36 md:h-40 lg:h-44 
+                h-36 md:h-44 lg:h-44 
                 bg-pshadow hover:bg-secondary hover:text-primary
                 rounded-md cursor-pointer overflow-hidden
                 hover:shadow-xl transition-all duration-300
