@@ -29,7 +29,7 @@ export default function ServiceModal({
                   fixed top-0 left-0 right-0 
                   h-[100%] max-h-full z-50 w-full p-2 md:p-8
                   overflow-x-hidden overflow-y-auto inset-0 
-                  bg-gray-700 bg-opacity-20 backdrop-blur-lg
+                  bg-opacity-0 
           `}
         >
           <div
@@ -43,9 +43,8 @@ export default function ServiceModal({
               className={`
                       md:flex h-[100%] m-2 md:m-0 max-h-full 
                       p-4 min-[375px]:p-6 md:p-8 lg:p-10
-                      bg-primary bg-opacity-70 backdrop-blur-lg
-                      border border-pshadow rounded-lg
-                      overflow-hidden
+                      bg-zinc-600 bg-opacity-50 backdrop-blur-md
+                      overflow-hidden rounded-3xl
                 `}
             >
               <div
@@ -54,12 +53,16 @@ export default function ServiceModal({
                         min-[375px]:top-6 min-[375px]:right-6 
                         md:top-8 md:right-8 lg:top-10 lg:right-10 
                         flex justify-center items-center 
-                        h-6 w-6 md:h-10 md:w-10 
+                        h-6 w-6 md:h-8 md:w-8 
                         border rounded-full cursor-pointer
+                        hover:text-red-500 hover:border-red-500 duration-300
+                        hover:drop-shadow-2xl
+                        bg-white bg-opacity-20
+
                 "
                 onClick={() => setIsOpen(service.id)}
               >
-                <IconX size={20} strokeWidth={1} />
+                <IconX size={18} strokeWidth={1} />
               </div>
               <div
                 className={`
@@ -67,29 +70,32 @@ export default function ServiceModal({
                           justify-around
                     `}
               >
-                <div className="flex gap-2 min-[375px]:gap-4 md:gap-8 w-full">
+                <div className="flex items-center gap-2 min-[375px]:gap-4 w-full">
                   <div
                     className={`
-                              self-end flex-none
+                              flex-none p-2
                               flex items-center justify-center  
                               h-14 w-14 md:h-24 md:w-24 
-                              min-w-[56px] md:min-w-[96px] rounded-xl bg-secondary
+                              min-w-[56px] md:min-w-[96px] 
                               min-[375px]:h-16
                               min-[375px]:w-16
                               min-[375px]:min-w-[64px]
+                              rounded-xl
+                              bg-secondary bg-opacity-80
+
                       `}
                   >
                     <Icon3dCubeSphere
-                      color="#02142E"
-                      size={48}
+                      color="#ffffff"
+                      size={900}
                       strokeWidth={1}
                     />
                   </div>
                   <div className="flex justify-between w-full">
                     <h4
                       className={`
-                              self-end min-[425px]:self-center
-                              text-start text-xl md:text-4xl leading-tight
+                              self-center text-start leading-tight
+                              text-xl min-[425px]:text-2xl md:text-3xl 
                               font-lexend capitalize text-white
                       `}
                     >
@@ -100,7 +106,8 @@ export default function ServiceModal({
 
                 <div
                   className="
-                            mx-auto text-sm md:text-lg 
+                            mx-auto 
+                            text-sm min-[425px]:text-lg md:text-xl 
                             font-jost text-left text-white
                     "
                 >
@@ -110,8 +117,10 @@ export default function ServiceModal({
                   className="
                             flex gap-2 items-center py-2 px-4 mx-auto
                             font-lexend cursor-pointer
-                            text-lg normal-case text-zap
-                            border border-zap rounded-lg
+                            text-lg normal-case text-white hover:text-zap
+                            border border-white hover:border-zap rounded-lg duration-300
+                            bg-white bg-opacity-20
+
                     "
                 >
                   <IconBrandWhatsapp size={24} strokeWidth={2} />
