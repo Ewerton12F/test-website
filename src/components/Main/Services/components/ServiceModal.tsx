@@ -8,8 +8,6 @@ import {
   IconX
 } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
-import { title } from 'process';
-
 interface ServiceModalProps {
   service: Service;
   isOpen: boolean;
