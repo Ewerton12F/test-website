@@ -59,7 +59,7 @@ export default function Navbar() {
             <Link
               id="navbar-menu-link-home"
               href="/"
-              className="text-2xl md:text-xl hover:text-cyan-500 duration-500"
+              className="text-2xl md:text-xl hover:text-secondary duration-300"
             >
               Home
             </Link>
@@ -68,7 +68,7 @@ export default function Navbar() {
             <Link
               id="navbar-menu-link-services"
               href="/"
-              className="text-2xl md:text-xl hover:text-cyan-500 duration-500"
+              className="text-2xl md:text-xl hover:text-secondary duration-300"
             >
               Serviços
             </Link>
@@ -77,7 +77,7 @@ export default function Navbar() {
             <Link
               id="navbar-menu-link-blog"
               href="/"
-              className="text-2xl md:text-xl hover:text-cyan-500 duration-500"
+              className="text-2xl md:text-xl hover:text-secondary duration-300"
             >
               Blog
             </Link>
@@ -86,7 +86,7 @@ export default function Navbar() {
             <Link
               id="navbar-menu-link-about"
               href="/"
-              className="text-2xl md:text-xl hover:text-cyan-500 duration-500"
+              className="text-2xl md:text-xl hover:text-secondary duration-300"
             >
               Sobre
             </Link>
@@ -95,22 +95,38 @@ export default function Navbar() {
         <nav className="hidden md:block">
           <ul className="flex text-xl">
             <li className="mx-3 md:mx-0 md:ml-8">
-              <Link id="navbar-menu-icon-instagram" href="/">
+              <Link
+                id="navbar-menu-icon-instagram"
+                className="hover:text-secondary duration-300"
+                href="/"
+              >
                 <IconBrandInstagram stroke={1.5} />
               </Link>
             </li>
             <li className="mx-3 md:mx-0 md:ml-8">
-              <Link id="navbar-menu-icon-facebook" href="/">
+              <Link
+                id="navbar-menu-icon-facebook"
+                className="hover:text-secondary duration-300"
+                href="/"
+              >
                 <IconBrandFacebook stroke={1.5} />
               </Link>
             </li>
             <li className="mx-3 md:mx-0 md:ml-8">
-              <Link id="navbar-menu-icon-twitter" href="/">
+              <Link
+                id="navbar-menu-icon-twitter"
+                className="hover:text-secondary duration-300"
+                href="/"
+              >
                 <IconBrandTwitter stroke={1.5} />
               </Link>
             </li>
             <li className="mx-3 md:mx-0 md:ml-8">
-              <Link id="navbar-menu-icon-linkedin" href="/">
+              <Link
+                id="navbar-menu-icon-linkedin"
+                className="hover:text-secondary duration-300"
+                href="/"
+              >
                 <IconBrandLinkedin stroke={1.5} />
               </Link>
             </li>
