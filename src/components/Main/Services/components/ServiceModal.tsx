@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { Service } from '../../../../../types';
 
 import {
@@ -6,7 +8,6 @@ import {
   IconX
 } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
-
 interface ServiceModalProps {
   service: Service;
   isOpen: boolean;
@@ -107,14 +108,19 @@ export default function ServiceModal({
                 <div
                   className="
                             mx-auto 
-                            text-sm min-[425px]:text-lg md:text-xl 
+                            text-sm min-[425px]:text-lg 
+                            md:text-xl 
                             font-jost text-left text-white
                     "
                 >
                   {service.largedesc}
                 </div>
-                <button
-                  className="
+                <Link
+                  target="_blank"
+                  href={`https://wa.me//5584996152546?text=Tenho%20interesse%20em%20${service.title}`}
+                >
+                  <button
+                    className="
                             flex gap-2 items-center py-2 px-4 mx-auto
                             font-lexend cursor-pointer
                             text-lg normal-case text-white 
@@ -122,10 +128,11 @@ export default function ServiceModal({
                             bg-white bg-opacity-20
 
                     "
-                >
-                  <IconBrandWhatsapp size={24} strokeWidth={2} />
-                  <p>Whatsapp</p>
-                </button>
+                  >
+                    <IconBrandWhatsapp size={24} strokeWidth={2} />
+                    <p>Whatsapp</p>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
