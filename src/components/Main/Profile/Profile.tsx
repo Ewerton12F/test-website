@@ -62,7 +62,7 @@ export default function Profile() {
           </p>
         </div>
       </div>
-      <div className="flex gap-3 items-center justify-center md:my-16 text-primary">
+      <div className="flex gap-3 items-center justify-center cursor-pointer md:my-16 text-primary hover:text-secondary duration-300">
         <Link href="/" className="font-jost">
           Curriculo Lattes e mais
         </Link>
