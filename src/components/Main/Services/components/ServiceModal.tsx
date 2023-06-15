@@ -44,7 +44,7 @@ export default function ServiceModal({
               className={`
                       md:flex h-[100%] m-2 md:m-0 max-h-full 
                       p-4 min-[375px]:p-6 md:p-8 lg:p-10
-                      bg-zinc-600 bg-opacity-50 backdrop-blur-md
+                      bg-zinc-600 bg-opacity-70 backdrop-blur-md
                       overflow-hidden rounded-3xl
                 `}
             >
@@ -82,7 +82,7 @@ export default function ServiceModal({
                               min-[375px]:w-16
                               min-[375px]:min-w-[64px]
                               rounded-xl
-                              bg-secondary bg-opacity-80
+                              bg-secondary 
 
                       `}
                   >
@@ -109,7 +109,7 @@ export default function ServiceModal({
                   className="
                             mx-auto 
                             text-sm min-[425px]:text-lg 
-                            md:text-xl 
+                            md:text-xl lg:text-2xl
                             font-jost text-left text-white
                     "
                 >
