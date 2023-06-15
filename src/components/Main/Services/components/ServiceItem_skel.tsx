@@ -44,7 +44,7 @@ export default function ServiceItemSkel() {
                       leading-tight text-base
                       sm:text-lg md:text-2xl lg:text-left
                       font-jost capitalize 
-                      h-2 w-14 bg-gray-200 rounded-full
+                      h-3 w-14 bg-gray-200 rounded-full
                       animate-pulse 
             `}
             ></h4>
@@ -53,7 +53,7 @@ export default function ServiceItemSkel() {
                       leading-tight text-base
                       sm:text-lg md:text-2xl lg:text-left
                       font-jost capitalize 
-                      h-2 w-16 bg-gray-200 rounded-full
+                      h-3 w-16 bg-gray-200 rounded-full
                       animate-pulse
             `}
             ></h4>
