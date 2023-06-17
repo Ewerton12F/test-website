@@ -4,93 +4,93 @@ export default function ServiceItemSkel() {
   return (
     <div
       className={`
-                m-2 py-4 px-2 min-[375px]:px-10 md:px-20 lg:py-5 lg:px-5
-                flex flex-col md:gap-2 lg:gap-4 lg:flex-row
-                items-center justify-center lg:justify-start lg:items-start
-                h-36 md:h-48
-                bg-pshadow hover:bg-secondary hover:text-primary
-                rounded-md cursor-pointer overflow-hidden
-                hover:shadow-xl transition-all duration-300
+                m-2 flex h-36 cursor-pointer flex-col items-center justify-center
+                overflow-hidden rounded-md bg-pshadow px-2 py-4
+                transition-all duration-300 hover:bg-secondary hover:text-primary
+                hover:shadow-xl min-[375px]:px-10
+                md:h-48 md:gap-2 md:px-20
+                lg:flex-row lg:items-start lg:justify-start
+                lg:gap-4 lg:px-5 lg:py-5
       `}
     >
       <div>
         <div
           className="
-                animate-pulse 
-                flex flex-col lg:flex-row lg:gap-2 md:gap-4
-                lg:mb-3
-                h-28 md:h-48
-                items-center lg:h-16
-                justify-evenly md:justify-center lg:justify-start"
+                flex 
+                h-28 animate-pulse flex-col items-center justify-evenly
+                md:h-48
+                md:justify-center md:gap-4
+                lg:mb-3 lg:h-16
+                lg:flex-row lg:justify-start lg:gap-2"
         >
           <div
             className={`
-                  flex-none
-                  flex mx-auto lg:m-0
-                  h-14 w-14
-                  items-center justify-center 
+                  mx-auto
+                  flex h-14 w-14
+                  flex-none items-center
+                  justify-center lg:m-0 
         `}
           >
             <Icon3dCubeSphere size={48} strokeWidth={1} />
           </div>
           <div
             className="
-                    flex flex-col gap-2.5
-                    items-center lg:items-start lg:justify-center
+                    flex flex-col items-center
+                    gap-2.5 lg:items-start lg:justify-center
             "
           >
             <h4
               className={`
-                      leading-tight text-base
-                      sm:text-lg md:text-2xl lg:text-left
-                      font-jost capitalize 
-                      h-3 w-14 bg-gray-200 rounded-full
-                      animate-pulse 
+                      h-3 w-14
+                      animate-pulse rounded-full bg-gray-200
+                      font-jost text-base 
+                      capitalize leading-tight sm:text-lg md:text-2xl
+                      lg:text-left 
             `}
             ></h4>
             <h4
               className={`
-                      leading-tight text-base
-                      sm:text-lg md:text-2xl lg:text-left
-                      font-jost capitalize 
-                      h-3 w-16 bg-gray-200 rounded-full
-                      animate-pulse
+                      h-3 w-16
+                      animate-pulse rounded-full bg-gray-200
+                      font-jost text-base 
+                      capitalize leading-tight sm:text-lg md:text-2xl
+                      lg:text-left
             `}
             ></h4>
           </div>
         </div>
         <div
           className={`
-                  hidden lg:flex lg:flex-col
-                  h-14 md:h-auto px-2
-                  items-center lg:items-start
-                  justify-center lg:justify-start`}
+                  hidden h-14 items-center
+                  justify-center px-2 md:h-auto
+                  lg:flex lg:flex-col
+                  lg:items-start lg:justify-start`}
         >
           <p
             className={`
-                        font-Lexend text-left 
-                        text-sm normal-case
-                        h-2 w-56 min-[1152px]:w-56 min-[1280px]:w-64
-                        bg-gray-200 rounded-full mb-2.5
-                        animate-pulse
+                        font-Lexend mb-2.5 
+                        h-2 w-56
+                        animate-pulse rounded-full bg-gray-200 text-left
+                        text-sm normal-case min-[1152px]:w-56
+                        min-[1280px]:w-64
               `}
           ></p>
           <p
             className={`
-                        font-Lexend text-left 
-                        text-sm normal-case
-                        h-2 w-60 min-[1152px]:w-64 min-[1280px]:w-72
-                        bg-gray-200 rounded-full mb-2.5
-                        animate-pulse
+                        font-Lexend mb-2.5 
+                        h-2 w-60
+                        animate-pulse rounded-full bg-gray-200 text-left
+                        text-sm normal-case min-[1152px]:w-64
+                        min-[1280px]:w-72
               `}
           ></p>
           <p
             className={`
-                        font-Lexend text-left 
-                        text-sm normal-case
-                        h-2 w-64 min-[1152px]:w-72 min-[1280px]:w-80
-                        bg-gray-200 rounded-full mb-2.5
-                        animate-pulse
+                        font-Lexend mb-2.5 
+                        h-2 w-64
+                        animate-pulse rounded-full bg-gray-200 text-left
+                        text-sm normal-case min-[1152px]:w-72
+                        min-[1280px]:w-80
               `}
           ></p>
         </div>

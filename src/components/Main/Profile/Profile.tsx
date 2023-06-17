@@ -5,26 +5,26 @@ import { IconExternalLink } from '@tabler/icons-react';
 
 export default function Profile() {
   return (
-    <div className="mx-5 my-14 md:my-16 md:mx-auto md:w-3/4 md:max-w-7xl">
-      <h2 className="text-3xl md:text-4xl font-serif text-primary">
+    <div className="mx-5 my-14 md:mx-auto md:my-16 md:w-3/4 md:max-w-7xl">
+      <h2 className="font-serif text-3xl text-primary md:text-4xl">
         Sobre o Psicanalista
       </h2>
-      <hr className="w-20 md:w-24 h-1 border-secondary md:bg-secondary mt-2 md:mt-3 mb-7 md:mb-5" />
-      <div className="grid md:gap-10 grid-cols-1 lg:grid-cols-2">
+      <hr className="mb-7 mt-2 h-1 w-20 border-secondary md:mb-5 md:mt-3 md:w-24 md:bg-secondary" />
+      <div className="grid grid-cols-1 md:gap-10 lg:grid-cols-2">
         <Image
-          className="mx-auto lg:mx-0 shadow-lg"
+          className="mx-auto shadow-lg lg:mx-0"
           src="https://upload.wikimedia.org/wikipedia/commons/1/12/Sigmund_Freud_LIFE.jpg"
           width={700}
           height={700}
           alt="Picture of the author"
         />
-        <div className="my-8 md:my-0 min-[425px]:mx-3 md:mx-0">
-          <p className="my-3 md:my-0 text-base md:text-xl font-jost text-primary">
+        <div className="my-8 min-[425px]:mx-3 md:mx-0 md:my-0">
+          <p className="my-3 font-jost text-base text-primary md:my-0 md:text-xl">
             Róbson Batista é psicólogo, psicanalista e doutor em filosofia pela
             Universidade Federal do Rio Grande do Norte. Especialista em
             adultos, atende em Natal-RN.
           </p>
-          <ul className="my-5 text-base md:text-lg text-primary list-disc ml-5">
+          <ul className="my-5 ml-5 list-disc text-base text-primary md:text-lg">
             <li className="mb-3">
               Graduação em Psicologia:
               <br />
@@ -54,7 +54,7 @@ export default function Profile() {
               </span>
             </li>
           </ul>
-          <p className="my-3 md:my-0 text-base md:text-xl font-jost text-primary">
+          <p className="my-3 font-jost text-base text-primary md:my-0 md:text-xl">
             Estudioso de história do pensamento ocidental, estética filosófica,
             literatura, ética e psicanálise, dedica-se também ao estudo da
             relação entre psicanálise e filosofia, psicanálise e epistemologia,
@@ -62,7 +62,7 @@ export default function Profile() {
           </p>
         </div>
       </div>
-      <div className="flex gap-3 items-center justify-center cursor-pointer md:my-16 text-primary hover:text-secondary duration-300">
+      <div className="flex cursor-pointer items-center justify-center gap-3 text-primary duration-300 hover:text-secondary md:my-16">
         <Link href="/" className="font-jost">
           Curriculo Lattes e mais
         </Link>

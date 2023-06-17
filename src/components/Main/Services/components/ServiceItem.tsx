@@ -20,41 +20,41 @@ export default function ServiceItem({
         setIsOpen(service.id);
       }}
       className={`
-                m-2 py-4 px-2 min-[375px]:px-10 md:px-20 lg:py-5 lg:px-5
-                flex flex-col md:gap-2 lg:gap-4 lg:flex-row
-                items-center justify-center lg:justify-start lg:items-start
-                h-36 md:h-48
-                bg-pshadow hover:bg-secondary hover:text-primary
-                rounded-md cursor-pointer overflow-hidden
-                hover:shadow-xl transition-all duration-300
+                m-2 flex h-36 cursor-pointer flex-col items-center justify-center
+                overflow-hidden rounded-md bg-pshadow px-2 py-4
+                transition-all duration-300 hover:bg-secondary hover:text-primary
+                hover:shadow-xl min-[375px]:px-10
+                md:h-48 md:gap-2 md:px-20
+                lg:flex-row lg:items-start lg:justify-start
+                lg:gap-4 lg:px-5 lg:py-5
         `}
     >
       <div>
         <div
           className={`
-                  flex flex-col lg:flex-row lg:gap-2 md:gap-4
-                  lg:mb-3
-                  h-28 md:h-48
-                  items-center lg:h-16
-                  justify-evenly md:justify-center lg:justify-start`}
+                  flex h-28 flex-col items-center justify-evenly
+                  md:h-48
+                  md:justify-center md:gap-4
+                  lg:mb-3 lg:h-16
+                  lg:flex-row lg:justify-start lg:gap-2`}
         >
           <div
             className={`
-                  flex-none
-                  flex mx-auto lg:m-0
-                  h-14 w-14
-                  items-center justify-center 
+                  mx-auto
+                  flex h-14 w-14
+                  flex-none items-center
+                  justify-center lg:m-0 
             `}
           >
             <Icon3dCubeSphere size={48} strokeWidth={1} />
           </div>
           <h4
             className={`
-                      flex items-center
-                      h-10 md:h-16
-                      leading-tight text-base
-                      sm:text-lg md:text-2xl lg:text-left
-                      font-jost capitalize lg:pr-10
+                      flex h-10
+                      items-center font-jost
+                      text-base capitalize
+                      leading-tight sm:text-lg md:h-16
+                      md:text-2xl lg:pr-10 lg:text-left
             `}
           >
             {service.title}
@@ -62,10 +62,10 @@ export default function ServiceItem({
         </div>
         <p
           className={`
-                        hidden lg:block 
-                        font-lexend text-left 
+                        hidden px-2 
+                        text-left font-lexend 
                         text-sm normal-case
-                        px-2 
+                        lg:block 
           `}
         >
           {service.smalldesc}

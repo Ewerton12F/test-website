@@ -27,38 +27,38 @@ export default function ServiceModal({
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
           className={`
-                  fixed top-0 left-0 right-0 
-                  h-[100%] max-h-full z-50 w-full p-2 md:p-8
-                  overflow-x-hidden overflow-y-auto inset-0 
-                  bg-opacity-0 
+                  fixed inset-0 left-0 right-0 
+                  top-0 z-50 h-[100%] max-h-full w-full overflow-y-auto
+                  overflow-x-hidden bg-opacity-0 p-2 
+                  md:p-8 
           `}
         >
           <div
             className="
                     flex
-                    h-[90%] translate-y-[4.5%]
-                    max-w-2xl min-[375px]:mx-2 md:mx-10 lg:mx-auto
+                    h-[90%] max-w-2xl
+                    translate-y-[4.5%] min-[375px]:mx-2 md:mx-10 lg:mx-auto
             "
           >
             <div
               className={`
-                      md:flex h-[100%] m-2 md:m-0 max-h-full 
-                      p-4 min-[375px]:p-6 md:p-8 lg:p-10
-                      bg-zinc-600 bg-opacity-70 backdrop-blur-md
-                      overflow-hidden rounded-3xl
+                      m-2 h-[100%] max-h-full overflow-hidden rounded-3xl 
+                      bg-zinc-600 bg-opacity-70 p-4 backdrop-blur-md
+                      min-[375px]:p-6 md:m-0 md:flex
+                      md:p-8 lg:p-10
                 `}
             >
               <div
                 className="
-                        fixed top-4 right-4 
-                        min-[375px]:top-6 min-[375px]:right-6 
-                        md:top-8 md:right-8 lg:top-10 lg:right-10 
-                        flex justify-center items-center 
-                        h-6 w-6 md:h-8 md:w-8 
-                        rounded-full cursor-pointer
-                        hover:bg-red-600 duration-300
-                        hover:drop-shadow-2xl
-                        bg-white bg-opacity-20
+                        fixed right-4 top-4 
+                        flex h-6 
+                        w-6 cursor-pointer items-center justify-center 
+                        rounded-full bg-white bg-opacity-20 
+                        duration-300 hover:bg-red-600 hover:drop-shadow-2xl min-[375px]:right-6 
+                        min-[375px]:top-6 md:right-8
+                        md:top-8 md:h-8
+                        md:w-8
+                        lg:right-10 lg:top-10
 
                 "
                 onClick={() => setIsOpen(service.id)}
@@ -67,22 +67,22 @@ export default function ServiceModal({
               </div>
               <div
                 className={`
-                          flex flex-col h-[100%]
+                          flex h-[100%] flex-col
                           justify-around
                     `}
               >
-                <div className="flex items-center gap-2 min-[375px]:gap-4 w-full">
+                <div className="flex w-full items-center gap-2 min-[375px]:gap-4">
                   <div
                     className={`
-                              flex-none p-2
-                              flex items-center justify-center  
-                              h-14 w-14 md:h-24 md:w-24 
-                              min-w-[56px] md:min-w-[96px] 
-                              min-[375px]:h-16
+                              flex h-14
+                              w-14 min-w-[56px] flex-none  
+                              items-center justify-center rounded-xl bg-secondary 
+                              p-2 min-[375px]:h-16 
                               min-[375px]:w-16
                               min-[375px]:min-w-[64px]
-                              rounded-xl
-                              bg-secondary 
+                              md:h-24
+                              md:w-24
+                              md:min-w-[96px] 
 
                       `}
                   >
@@ -92,12 +92,12 @@ export default function ServiceModal({
                       strokeWidth={1}
                     />
                   </div>
-                  <div className="flex justify-between w-full">
+                  <div className="flex w-full justify-between">
                     <h4
                       className={`
-                              self-center text-start leading-tight
-                              text-xl min-[425px]:text-2xl md:text-3xl 
-                              font-lexend capitalize text-white
+                              self-center text-start font-lexend
+                              text-xl capitalize leading-tight 
+                              text-white min-[425px]:text-2xl md:text-3xl
                       `}
                     >
                       {service.title}
@@ -108,9 +108,9 @@ export default function ServiceModal({
                 <div
                   className="
                             mx-auto 
-                            text-sm min-[425px]:text-lg 
-                            md:text-xl lg:text-2xl
-                            font-jost text-left text-white
+                            text-left font-jost 
+                            text-sm text-white
+                            min-[425px]:text-lg md:text-xl lg:text-2xl
                     "
                 >
                   {service.largedesc}
@@ -121,11 +121,11 @@ export default function ServiceModal({
                 >
                   <button
                     className="
-                            flex gap-2 items-center py-2 px-4 mx-auto
-                            font-lexend cursor-pointer
-                            text-lg normal-case text-white 
-                            hover:bg-zap rounded-xl duration-300
+                            mx-auto flex cursor-pointer items-center gap-2 rounded-xl
                             bg-white bg-opacity-20
+                            px-4 py-2 font-lexend 
+                            text-lg normal-case text-white
+                            duration-300 hover:bg-zap
 
                     "
                   >
