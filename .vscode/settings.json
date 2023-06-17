@@ -1,11 +1,13 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
   "files.autoSave": "afterDelay",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.format": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   }
 }
