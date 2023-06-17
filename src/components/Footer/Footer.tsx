@@ -6,13 +6,13 @@ export default function Footer() {
   return (
     <footer>
       <section className="bg-primary">
-        <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:flex lg:justify-between mx-5 min-[375px]:mx-10 py-10 md:mx-auto md:w-3/4 md:max-w-7xl">
+        <div className="mx-5 grid grid-cols-1 gap-10 py-10 min-[375px]:mx-10 md:mx-auto md:w-3/4 md:max-w-7xl md:grid-cols-2 lg:flex lg:justify-between">
           <div className="">
             <Link id="navbar-link-home" href="/">
-              <h1 className="flex flex-col items-start text-[2.35rem] font-oswald">
+              <h1 className="flex flex-col items-start font-oswald text-[2.35rem]">
                 Róbson
                 <hr className="w-[6.15rem]" />
-                <span className="text-xl font-serif text-secondary">
+                <span className="font-serif text-xl text-secondary">
                   Psicanálise
                 </span>
               </h1>
@@ -21,7 +21,7 @@ export default function Footer() {
           <div>
             <dl>
               <dt>
-                <h3 className="text-2xl font-serif text-secondary mb-3">
+                <h3 className="mb-3 font-serif text-2xl text-secondary">
                   Horários
                 </h3>
               </dt>
@@ -29,18 +29,18 @@ export default function Footer() {
                 <ul className="flex flex-col gap-2">
                   <li>
                     <dt>
-                      <h4 className="text-xl font-jost">Seg. - Sex.:</h4>
+                      <h4 className="font-jost text-xl">Seg. - Sex.:</h4>
                     </dt>
                     <dd>
-                      <p className="text-sm font-lexend">10h - 20h</p>
+                      <p className="font-lexend text-sm">10h - 20h</p>
                     </dd>
                   </li>
                   <li>
                     <dt>
-                      <h4 className="text-xl font-jost">Sáb.:</h4>
+                      <h4 className="font-jost text-xl">Sáb.:</h4>
                     </dt>
                     <dd>
-                      <p className="text-sm font-lexend"> 8h - 12h</p>
+                      <p className="font-lexend text-sm"> 8h - 12h</p>
                     </dd>
                   </li>
                 </ul>
@@ -50,7 +50,7 @@ export default function Footer() {
           <div>
             <dl>
               <dt>
-                <h3 className="text-2xl font-serif text-secondary mb-3">
+                <h3 className="mb-3 font-serif text-2xl text-secondary">
                   Contatos
                 </h3>
               </dt>
@@ -58,14 +58,14 @@ export default function Footer() {
                 <ul className="flex flex-col gap-2">
                   <li>
                     <dt>
-                      <h4 className="text-xl font-jost">Número:</h4>
+                      <h4 className="font-jost text-xl">Número:</h4>
                     </dt>
                     <dd>
                       <Link
                         href="/"
                         className="
-                                text-sm font-lexend pointer 
-                                hover:text-secondary duration-300
+                                pointer font-lexend text-sm 
+                                duration-300 hover:text-secondary
                         "
                       >
                         (84)99615-2546
@@ -74,7 +74,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <dt>
-                      <h4 className="text-xl font-jost">Emails de contato:</h4>
+                      <h4 className="font-jost text-xl">Emails de contato:</h4>
                     </dt>
                     <dd>
                       <ul>
@@ -82,8 +82,8 @@ export default function Footer() {
                           <Link
                             href="/"
                             className="
-                                text-sm font-lexend pointer 
-                                hover:text-secondary duration-300
+                                pointer font-lexend text-sm 
+                                duration-300 hover:text-secondary
                              "
                           >
                             robsonbatista.contato@gmail.com
@@ -93,8 +93,8 @@ export default function Footer() {
                           <Link
                             href="/"
                             className="
-                                text-sm font-lexend pointer 
-                                hover:text-secondary duration-300
+                                pointer font-lexend text-sm 
+                                duration-300 hover:text-secondary
                              "
                           >
                             robsonhenriquebatista.ufrn@gmail.com
@@ -110,7 +110,7 @@ export default function Footer() {
           <div>
             <dl>
               <dt>
-                <h3 className="text-2xl font-serif text-secondary mb-3">
+                <h3 className="mb-3 font-serif text-2xl text-secondary">
                   Localização
                 </h3>
               </dt>
@@ -119,8 +119,8 @@ export default function Footer() {
                   href="https://goo.gl/maps/em7M7zXhgEzdMKXa7"
                   target="_blank"
                   className="
-                          text-sm font-lexend pointer 
-                          hover:text-secondary duration-300
+                          pointer font-lexend text-sm 
+                          duration-300 hover:text-secondary
                   "
                 >
                   OTC - Office Tower Center, (sala 1513).
@@ -139,24 +139,24 @@ export default function Footer() {
           <div className="flex flex-col items-center justify-between">
             <span
               className="
-                      text-base font-jost text-gray-200 
-                      hover:animate-text hover:bg-gradient-to-r 
-                      hover:from-teal-500 hover:via-purple-500 
-                      hover:to-orange-500 
-                      hover:bg-clip-text hover:text-transparent duration-300"
+                      font-jost text-base text-gray-200 
+                      duration-300 hover:animate-text 
+                      hover:bg-gradient-to-r hover:from-teal-500 
+                      hover:via-purple-500 
+                      hover:to-orange-500 hover:bg-clip-text hover:text-transparent"
             >
               Designed & Developed by Ewerton
             </span>
-            <div className="flex mt-4 space-x-6 justify-center items-center">
+            <div className="mt-4 flex items-center justify-center space-x-6">
               <a
                 href="#"
-                className="text-gray-200 hover:text-secondary duration-300"
+                className="text-gray-200 duration-300 hover:text-secondary"
               >
                 <IconBrandGithub />
               </a>
               <a
                 href="#"
-                className="text-gray-200 hover:text-secondary duration-300"
+                className="text-gray-200 duration-300 hover:text-secondary"
               >
                 <IconBrandWhatsapp />
               </a>

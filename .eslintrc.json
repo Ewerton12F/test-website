@@ -12,9 +12,9 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@next/next/recommended",
-    "prettier",
     "plugin:prettier/recommended"
   ],
   "overrides": [],
@@ -27,8 +27,15 @@
       "jsx": true
     }
   },
-  "plugins": ["react", "@typescript-eslint", "eslint-plugin-import-helpers"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "eslint-plugin-import-helpers"
+  ],
   "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": "error",
     "import-helpers/order-imports": [

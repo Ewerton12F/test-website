@@ -13,7 +13,7 @@ export default function useFetch<T = unknown>(url: string) {
       .finally(() => {
         setIsFetching(false);
       });
-  }, []);
+  }, [url]);
 
   return { data, error, isFetching };
 }

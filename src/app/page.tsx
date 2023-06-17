@@ -13,7 +13,7 @@ export default function Home() {
         className={`
         flex flex-col justify-center
         bg-gradient-to-b 
-        from-primary from-25% md:from-35% to-zinc-200 to-0% 
+        from-primary from-25% to-zinc-200 to-0% md:from-35% 
       `}
       >
         <header>

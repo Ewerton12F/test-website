@@ -19,10 +19,10 @@ export default function Navbar() {
 
   return (
     <header className="bg-primary">
-      <nav className="mx-5 md:mx-auto md:w-3/4 md:max-w-7xl py-10 flex justify-between items-center">
+      <nav className="mx-5 flex items-center justify-between py-10 md:mx-auto md:w-3/4 md:max-w-7xl">
         <div className="md:hidden">
           <Link id="navbar-link-home" href="/">
-            <h1 className="flex items-center text-xl font-oswald">
+            <h1 className="flex items-center font-oswald text-xl">
               Róbson
               <p className="mx-1 font-sans">|</p>
               <span className="font-serif text-secondary">Psicanálise</span>
@@ -46,47 +46,47 @@ export default function Navbar() {
         <ul
           className={`
           ${open ? 'block' : 'hidden md:flex'}
-          flex flex-col md:flex-row md:items-center z-[2]
-          md:z-auto md:static fixed  
-          bg-primary w-full left-0   
-          md:w-auto md:py-0 py-10
-          top-[10svh] md:top-0 h-[90svh] md:h-0
-          text-center font-jost 
-          transition-all ease-in duration-500
+          fixed left-0 top-[10svh] z-[2] flex
+          h-[90svh] w-full flex-col  
+          bg-primary py-10 text-center   
+          font-jost transition-all duration-500
+          ease-in md:static md:top-0 md:z-auto
+          md:h-0 md:w-auto 
+          md:flex-row md:items-center md:py-0
         `}
         >
-          <li className="mx-5 md:mx-0 md:mr-10 my-12 md:my-0">
+          <li className="mx-5 my-12 md:mx-0 md:my-0 md:mr-10">
             <Link
               id="navbar-menu-link-home"
               href="/"
-              className="text-2xl md:text-xl hover:text-secondary duration-300"
+              className="text-2xl duration-300 hover:text-secondary md:text-xl"
             >
               Home
             </Link>
           </li>
-          <li className="mx-5 md:mx-0 md:mr-10 my-12 md:my-0">
+          <li className="mx-5 my-12 md:mx-0 md:my-0 md:mr-10">
             <Link
               id="navbar-menu-link-services"
               href="/"
-              className="text-2xl md:text-xl hover:text-secondary duration-300"
+              className="text-2xl duration-300 hover:text-secondary md:text-xl"
             >
               Serviços
             </Link>
           </li>
-          <li className="mx-5 md:mx-0 md:mr-10 my-12 md:my-0">
+          <li className="mx-5 my-12 md:mx-0 md:my-0 md:mr-10">
             <Link
               id="navbar-menu-link-blog"
               href="/"
-              className="text-2xl md:text-xl hover:text-secondary duration-300"
+              className="text-2xl duration-300 hover:text-secondary md:text-xl"
             >
               Blog
             </Link>
           </li>
-          <li className="mx-5 md:mx-0 md:mr-10 my-12 md:my-0">
+          <li className="mx-5 my-12 md:mx-0 md:my-0 md:mr-10">
             <Link
               id="navbar-menu-link-about"
               href="/"
-              className="text-2xl md:text-xl hover:text-secondary duration-300"
+              className="text-2xl duration-300 hover:text-secondary md:text-xl"
             >
               Sobre
             </Link>
@@ -97,7 +97,7 @@ export default function Navbar() {
             <li className="mx-3 md:mx-0 md:ml-8">
               <Link
                 id="navbar-menu-icon-instagram"
-                className="hover:text-secondary duration-300"
+                className="duration-300 hover:text-secondary"
                 href="/"
               >
                 <IconBrandInstagram stroke={1.5} />
@@ -106,7 +106,7 @@ export default function Navbar() {
             <li className="mx-3 md:mx-0 md:ml-8">
               <Link
                 id="navbar-menu-icon-facebook"
-                className="hover:text-secondary duration-300"
+                className="duration-300 hover:text-secondary"
                 href="/"
               >
                 <IconBrandFacebook stroke={1.5} />
@@ -115,7 +115,7 @@ export default function Navbar() {
             <li className="mx-3 md:mx-0 md:ml-8">
               <Link
                 id="navbar-menu-icon-twitter"
-                className="hover:text-secondary duration-300"
+                className="duration-300 hover:text-secondary"
                 href="/"
               >
                 <IconBrandTwitter stroke={1.5} />
@@ -124,7 +124,7 @@ export default function Navbar() {
             <li className="mx-3 md:mx-0 md:ml-8">
               <Link
                 id="navbar-menu-icon-linkedin"
-                className="hover:text-secondary duration-300"
+                className="duration-300 hover:text-secondary"
                 href="/"
               >
                 <IconBrandLinkedin stroke={1.5} />
