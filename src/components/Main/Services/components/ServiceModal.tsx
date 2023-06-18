@@ -43,9 +43,11 @@ export default function ServiceModal({
             <div
               className={`
                       m-2 h-[100%] max-h-full overflow-hidden rounded-3xl 
-                      bg-zinc-600 bg-opacity-70 p-4 backdrop-blur-md
-                      min-[375px]:p-6 md:m-0 md:flex
-                      md:p-8 lg:p-10
+                      bg-black bg-opacity-50 p-4
+                      drop-shadow-lg backdrop-blur-md min-[375px]:p-6
+                      md:m-0 md:flex md:p-8 lg:p-10
+
+
                 `}
             >
               <div
@@ -123,14 +125,14 @@ export default function ServiceModal({
                     className="
                             mx-auto flex cursor-pointer items-center gap-2 rounded-xl
                             bg-white bg-opacity-20
-                            px-4 py-2 font-lexend 
+                            px-5 py-3 font-lexend 
                             text-lg normal-case text-white
                             duration-300 hover:bg-zap
 
                     "
                   >
                     <IconBrandWhatsapp size={24} strokeWidth={2} />
-                    <p>Whatsapp</p>
+                    <p className="leading-tight">Whatsapp</p>
                   </button>
                 </Link>
               </div>
