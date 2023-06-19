@@ -21,7 +21,7 @@ export default function ServiceItem({
       }}
       className={`
                 m-2 flex h-36 cursor-pointer flex-col items-center justify-center
-                overflow-hidden rounded-md bg-pshadow px-2 py-4
+                overflow-hidden bg-pshadow px-2 py-4
                 transition-all duration-300 hover:bg-secondary hover:text-primary
                 hover:shadow-xl min-[375px]:px-10
                 md:h-48 md:gap-2 md:px-20

@@ -24,29 +24,29 @@ export default function Profile() {
             Universidade Federal do Rio Grande do Norte. Especialista em
             adultos, atende em Natal-RN.
           </p>
-          <ul className="my-5 ml-5 list-disc text-base text-primary md:text-lg">
-            <li className="mb-3">
+          <ul className="my-5 text-base text-primary md:text-lg">
+            <li className="mb-3 font-cardo">
               Graduação em Psicologia:
               <br />
               <span className="italic">
                 “Freud e a História da Razão Ocidental”
               </span>
             </li>
-            <li className="mb-3">
+            <li className="mb-3 font-cardo">
               Bacharelado em Filosofia:
               <br />
               <span className="italic">
                 “A Emergência do Sujeito Ficcional”
               </span>
             </li>
-            <li className="mb-3">
+            <li className="mb-3 font-cardo">
               Mestrado em Filosofia:
               <br />
               <span className="italic">
                 “Para uma Metapsicologia Freudiana da Experiência Estética”
               </span>
             </li>
-            <li className="mb-3">
+            <li className="mb-3 font-cardo">
               Doutorado em Filosofia:
               <br />
               <span className="italic">
@@ -62,11 +62,22 @@ export default function Profile() {
           </p>
         </div>
       </div>
-      <div className="flex cursor-pointer items-center justify-center gap-3 text-primary duration-300 hover:text-secondary md:my-16">
-        <Link href="/" className="font-jost">
-          Curriculo Lattes e mais
-        </Link>
-        <IconExternalLink />
+      <div className="flex items-center justify-center md:my-16">
+        <button
+          className="
+                  flex items-center justify-center gap-4 bg-secondary
+                  px-10 py-5 text-primary 
+                  transition-all duration-300 hover:bg-pshadow hover:text-white md:px-16
+          "
+        >
+          <Link
+            href="/"
+            className="pt-[0.5px] font-cardo leading-tight md:text-lg"
+          >
+            Curriculo Lattes e mais
+          </Link>
+          <IconExternalLink stroke={1} />
+        </button>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
       <section className="bg-primary">
-        <div className="mx-5 grid grid-cols-1 gap-10 py-10 min-[375px]:mx-10 md:mx-auto md:w-3/4 md:max-w-7xl md:grid-cols-2 lg:flex lg:justify-between">
+        <div className="mx-5 grid grid-cols-1 gap-10 py-10 md:mx-auto md:w-3/4 md:max-w-7xl md:grid-cols-2 lg:flex lg:justify-between">
           <div className="">
             <Link id="navbar-link-home" href="/">
               <h1 className="flex flex-col items-start font-oswald text-[2.35rem]">

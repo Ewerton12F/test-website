@@ -30,7 +30,7 @@ export default function ServiceModal({
                   fixed inset-0 left-0 right-0 
                   top-0 z-50 h-[100%] max-h-full w-full overflow-y-auto
                   overflow-x-hidden bg-opacity-0 p-2 
-                  md:p-8 
+                  md:p-8
           `}
         >
           <div
@@ -43,10 +43,10 @@ export default function ServiceModal({
             <div
               className={`
                       m-2 h-[100%] max-h-full overflow-hidden rounded-3xl 
-                      bg-black bg-opacity-50 p-4
-                      drop-shadow-lg backdrop-blur-md min-[375px]:p-6
-                      md:m-0 md:flex md:p-8 lg:p-10
-
+                      bg-primary bg-opacity-50 p-4
+                      drop-shadow-lg backdrop-blur-md
+                      min-[375px]:p-6 md:m-0 md:flex md:p-8
+                      lg:p-10 
 
                 `}
             >
@@ -124,10 +124,11 @@ export default function ServiceModal({
                   <button
                     className="
                             mx-auto flex cursor-pointer items-center gap-2 rounded-xl
-                            bg-white bg-opacity-20
-                            px-5 py-3 font-lexend 
-                            text-lg normal-case text-white
-                            duration-300 hover:bg-zap
+                            border border-zap bg-white
+                            bg-opacity-20 px-5 py-3 
+                            font-lexend text-lg normal-case
+                            text-zap duration-300
+                            hover:bg-zap hover:text-white
 
                     "
                   >
