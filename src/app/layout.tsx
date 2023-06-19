@@ -1,6 +1,7 @@
 import './globals.css';
 import { Metadata } from 'next';
 import {
+  Cardo,
   DM_Serif_Display as DMsd,
   Jost,
   Oswald,
@@ -8,6 +9,11 @@ import {
   Quattrocento
 } from 'next/font/google';
 
+const cardo = Cardo({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-cardo'
+});
 const dmsd = DMsd({
   weight: '400',
   subsets: ['latin'],
@@ -36,6 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`
+          ${cardo.variable} 
           ${dmsd.variable} 
           ${jost.variable} 
           ${oswald.variable} 

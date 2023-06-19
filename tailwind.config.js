@@ -9,15 +9,16 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: 'var(--font-dmsd)',
+        cardo: 'var(--font-cardo)',
         jost: 'var(--font-jost)',
         oswald: 'var(--font-oswald)',
         lexend: 'var(--font-lexend)',
         quattrocento: 'var(--font-quattrocento)'
       },
       colors: {
-        primary: '#02142E',
-        pshadow: '#182C47',
-        secondary: '#FFC759',
+        primary: '#021A3B',
+        pshadow: '#021A3B',
+        secondary: '#FFCA42',
         'old-paper': '#FFE1A6',
         zap: '#25D366'
       },
