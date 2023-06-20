@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useRef, useState } from 'react';
-import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
 
 import animationData from '../../assets/menu-to-close.json';
 
@@ -60,7 +60,7 @@ export default function Navbar() {
           <li className="mx-5 my-12 md:mx-0 md:my-0 md:mr-10">
             <Link
               id="navbar-menu-link-services"
-              href="/"
+              href="#services"
               className="text-2xl duration-300 hover:text-secondary md:text-xl"
             >
               Serviços
@@ -69,19 +69,19 @@ export default function Navbar() {
           <li className="mx-5 my-12 md:mx-0 md:my-0 md:mr-10">
             <Link
               id="navbar-menu-link-blog"
-              href="/"
+              href="#profile"
               className="text-2xl duration-300 hover:text-secondary md:text-xl"
             >
-              Blog
+              Perfil
             </Link>
           </li>
           <li className="mx-5 my-12 md:mx-0 md:my-0 md:mr-10">
             <Link
               id="navbar-menu-link-about"
-              href="/"
+              href="#blog"
               className="text-2xl duration-300 hover:text-secondary md:text-xl"
             >
-              Sobre
+              Blog
             </Link>
           </li>
         </ul>
@@ -91,7 +91,8 @@ export default function Navbar() {
               <Link
                 id="navbar-menu-icon-instagram"
                 className="duration-300 hover:text-secondary"
-                href="/"
+                href="https://www.instagram.com/consultorio_de_psicanalise/"
+                target="_blank"
               >
                 <FaInstagram />
               </Link>
@@ -100,25 +101,18 @@ export default function Navbar() {
               <Link
                 id="navbar-menu-icon-facebook"
                 className="duration-300 hover:text-secondary"
-                href="/"
+                href="https://www.facebook.com/robsonhbatista/"
+                target="_blank"
               >
                 <FaFacebook />
               </Link>
             </li>
             <li className="mx-3 md:mx-0 md:ml-8">
               <Link
-                id="navbar-menu-icon-twitter"
-                className="duration-300 hover:text-secondary"
-                href="/"
-              >
-                <FaTwitter />
-              </Link>
-            </li>
-            <li className="mx-3 md:mx-0 md:ml-8">
-              <Link
                 id="navbar-menu-icon-linkedin"
                 className="duration-300 hover:text-secondary"
-                href="/"
+                href="https://www.linkedin.com/in/robsonhbatista/"
+                target="_blank"
               >
                 <FaLinkedin />
               </Link>

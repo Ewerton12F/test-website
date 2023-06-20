@@ -31,9 +31,6 @@ describe('Navbar Component', () => {
       container.querySelector('#navbar-menu-icon-facebook')
     ).toBeInTheDocument();
     expect(
-      container.querySelector('#navbar-menu-icon-twitter')
-    ).toBeInTheDocument();
-    expect(
       container.querySelector('#navbar-menu-icon-linkedin')
     ).toBeInTheDocument();
   });

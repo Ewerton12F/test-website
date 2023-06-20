@@ -5,7 +5,10 @@ import { IconExternalLink } from '@tabler/icons-react';
 
 export default function Profile() {
   return (
-    <div className="mx-5 my-14 md:mx-auto md:my-16 md:w-3/4 md:max-w-7xl">
+    <div
+      id="profile"
+      className="mx-5 my-14 md:mx-auto md:my-16 md:w-3/4 md:max-w-7xl"
+    >
       <h2 className="font-serif text-3xl text-primary md:text-4xl">
         Sobre o Psicanalista
       </h2>
@@ -13,7 +16,7 @@ export default function Profile() {
       <div className="grid grid-cols-1 md:gap-10 lg:grid-cols-2">
         <Image
           className="mx-auto shadow-lg lg:mx-0"
-          src="https://upload.wikimedia.org/wikipedia/commons/1/12/Sigmund_Freud_LIFE.jpg"
+          src="/profile-photo.jpeg"
           width={700}
           height={700}
           alt="Picture of the author"
