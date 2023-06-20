@@ -21,12 +21,12 @@ const serv: Service = {
   title: 'test1',
   smalldesc: 'TEST DESC L 1',
   largedesc: 'TEST DESC S 1',
-  icon: 'https://teste-server.vercel.app/media/services/test-svg_uDrELFh.svg'
+  icon: 'HiOutlineCubeTransparent'
 };
 
 export default function ServicesList() {
   const { data: services, isFetching } = useFetch<Service[]>(
-    'https://teste-server.vercel.app/api/services-list'
+    'https://teste-server-2.vercel.app/api/services-list'
   );
   const [service, setSelectedService] = useState<Service>(serv);
   const [open, setOpen] = useState<number>(0);

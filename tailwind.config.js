@@ -19,7 +19,7 @@ module.exports = {
         primary: '#021A3B',
         pshadow: '#021A3B',
         secondary: '#FFCA42',
-        'old-paper': '#FFE1A6',
+        paper: '#FFE1A6',
         zap: '#25D366'
       },
       animation: {

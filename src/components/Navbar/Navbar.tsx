@@ -2,15 +2,10 @@
 
 import Link from 'next/link';
 import { useRef, useState } from 'react';
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 import animationData from '../../assets/menu-to-close.json';
 
-import {
-  IconBrandFacebook,
-  IconBrandInstagram,
-  IconBrandTwitter,
-  IconBrandLinkedin
-} from '@tabler/icons-react';
 import Lottie, { LottieRefCurrentProps } from 'lottie-react';
 
 export default function Navbar() {
@@ -21,12 +16,10 @@ export default function Navbar() {
     <header className="bg-primary">
       <nav className="mx-5 flex items-center justify-between py-10 md:mx-auto md:w-3/4 md:max-w-7xl">
         <div className="md:hidden">
-          <Link id="navbar-link-home" href="/">
-            <h1 className="flex items-center font-oswald text-xl">
-              Róbson
-              <p className="mx-1 font-sans">|</p>
-              <span className="font-serif text-secondary">Psicanálise</span>
-            </h1>
+          <Link id="navbar-link-home" className="flex items-center" href="/">
+            <h1 className="flex items-center font-oswald text-xl">Róbson</h1>
+            <p className="mx-1 text-xl">|</p>
+            <span className="font-serif text-secondary">Psicanálise</span>
           </Link>
         </div>
         <button id="navbar-hamburger-menu" className="md:hidden">
@@ -100,7 +93,7 @@ export default function Navbar() {
                 className="duration-300 hover:text-secondary"
                 href="/"
               >
-                <IconBrandInstagram stroke={1.5} />
+                <FaInstagram />
               </Link>
             </li>
             <li className="mx-3 md:mx-0 md:ml-8">
@@ -109,7 +102,7 @@ export default function Navbar() {
                 className="duration-300 hover:text-secondary"
                 href="/"
               >
-                <IconBrandFacebook stroke={1.5} />
+                <FaFacebook />
               </Link>
             </li>
             <li className="mx-3 md:mx-0 md:ml-8">
@@ -118,7 +111,7 @@ export default function Navbar() {
                 className="duration-300 hover:text-secondary"
                 href="/"
               >
-                <IconBrandTwitter stroke={1.5} />
+                <FaTwitter />
               </Link>
             </li>
             <li className="mx-3 md:mx-0 md:ml-8">
@@ -127,7 +120,7 @@ export default function Navbar() {
                 className="duration-300 hover:text-secondary"
                 href="/"
               >
-                <IconBrandLinkedin stroke={1.5} />
+                <FaLinkedin />
               </Link>
             </li>
           </ul>

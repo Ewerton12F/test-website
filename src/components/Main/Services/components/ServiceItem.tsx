@@ -1,6 +1,8 @@
-import { Service } from '../../../../../types';
+import { useEffect, useState } from 'react';
 
-import { Icon3dCubeSphere } from '@tabler/icons-react';
+import { Service } from '../../../../../types';
+import { Icon } from './Icon';
+
 interface ServiceItemProps {
   service: Service;
   isOpen: boolean;
@@ -13,6 +15,12 @@ export default function ServiceItem({
   setIsOpen,
   setSelected
 }: ServiceItemProps) {
+  const [icon, setIcon] = useState('HiOutlineCubeTransparent');
+
+  useEffect(() => {
+    setIcon(service.icon);
+  }, [icon, setIcon, service.icon]);
+
   return (
     <div
       onClick={() => {
@@ -46,7 +54,7 @@ export default function ServiceItem({
                   justify-center lg:m-0 
             `}
           >
-            <Icon3dCubeSphere size={48} strokeWidth={1} />
+            <Icon nameIcon={icon} propsIcon={{ size: 40 }} />
           </div>
           <h4
             className={`

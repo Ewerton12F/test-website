@@ -1,12 +1,10 @@
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 import { Service } from '../../../../../types';
+import { Icon } from './Icon';
 
-import {
-  Icon3dCubeSphere,
-  IconBrandWhatsapp,
-  IconX
-} from '@tabler/icons-react';
+import { IconBrandWhatsapp, IconX } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 interface ServiceModalProps {
   service: Service;
@@ -19,6 +17,12 @@ export default function ServiceModal({
   isOpen,
   setIsOpen
 }: ServiceModalProps) {
+  const [icon, setIcon] = useState('HiOutlineCubeTransparent');
+
+  useEffect(() => {
+    setIcon(service.icon);
+  }, [icon, setIcon, service.icon]);
+
   return (
     <>
       {isOpen && (
@@ -88,11 +92,7 @@ export default function ServiceModal({
 
                       `}
                   >
-                    <Icon3dCubeSphere
-                      color="#ffffff"
-                      size={900}
-                      strokeWidth={1}
-                    />
+                    <Icon nameIcon={icon} propsIcon={{ size: 45 }} />
                   </div>
                   <div className="flex w-full justify-between">
                     <h4

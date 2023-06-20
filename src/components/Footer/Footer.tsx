@@ -62,7 +62,7 @@ export default function Footer() {
                     </dt>
                     <dd>
                       <Link
-                        href="/"
+                        href={`https://wa.me//5584996152546`}
                         className="
                                 pointer font-lexend text-sm 
                                 duration-300 hover:text-secondary
@@ -80,7 +80,7 @@ export default function Footer() {
                       <ul>
                         <li>
                           <Link
-                            href="/"
+                            href="mailto:robsonbatista.contato@gmail.com"
                             className="
                                 pointer font-lexend text-sm 
                                 duration-300 hover:text-secondary
@@ -91,7 +91,7 @@ export default function Footer() {
                         </li>
                         <li>
                           <Link
-                            href="/"
+                            href="mailto:robsonhenriquebatista.ufrn@gmail.com"
                             className="
                                 pointer font-lexend text-sm 
                                 duration-300 hover:text-secondary
