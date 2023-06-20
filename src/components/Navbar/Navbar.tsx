@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useRef, useState } from 'react';
-import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
 
 import animationData from '../../assets/menu-to-close.json';
 
