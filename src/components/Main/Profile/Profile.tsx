@@ -74,10 +74,10 @@ export default function Profile() {
           "
         >
           <Link
-            href="/"
+            href="http://lattes.cnpq.br/1009858417414235"
             className="pt-[0.5px] font-cardo leading-tight md:text-lg"
           >
-            Curriculo Lattes e mais
+            Curriculo Lattes
           </Link>
           <IconExternalLink stroke={1} />
         </button>
