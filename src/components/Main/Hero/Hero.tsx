@@ -12,7 +12,7 @@ export default function Hero() {
         id="hero-subtitle"
         className="mt-1 font-serif text-xl text-secondary md:mt-3 md:text-3xl"
       >
-        Psicanalista
+        Psicanálise
       </h3>
     </div>
   );

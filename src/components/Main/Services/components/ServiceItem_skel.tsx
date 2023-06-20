@@ -1,4 +1,4 @@
-import { Icon3dCubeSphere } from '@tabler/icons-react';
+import { HiOutlineCubeTransparent } from 'react-icons/hi';
 
 export default function ServiceItemSkel() {
   return (
@@ -31,7 +31,7 @@ export default function ServiceItemSkel() {
                   justify-center lg:m-0 
         `}
           >
-            <Icon3dCubeSphere size={48} strokeWidth={1} />
+            <HiOutlineCubeTransparent size={45} />
           </div>
           <div
             className="
