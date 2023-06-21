@@ -149,13 +149,13 @@ export default function Footer() {
             </span>
             <div className="mt-4 flex items-center justify-center space-x-6">
               <a
-                href="#"
+                href="https://github.com/Ewerton12f"
                 className="text-gray-200 duration-300 hover:text-secondary"
               >
                 <IconBrandGithub />
               </a>
               <a
-                href="#"
+                href="https://wa.me//5584988633633"
                 className="text-gray-200 duration-300 hover:text-secondary"
               >
                 <IconBrandWhatsapp />
