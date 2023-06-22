@@ -2,14 +2,10 @@
   "name": "test-website",
   "version": "0.1.0",
   "private": true,
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "npm run pre-commit"
+    "src/**/*.{ts,tsx}": [
+      "eslint",
+      "git add"
     ]
   },
   "scripts": {
@@ -18,9 +14,9 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "style:eslint": "eslint '*/**/*.{js, jsx,ts,tsx}' --quiet --fix",
-    "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
-    "style:prettier-write": "prettier --write .",
+    "style:eslint": "eslint 'src/**/*.{ts,tsx}' --quiet --fix",
+    "style:prettier": "prettier --check 'src/**/*.{ts,tsx}'",
+    "style:prettier-write": "prettier --write 'src/**/*.{ts,tsx}'",
     "pre-commit": "npm run style:eslint && npm run style:prettier-write && npm run style:prettier && npm run lint",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
