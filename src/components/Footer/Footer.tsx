@@ -137,7 +137,9 @@ export default function Footer() {
       <section className="bg-black">
         <div className="mx-auto w-full max-w-screen-xl py-6">
           <div className="flex flex-col items-center justify-between">
-            <span
+            <Link
+              href="https://www.devton.tech/"
+              target="_blank"
               className="
                       font-jost text-base text-gray-200 
                       duration-300 hover:animate-text 
@@ -146,20 +148,22 @@ export default function Footer() {
                       hover:to-orange-500 hover:bg-clip-text hover:text-transparent"
             >
               Designed & Developed by Ewerton
-            </span>
+            </Link>
             <div className="mt-4 flex items-center justify-center space-x-6">
-              <a
+              <Link
                 href="https://github.com/Ewerton12f"
+                target="_blank"
                 className="text-gray-200 duration-300 hover:text-secondary"
               >
                 <IconBrandGithub />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://wa.me//5584988633633"
+                target="_blank"
                 className="text-gray-200 duration-300 hover:text-secondary"
               >
                 <IconBrandWhatsapp />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
