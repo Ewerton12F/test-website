@@ -16,10 +16,10 @@ module.exports = {
         quattrocento: 'var(--font-quattrocento)'
       },
       colors: {
-        primary: '#021A3B',
-        pshadow: '#021A3B',
+        primary: '#020E52',
+        pshadow: '#020E52',
         secondary: '#FFCA42',
-        paper: '#FFE1A6',
+        paper: '#F2D6AE',
         zap: '#25D366'
       },
       animation: {
