@@ -13,8 +13,8 @@ export default function Navbar() {
   const menuRef = useRef<LottieRefCurrentProps>(null);
 
   return (
-    <header className="bg-primary">
-      <nav className="mx-5 flex items-center justify-between py-10 md:mx-auto md:w-3/4 md:max-w-7xl">
+    <header className="">
+      <nav className="mx-5 flex items-center justify-between py-10 md:mx-auto md:w-10/12 md:max-w-7xl">
         <div className="md:hidden">
           <Link id="navbar-link-home" className="flex items-center" href="/">
             <h1 className="flex items-center font-oswald text-xl">Róbson</h1>

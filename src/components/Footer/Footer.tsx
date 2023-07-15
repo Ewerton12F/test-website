@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 import {
   IconBrandFacebook,
@@ -47,9 +47,9 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-primary">
+    <footer className="bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-sky-600 to-primary">
       <section>
-        <div className="mx-5 grid grid-cols-1 gap-10 py-10 md:mx-auto md:w-3/4 md:max-w-7xl md:grid-cols-2 xl:flex xl:justify-between xl:gap-0">
+        <div className="mx-5 grid grid-cols-1 gap-10 py-10 md:mx-auto md:w-10/12 md:max-w-7xl md:grid-cols-2 xl:flex xl:justify-between xl:gap-0">
           <div className="">
             <Link id="navbar-link-home" href="/">
               <h2 className="mb-5 flex flex-col items-start font-oswald text-[2.35rem]">
@@ -67,13 +67,13 @@ export default function Footer() {
                   target="_blank"
                   className="
                                 flex w-fit items-center justify-center
-                                border border-white p-5 text-white 
+                                rounded-md border border-white p-5 text-white 
                                 transition-all duration-300 
                                 hover:border-secondary hover:bg-secondary
                                 hover:text-primary
-                             "
+                            "
                 >
-                  <IconBrandWhatsapp />
+                  <IconBrandWhatsapp size={32} stroke={2} />
                 </Link>
               </li>
               <li>
@@ -82,13 +82,13 @@ export default function Footer() {
                   target="_blank"
                   className="
                                 flex w-fit items-center justify-center
-                                border border-white p-5 text-white 
+                                rounded-md border border-white p-5 text-white 
                                 transition-all duration-300 
                                 hover:border-secondary hover:bg-secondary
                                 hover:text-primary
                              "
                 >
-                  <IconBrandInstagram />
+                  <IconBrandInstagram size={32} stroke={2} />
                 </Link>
               </li>
               <li>
@@ -97,13 +97,13 @@ export default function Footer() {
                   target="_blank"
                   className="
                                 flex w-fit items-center justify-center
-                                border border-white p-5 text-white 
+                                rounded-md border border-white p-5 text-white 
                                 transition-all duration-300 
                                 hover:border-secondary hover:bg-secondary
                                 hover:text-primary
                              "
                 >
-                  <IconBrandFacebook />
+                  <IconBrandFacebook size={32} stroke={2} />
                 </Link>
               </li>
               <li>
@@ -112,13 +112,13 @@ export default function Footer() {
                   target="_blank"
                   className="
                                 flex w-fit items-center justify-center
-                                border border-white p-5 text-white 
+                                rounded-md border border-white p-5 text-white 
                                 transition-all duration-300 
                                 hover:border-secondary hover:bg-secondary
                                 hover:text-primary
                              "
                 >
-                  <IconBrandLinkedin />
+                  <IconBrandLinkedin size={32} stroke={2} />
                 </Link>
               </li>
             </ul>
@@ -193,9 +193,9 @@ export default function Footer() {
                       href={`https://wa.me//5584996152546`}
                       className="
                                 flex items-center justify-center gap-4 
-                                border border-white px-5 py-5 font-lexend
-                                text-white transition-all duration-300 
-                                hover:border-secondary hover:bg-secondary hover:text-primary
+                                rounded-md border border-white px-5 py-5 font-lexend
+                                text-white transition-all duration-300 hover:border-secondary
+                                hover:bg-secondary hover:text-primary
                              "
                     >
                       (84) 9 9615-2546
@@ -204,9 +204,9 @@ export default function Footer() {
                       onClick={handleClickNumber}
                       className="
                     flex items-center justify-center gap-4 
-                    border border-white px-5 py-5 font-lexend
-                    text-white transition-all duration-300 
-                    hover:border-secondary hover:bg-secondary hover:text-primary
+                    rounded-md border border-white px-5 py-5 font-lexend
+                    text-white transition-all duration-300 hover:border-secondary
+                    hover:bg-secondary hover:text-primary
                              "
                     >
                       {buttonTextNumber ? (
@@ -228,10 +228,12 @@ export default function Footer() {
                       href="mailto:robsonbatista.contato@gmail.com"
                       className="
                                 flex items-center justify-center gap-4 
-                                border border-white px-5 py-5 font-lexend
-                                text-white transition-all duration-300 
-                                hover:border-secondary hover:bg-secondary hover:text-primary lg:px-10
-                             "
+                                rounded-md border border-white px-5 py-5 
+                                font-lexend text-white transition-all 
+                                duration-300 hover:border-secondary
+                                hover:bg-secondary hover:text-primary 
+                                lg:px-10 
+                      "
                     >
                       robsonbatista.contato@gmail.com
                     </Link>
@@ -239,9 +241,9 @@ export default function Footer() {
                       onClick={handleClickEmail}
                       className="
                     flex items-center justify-center gap-4 
-                    border border-white px-5 py-5 font-lexend
-                    text-white transition-all duration-300 
-                    hover:border-secondary hover:bg-secondary hover:text-primary
+                    rounded-md border border-white px-5 py-5 font-lexend
+                    text-white transition-all duration-300 hover:border-secondary
+                    hover:bg-secondary hover:text-primary 
                              "
                     >
                       {buttonTextEmail ? (
@@ -264,7 +266,7 @@ export default function Footer() {
           <div>
             <dl>
               <dt>
-                <h3 className="mb-5 font-serif text-3xl text-secondary">
+                <h3 className="mb-5 font-serif text-3xl text-secondary lg:text-4xl">
                   Localização
                 </h3>
               </dt>
@@ -274,10 +276,10 @@ export default function Footer() {
                     href="https://goo.gl/maps/em7M7zXhgEzdMKXa7"
                     target="_blank"
                     className="
-                              flex items-center justify-center gap-4
-                              border border-white px-5 py-5 font-lexend text-white
-                              transition-all duration-300 hover:border-secondary 
-                              hover:bg-secondary hover:text-primary lg:px-10
+                              flex items-center justify-center gap-4 rounded-md
+                              border border-white px-5 py-5 font-lexend text-white transition-all
+                              duration-300 hover:border-secondary hover:bg-secondary 
+                              hover:text-primary lg:px-10 
                   "
                   >
                     OTC - Office Tower Center, (sala 1513).
@@ -289,10 +291,10 @@ export default function Footer() {
                   <button
                     onClick={handleClickAdress}
                     className="
-                    flex items-center justify-center gap-4 
-                    border border-white px-5 py-5 font-lexend
-                    text-white transition-all duration-300 
-                    hover:border-secondary hover:bg-secondary hover:text-primary
+                    flex items-center justify-center gap-4 rounded-md
+                    border border-white px-5 py-5 font-lexend text-white
+                    transition-all duration-300 hover:border-secondary 
+                    hover:bg-secondary hover:text-primary 
                              "
                   >
                     {buttonTextAdress ? (
@@ -319,7 +321,7 @@ export default function Footer() {
                       bg-clip-text font-jost 
                       text-base text-transparent 
                       duration-300 md:mx-auto
-                      md:w-3/4 md:max-w-7xl"
+                      md:w-10/12 md:max-w-7xl"
       ></hr>
       <section>
         <div className="mx-auto w-full max-w-screen-xl py-10">
@@ -329,12 +331,13 @@ export default function Footer() {
               target="_blank"
               className="
                       animate-text bg-gradient-to-r 
-                      from-teal-500 
-                      via-purple-500 
-                      to-orange-500 
+                      from-teal-300 
+                      via-purple-300 
+                      to-green-300
                       bg-clip-text font-jost text-base
                       text-transparent transition-all duration-300
-                      hover:text-white"
+                      hover:text-white 
+              "
             >
               Designed & Developed by Ewerton
             </Link>

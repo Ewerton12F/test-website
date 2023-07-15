@@ -4,11 +4,11 @@ export default function ServiceItemSkel() {
   return (
     <div
       className={`
-                m-2 flex h-36 cursor-pointer flex-col items-center justify-center
+                flex h-96 cursor-pointer flex-col items-center justify-center
                 overflow-hidden rounded-md bg-pshadow px-2 py-4
                 transition-all duration-300 hover:bg-secondary hover:text-primary
-                hover:shadow-xl min-[375px]:px-10
-                md:h-48 md:gap-2 md:px-20
+                hover:shadow-xl min-[375px]:h-[500px]
+                min-[375px]:px-10 md:gap-2 md:px-20
                 lg:flex-row lg:items-start lg:justify-start
                 lg:gap-4 lg:px-5 lg:py-5
       `}

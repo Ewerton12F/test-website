@@ -14,7 +14,26 @@ body {
 }
 
 .swiper-wrapper {
-  padding-bottom: 2.5rem;
+  padding-bottom: 50px;
+}
+
+.swiper-button-next {
+  margin-top: 0px;
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-50%);
+}
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-50%);
+  margin-top: 0px;
 }
 
 @media screen and (min-width: 420px) {
