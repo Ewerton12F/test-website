@@ -5,51 +5,69 @@ import { IconExternalLink } from '@tabler/icons-react';
 
 export default function Profile() {
   return (
-    <div
+    <section
       id="profile"
-      className="mx-5 my-14 md:mx-auto md:my-16 md:w-3/4 md:max-w-7xl"
+      className="mx-5 py-10 md:mx-auto md:w-10/12 md:max-w-7xl"
     >
-      <h2 className="font-serif text-3xl text-primary md:text-4xl">
-        Sobre o Psicanalista
-      </h2>
-      <hr className="mb-7 mt-2 h-1 w-20 border-secondary md:mb-5 md:mt-3 md:w-24 md:bg-secondary" />
+      <div className="lg:hidden">
+        <h2 className="font-serif text-3xl text-primary md:text-4xl">
+          Sobre o Psicanalista
+        </h2>
+        <hr
+          className="
+          mb-5 h-1 w-[265px] border-2 border-secondary md:mb-5 
+          md:mt-3 md:w-[317px]
+          "
+        />
+      </div>
       <div className="grid grid-cols-1 md:gap-10 lg:grid-cols-2">
         <Image
           className="mx-auto shadow-lg lg:mx-0"
           src="/profile-photo.jpeg"
-          width={700}
-          height={700}
+          width={7000}
+          height={7000}
           alt="Picture of the author"
         />
-        <div className="my-8 min-[425px]:mx-3 md:mx-0 md:my-0">
-          <p className="my-3 font-jost text-base text-primary md:my-0 md:text-xl">
+        <div className="mt-5 md:mt-0">
+          <div className="hidden lg:block">
+            <h2 className="font-serif text-3xl text-primary md:text-4xl">
+              Sobre o Psicanalista
+            </h2>
+            <hr
+              className="
+                  mb-5 h-1 w-[265px] border-2 border-secondary
+                  lg:mt-2 lg:w-[315px]
+              "
+            />
+          </div>
+          <p className="font-jost text-lg text-primary md:my-0 md:text-xl">
             Róbson Batista é psicólogo, psicanalista e doutor em filosofia pela
             Universidade Federal do Rio Grande do Norte. Especialista em
             adultos, atende em Natal-RN.
           </p>
-          <ul className="my-5 text-base text-primary md:text-lg">
-            <li className="mb-3 font-cardo">
+          <ul className="my-5 text-lg text-primary md:text-lg">
+            <li className="mb-2.5 font-cardo">
               Graduação em Psicologia:
               <br />
               <span className="italic">
                 “Freud e a História da Razão Ocidental”
               </span>
             </li>
-            <li className="mb-3 font-cardo">
+            <li className="mb-2.5 font-cardo">
               Bacharelado em Filosofia:
               <br />
               <span className="italic">
                 “A Emergência do Sujeito Ficcional”
               </span>
             </li>
-            <li className="mb-3 font-cardo">
+            <li className="mb-2.5 font-cardo">
               Mestrado em Filosofia:
               <br />
               <span className="italic">
                 “Para uma Metapsicologia Freudiana da Experiência Estética”
               </span>
             </li>
-            <li className="mb-3 font-cardo">
+            <li className="mb-2.5 font-cardo">
               Doutorado em Filosofia:
               <br />
               <span className="italic">
@@ -57,7 +75,7 @@ export default function Profile() {
               </span>
             </li>
           </ul>
-          <p className="my-3 font-jost text-base text-primary md:my-0 md:text-xl">
+          <p className="font-jost text-lg text-primary md:my-0 md:text-xl">
             Estudioso de história do pensamento ocidental, estética filosófica,
             literatura, ética e psicanálise, dedica-se também ao estudo da
             relação entre psicanálise e filosofia, psicanálise e epistemologia,
@@ -65,23 +83,23 @@ export default function Profile() {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center md:my-16">
+      <div className="mt-10 flex items-center justify-center ">
         <button
           className="
-                  flex items-center justify-center gap-4 bg-secondary
-                  px-10 py-5 text-primary 
-                  transition-all duration-300 hover:bg-pshadow hover:text-white md:px-16
+                  flex items-center justify-center gap-4 rounded-xl
+                  bg-secondary px-10 py-5 text-primary transition-all 
+                  duration-300 hover:bg-pshadow hover:text-white 
           "
         >
           <Link
             href="http://lattes.cnpq.br/1009858417414235"
-            className="pt-[0.5px] font-cardo leading-tight md:text-lg"
+            className="pt-[0.5px] font-lexend text-lg leading-tight min-[375px]:text-xl"
           >
             Curriculo Lattes
           </Link>
-          <IconExternalLink stroke={1} />
+          <IconExternalLink size={32} stroke={2} />
         </button>
       </div>
-    </div>
+    </section>
   );
 }

@@ -29,7 +29,7 @@ const quattrocento = Quattrocento({
 });
 
 export const metadata: Metadata = {
-  title: 'Róbson Batista - Psicanálise',
+  title: 'Róbson Batista | Psicanálise',
   description: 'Serviços para o público'
 };
 

@@ -4,9 +4,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'upload.wikimedia.org',
+        hostname: 'source.unsplash.com',
         port: '',
-        pathname: '/wikipedia/**'
+        pathname: '/featured/**'
       }
     ]
   }
