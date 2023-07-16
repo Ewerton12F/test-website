@@ -266,7 +266,7 @@ export default function Footer() {
           <div>
             <dl>
               <dt>
-                <h3 className="mb-5 font-serif text-3xl text-secondary lg:text-4xl">
+                <h3 className="mb-5 font-serif text-3xl text-secondary">
                   Localização
                 </h3>
               </dt>
