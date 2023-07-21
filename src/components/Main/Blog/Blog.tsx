@@ -10,7 +10,7 @@ export default function Blog() {
   const constructRef = useRef<LottieRefCurrentProps>(null);
 
   return (
-    <div id="blog" className="mx-5 my-10 bg-white">
+    <section id="blog" className="mx-5 my-10 bg-white md:my-14">
       <div className="">
         <h2 className="pb-1 text-center font-serif text-3xl text-primary md:text-4xl">
           Artigos & Publicações
@@ -43,6 +43,6 @@ export default function Blog() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

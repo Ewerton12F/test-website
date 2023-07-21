@@ -17,18 +17,24 @@ export default function Navbar() {
       className={`
                 ${
                   open
-                    ? 'bg-zinc-900 bg-opacity-30 transition-all duration-300 md:bg-opacity-0'
+                    ? 'bg-zinc-900 bg-opacity-70 transition-all duration-300 md:bg-opacity-0'
                     : ''
                 }
                 flex items-center justify-between
-                py-2.5 md:mx-auto md:my-10 md:w-11/12 md:max-w-7xl
+                py-2.5 md:mx-auto md:my-14 md:w-11/12 md:max-w-7xl
       `}
     >
-      <div className="p-5 md:hidden ">
-        <Link id="navbar-link-home" className="flex items-baseline" href="/">
-          <h1 className="font-oswald text-xl">Róbson</h1>
-          <p className="mx-1 text-xl">|</p>
-          <span className="font-serif text-xl text-secondary">Psicanálise</span>
+      <div className="md:hidden ">
+        <Link
+          id="navbar-link-home"
+          className="flex items-baseline p-5"
+          href="/"
+        >
+          <h1 className="font-oswald text-xl min-[600px]:text-2xl">Róbson</h1>
+          <p className="mx-1 text-xl min-[600px]:text-2xl">|</p>
+          <span className="font-serif text-xl text-secondary min-[600px]:text-2xl">
+            Psicanálise
+          </span>
         </Link>
       </div>
       <button id="navbar-hamburger-menu" className="p-5 md:hidden">
@@ -49,14 +55,14 @@ export default function Navbar() {
         className={`
                   ${open ? 'block' : 'right-[-80%] md:flex'}
                   fixed right-0 top-[90px] z-[2] flex h-[100vh] w-4/5 flex-col
-                  bg-zinc-900 bg-opacity-30 p-5 text-left backdrop-blur-md 
+                  bg-zinc-900 bg-opacity-70 p-5 text-left backdrop-blur-md 
                   transition-all duration-300 min-[375px]:py-10 md:static
                   md:top-0 md:z-auto md:mx-auto md:h-0 md:w-full md:flex-row
                   md:items-center md:justify-between md:py-0
         `}
       >
         <ul className="flex flex-col font-lexend md:flex-row">
-          <li className="my-5 md:mx-0 md:my-0 md:mr-10">
+          <li className="my-5 md:mx-0 md:mr-5">
             <Link
               onClick={() => {
                 setOpen(!open);
@@ -73,7 +79,7 @@ export default function Navbar() {
               Home
             </Link>
           </li>
-          <li className="my-5 md:mx-0 md:my-0 md:mr-10">
+          <li className="my-5 md:mx-0 md:mr-5">
             <Link
               onClick={() => {
                 setOpen(!open);
@@ -90,7 +96,7 @@ export default function Navbar() {
               Serviços
             </Link>
           </li>
-          <li className="my-5 md:mx-0 md:my-0 md:mr-10">
+          <li className="my-5 md:mx-0 md:mr-5">
             <Link
               onClick={() => {
                 setOpen(!open);
@@ -107,7 +113,7 @@ export default function Navbar() {
               Perfil
             </Link>
           </li>
-          <li className="my-5 md:mx-0 md:my-0 md:mr-10">
+          <li className="my-5 md:mx-0 md:mr-5">
             <Link
               onClick={() => {
                 setOpen(!open);

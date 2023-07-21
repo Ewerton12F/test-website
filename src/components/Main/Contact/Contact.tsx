@@ -5,27 +5,35 @@ import { IconBrandWhatsapp } from '@tabler/icons-react';
 
 export default function Contact() {
   return (
-    <section className="mx-5 my-10 md:mx-auto md:w-10/12 md:max-w-7xl">
-      <h2 className="font-serif text-3xl text-primary md:text-4xl">
-        Entre em Contato
-      </h2>
-      <hr
-        className="
-                  mb-5 h-1 w-[233px] border-2 border-secondary md:mb-5 
-                  md:mt-2 md:w-[278px] lg:mb-10
-        "
-      />
+    <section
+      className="
+                m-5 my-12 max-w-[350px] min-[375px]:mx-auto 
+                min-[375px]:my-14 min-[600px]:max-w-[450px] md:mt-32
+                md:max-w-[600px] lg:max-w-[725px]
+      "
+    >
       <div
         className="
-                  grid gap-10 rounded-xl border border-zap 
-                  bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] 
-                  from-green-300 via-green-500 to-green-800 py-10 
-                  text-center 
+                  grid gap-5 rounded-xl border border-zap py-10 text-center 
+                  min-[375px]:gap-7 min-[600px]:gap-8 min-[600px]:px-8
         "
       >
-        <p className="mx-5 font-jost text-lg text-white md:mx-10 md:text-2xl">
+        <h2
+          className="
+                    font-lexend text-xl text-white min-[375px]:text-2xl 
+                    min-[600px]:text-3xl
+          "
+        >
+          Entre em Contato
+        </h2>
+        <p
+          className="
+                    text-md mx-5 font-jost leading-tight
+                    text-white min-[600px]:text-xl md:text-2xl
+          "
+        >
           Fale diretamente comigo pelo Whatsapp sobre valores e disponibilidade
-          de horário.
+          de horário
         </p>
         <Link
           className="mx-auto"
@@ -35,13 +43,14 @@ export default function Contact() {
           <button
             className="
                       mx-auto flex cursor-pointer items-center gap-2 rounded-xl 
-                      border-2 border-white bg-zap px-10 py-5 font-lexend 
-                      text-lg normal-case text-white duration-300
-                     hover:bg-[#075E54]
+                      border-2 border-zap px-10 py-5 font-lexend text-lg 
+                      normal-case text-white duration-300 hover:bg-zap
             "
           >
             <IconBrandWhatsapp size={32} strokeWidth={2} />
-            <p className="text-xl leading-tight md:text-2xl">Whatsapp</p>
+            <p className="text-xl leading-tight min-[600px]:text-2xl md:text-3xl">
+              Whatsapp
+            </p>
           </button>
         </Link>
       </div>
