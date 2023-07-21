@@ -24,7 +24,7 @@ export default function Profile() {
             src="/profile-photo.jpeg"
             width={7000}
             height={7000}
-            alt="Robson Batista"
+            alt="Robson Batista | Psicanalista"
           />
           <div className="mt-5 md:mt-0">
             <div className="hidden lg:block">
