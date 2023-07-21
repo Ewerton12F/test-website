@@ -20,7 +20,7 @@ export default function Navbar() {
                     ? 'bg-zinc-900 bg-opacity-70 transition-all duration-300 md:bg-opacity-0'
                     : ''
                 }
-                flex items-center justify-between
+                flex items-center justify-between overflow-hidden
                 py-2.5 md:mx-auto md:my-14 md:w-11/12 md:max-w-7xl
       `}
     >
@@ -53,10 +53,14 @@ export default function Navbar() {
       </button>
       <div
         className={`
-                  ${open ? 'block' : 'right-[-80%] md:flex'}
-                  fixed right-0 top-[90px] z-[2] flex h-[100vh] w-4/5 flex-col
+                  ${
+                    open
+                      ? 'duration-800 absolute transition-all'
+                      : 'hidden md:flex'
+                  }
+                  right-0 top-[90px] z-[2] flex h-[100vh] w-4/5 flex-col
                   bg-zinc-900 bg-opacity-70 p-5 text-left backdrop-blur-md 
-                  transition-all duration-300 min-[375px]:py-10 md:static
+                  min-[375px]:py-10 md:static
                   md:top-0 md:z-auto md:mx-auto md:h-0 md:w-full md:flex-row
                   md:items-center md:justify-between md:py-0
         `}
