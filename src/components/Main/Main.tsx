@@ -7,7 +7,7 @@ export default function Main() {
       className={`
                   flex h-[770px] w-full flex-col justify-center
                   min-[375px]:h-[830px] min-[600px]:h-[880px] md:h-[1200px]
-                  lg:h-[1250px]
+                  lg:h-[1250px] 
         `}
     >
       <video
