@@ -91,9 +91,9 @@ export default function Profile() {
         <div className="mt-10 flex items-center justify-center ">
           <button
             className="
-                  flex items-center justify-center gap-4 rounded-xl
-                  bg-secondary px-10 py-5 text-primary transition-all 
-                  duration-300 hover:bg-pshadow hover:text-white 
+                  flex items-center justify-center gap-4 rounded-xl border px-10 
+                  py-5 transition-all duration-300 hover:border-secondary 
+                  hover:bg-secondary hover:text-primary
           "
           >
             <Link
