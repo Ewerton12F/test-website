@@ -73,7 +73,7 @@ export default function Footer() {
                                 hover:text-primary
                             "
                 >
-                  <IconBrandWhatsapp size={32} stroke={2} />
+                  <IconBrandWhatsapp size={26} stroke={2} />
                 </Link>
               </li>
               <li>
@@ -88,7 +88,7 @@ export default function Footer() {
                                 hover:text-primary
                              "
                 >
-                  <IconBrandInstagram size={32} stroke={2} />
+                  <IconBrandInstagram size={26} stroke={2} />
                 </Link>
               </li>
               <li>
@@ -103,7 +103,7 @@ export default function Footer() {
                                 hover:text-primary
                              "
                 >
-                  <IconBrandFacebook size={32} stroke={2} />
+                  <IconBrandFacebook size={26} stroke={2} />
                 </Link>
               </li>
               <li>
@@ -118,7 +118,7 @@ export default function Footer() {
                                 hover:text-primary
                              "
                 >
-                  <IconBrandLinkedin size={32} stroke={2} />
+                  <IconBrandLinkedin size={26} stroke={2} />
                 </Link>
               </li>
             </ul>
