@@ -5,10 +5,16 @@ import { IconExternalLink } from '@tabler/icons-react';
 
 export default function Profile() {
   return (
-    <section id="profile" className="bg-[#F4F8FF]">
+    <section
+      id="profile"
+      className="
+                border-y-2 border-zinc-600 
+                bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))]
+                from-gray-900 to-gray-600"
+    >
       <div className="mx-5 py-10 md:mx-auto md:w-10/12 md:max-w-7xl md:py-14">
         <div className="lg:hidden">
-          <h2 className="font-serif text-3xl text-primary md:text-4xl">
+          <h2 className="font-serif text-3xl md:text-4xl">
             Sobre o Psicanalista
           </h2>
           <hr
@@ -28,7 +34,7 @@ export default function Profile() {
           />
           <div className="mt-5 md:mt-0">
             <div className="hidden lg:block">
-              <h2 className="font-serif text-3xl text-primary md:text-4xl">
+              <h2 className="font-serif text-3xl md:text-4xl">
                 Sobre o Psicanalista
               </h2>
               <hr
@@ -38,12 +44,12 @@ export default function Profile() {
               "
               />
             </div>
-            <p className="font-jost text-lg text-primary md:my-0 md:text-xl">
+            <p className="font-jost text-lg md:my-0 md:text-xl">
               Róbson Batista é psicólogo, psicanalista e doutor em filosofia
               pela Universidade Federal do Rio Grande do Norte. Especialista em
               adultos, atende em Natal-RN.
             </p>
-            <ul className="my-5 text-lg text-primary md:text-lg">
+            <ul className="my-5 text-lg md:text-lg">
               <li className="mb-2.5 font-cardo">
                 Graduação em Psicologia:
                 <br />
@@ -73,7 +79,7 @@ export default function Profile() {
                 </span>
               </li>
             </ul>
-            <p className="font-jost text-lg text-primary md:my-0 md:text-xl">
+            <p className="font-jost text-lg md:my-0 md:text-xl">
               Estudioso de história do pensamento ocidental, estética
               filosófica, literatura, ética e psicanálise, dedica-se também ao
               estudo da relação entre psicanálise e filosofia, psicanálise e

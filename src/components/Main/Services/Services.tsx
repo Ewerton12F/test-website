@@ -5,13 +5,11 @@ export default function Services() {
     <section
       id="services"
       className="
-                border-y-2 border-zinc-600 
-                bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))]
-                from-gray-900 to-gray-600 px-5 pb-14 text-center drop-shadow-xl
-                md:mx-auto md:px-10 md:pb-16
+                bg-black px-5 pb-14 text-center
+                drop-shadow-xl md:mx-auto md:px-10 md:pb-16
       "
     >
-      <div className="my-12 md:my-16">
+      <div className="py-12 md:py-16">
         <h2
           className="
                     font-serif text-3xl text-white 
