@@ -30,6 +30,10 @@ export default function Main() {
       >
         <Navbar />
         <Hero />
+        <div
+          className="absolute bottom-[0px] z-0 h-[40px] w-full bg-gradient-to-t 
+                   from-black drop-shadow-lg md:h-[80px]"
+        ></div>
       </div>
     </main>
   );

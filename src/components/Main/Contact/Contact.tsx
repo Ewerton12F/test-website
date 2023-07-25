@@ -8,7 +8,7 @@ export default function Contact() {
     <section
       className="
                 m-5 my-12 max-w-[350px] min-[375px]:mx-auto 
-                min-[375px]:my-14 min-[600px]:max-w-[450px] md:mt-32
+                min-[375px]:my-14 min-[600px]:max-w-[450px] md:mt-20
                 md:max-w-[600px] lg:max-w-[725px]
       "
     >
