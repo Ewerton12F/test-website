@@ -49,10 +49,10 @@ export default function Footer() {
   return (
     <footer className="bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-sky-600 to-primary">
       <section>
-        <div className="mx-5 grid grid-cols-1 gap-10 py-10 md:mx-auto md:w-10/12 md:max-w-7xl md:grid-cols-2 xl:flex xl:justify-between xl:gap-0">
+        <div className="mx-5 grid grid-cols-1 gap-7 py-7 md:mx-auto md:w-10/12 md:max-w-7xl md:grid-cols-2 xl:flex xl:justify-between xl:gap-0">
           <div className="">
             <Link id="navbar-link-home" href="/">
-              <h2 className="mb-5 flex flex-col items-start font-oswald text-[2.35rem]">
+              <h2 className="mb-3 flex flex-col items-start font-oswald text-[2.35rem]">
                 Róbson
                 <hr className="w-[6.15rem]" />
                 <span className="font-serif text-xl text-secondary">
@@ -60,18 +60,18 @@ export default function Footer() {
                 </span>
               </h2>
             </Link>
-            <ul className="flex gap-1 xl:mb-10">
+            <ul className="flex gap-1 xl:mb-5">
               <li>
                 <Link
                   href={`https://wa.me//5584996152546`}
                   target="_blank"
                   className="
-                                flex w-fit items-center justify-center
-                                rounded-md border border-white p-5 text-white 
-                                transition-all duration-300 
-                                hover:border-secondary hover:bg-secondary
-                                hover:text-primary
-                            "
+                            flex w-fit items-center justify-center
+                            rounded-md border border-white p-3 text-white 
+                            transition-all duration-300 
+                            hover:border-secondary hover:bg-secondary
+                            hover:text-primary
+                  "
                 >
                   <IconBrandWhatsapp size={26} stroke={2} />
                 </Link>
@@ -81,12 +81,12 @@ export default function Footer() {
                   href={`https://www.instagram.com/consultorio_de_psicanalise/`}
                   target="_blank"
                   className="
-                                flex w-fit items-center justify-center
-                                rounded-md border border-white p-5 text-white 
-                                transition-all duration-300 
-                                hover:border-secondary hover:bg-secondary
-                                hover:text-primary
-                             "
+                            flex w-fit items-center justify-center
+                            rounded-md border border-white p-3 text-white 
+                            transition-all duration-300 
+                            hover:border-secondary hover:bg-secondary
+                            hover:text-primary
+                  "
                 >
                   <IconBrandInstagram size={26} stroke={2} />
                 </Link>
@@ -97,7 +97,7 @@ export default function Footer() {
                   target="_blank"
                   className="
                                 flex w-fit items-center justify-center
-                                rounded-md border border-white p-5 text-white 
+                                rounded-md border border-white p-3 text-white 
                                 transition-all duration-300 
                                 hover:border-secondary hover:bg-secondary
                                 hover:text-primary
@@ -112,7 +112,7 @@ export default function Footer() {
                   target="_blank"
                   className="
                                 flex w-fit items-center justify-center
-                                rounded-md border border-white p-5 text-white 
+                                rounded-md border border-white p-3 text-white 
                                 transition-all duration-300 
                                 hover:border-secondary hover:bg-secondary
                                 hover:text-primary
@@ -124,12 +124,12 @@ export default function Footer() {
             </ul>
             <dl className="hidden xl:block">
               <dt>
-                <h3 className="mb-5 font-serif text-3xl text-secondary">
+                <h3 className="mb-3 font-serif text-3xl text-secondary">
                   Horários
                 </h3>
               </dt>
               <dd>
-                <ul className="flex flex-col gap-4">
+                <ul className="flex flex-col gap-1.5">
                   <li className="flex gap-1.5 align-bottom">
                     <dt>
                       <h4 className="font-jost text-xl">Seg. à Sex.:</h4>
@@ -153,12 +153,12 @@ export default function Footer() {
           <div>
             <dl className="xl:hidden">
               <dt>
-                <h3 className="mb-5 font-serif text-3xl text-secondary">
+                <h3 className="mb-3 font-serif text-3xl text-secondary">
                   Horários
                 </h3>
               </dt>
               <dd>
-                <ul className="flex flex-col gap-4">
+                <ul className="flex flex-col gap-1.5">
                   <li className="flex gap-1.5 align-bottom">
                     <dt>
                       <h4 className="font-jost text-xl">Seg. à Sex.:</h4>
@@ -182,18 +182,18 @@ export default function Footer() {
           <div className="xl:mx-10">
             <dl>
               <dt>
-                <h3 className="mb-5 font-serif text-3xl text-secondary">
+                <h3 className="mb-3 font-serif text-3xl text-secondary">
                   Contatos
                 </h3>
               </dt>
               <dd>
-                <ul className="flex flex-col gap-4">
+                <ul className="flex flex-col gap-3">
                   <li className="flex flex-col gap-1">
                     <Link
                       href={`https://wa.me//5584996152546`}
                       className="
                                 flex items-center justify-center gap-4 
-                                rounded-md border border-white px-5 py-5 font-lexend
+                                rounded-md border border-white px-5 py-3 font-lexend
                                 text-white transition-all duration-300 hover:border-secondary
                                 hover:bg-secondary hover:text-primary
                              "
@@ -204,7 +204,7 @@ export default function Footer() {
                       onClick={handleClickNumber}
                       className="
                     flex items-center justify-center gap-4 
-                    rounded-md border border-white px-5 py-5 font-lexend
+                    rounded-md border border-white px-5 py-3 font-lexend
                     text-white transition-all duration-300 hover:border-secondary
                     hover:bg-secondary hover:text-primary
                              "
@@ -228,7 +228,7 @@ export default function Footer() {
                       href="mailto:robsonbatista.contato@gmail.com"
                       className="
                                 flex items-center justify-center gap-4 
-                                rounded-md border border-white px-5 py-5 
+                                rounded-md border border-white px-5 py-3 
                                 font-lexend text-white transition-all 
                                 duration-300 hover:border-secondary
                                 hover:bg-secondary hover:text-primary 
@@ -241,7 +241,7 @@ export default function Footer() {
                       onClick={handleClickEmail}
                       className="
                     flex items-center justify-center gap-4 
-                    rounded-md border border-white px-5 py-5 font-lexend
+                    rounded-md border border-white px-5 py-3 font-lexend
                     text-white transition-all duration-300 hover:border-secondary
                     hover:bg-secondary hover:text-primary 
                              "
@@ -266,7 +266,7 @@ export default function Footer() {
           <div>
             <dl>
               <dt>
-                <h3 className="mb-5 font-serif text-3xl text-secondary">
+                <h3 className="mb-3 font-serif text-3xl text-secondary">
                   Localização
                 </h3>
               </dt>
@@ -277,7 +277,7 @@ export default function Footer() {
                     target="_blank"
                     className="
                               flex items-center justify-center gap-4 rounded-md
-                              border border-white px-5 py-5 font-lexend text-white transition-all
+                              border border-white px-5 py-3 font-lexend text-white transition-all
                               duration-300 hover:border-secondary hover:bg-secondary 
                               hover:text-primary lg:px-10 
                   "
@@ -292,7 +292,7 @@ export default function Footer() {
                     onClick={handleClickAdress}
                     className="
                     flex items-center justify-center gap-4 rounded-md
-                    border border-white px-5 py-5 font-lexend text-white
+                    border border-white px-5 py-3 font-lexend text-white
                     transition-all duration-300 hover:border-secondary 
                     hover:bg-secondary hover:text-primary 
                              "
@@ -324,7 +324,7 @@ export default function Footer() {
                       md:w-10/12 md:max-w-7xl"
       ></hr>
       <section>
-        <div className="mx-auto w-full max-w-screen-xl py-10">
+        <div className="mx-auto w-full max-w-screen-xl py-5">
           <div className="flex flex-col items-center justify-between">
             <Link
               href="https://www.devton.tech/"
