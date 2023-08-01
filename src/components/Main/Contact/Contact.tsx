@@ -14,14 +14,14 @@ export default function Contact() {
     >
       <div
         className="
-                  grid gap-5 rounded-xl border border-zap py-10 text-center 
-                  min-[375px]:gap-7 min-[600px]:gap-8 min-[600px]:px-8
+                  grid gap-5 rounded-xl border border-zap py-7 text-center 
+                  min-[375px]:gap-7 min-[600px]:gap-5 min-[600px]:px-8
         "
       >
         <h2
           className="
                     font-lexend text-xl text-white min-[375px]:text-2xl 
-                    min-[600px]:text-3xl
+                    min-[600px]:text-[27px]
           "
         >
           Entre em Contato
@@ -29,7 +29,7 @@ export default function Contact() {
         <p
           className="
                     text-md mx-5 font-jost leading-tight
-                    text-white min-[600px]:text-xl md:text-2xl
+                    text-white 
           "
         >
           Fale diretamente comigo pelo Whatsapp sobre valores e disponibilidade
@@ -42,15 +42,13 @@ export default function Contact() {
         >
           <button
             className="
-                      mx-auto flex cursor-pointer items-center gap-2 rounded-xl 
-                      border-2 border-zap px-10 py-5 font-lexend text-lg 
+                      mx-auto flex cursor-pointer items-center gap-3 rounded-md 
+                      border-2 border-zap px-7 py-3 font-lexend text-lg 
                       normal-case text-white duration-300 hover:bg-zap
             "
           >
-            <IconBrandWhatsapp size={32} strokeWidth={2} />
-            <p className="text-xl leading-tight min-[600px]:text-2xl md:text-3xl">
-              Whatsapp
-            </p>
+            <IconBrandWhatsapp size={26} strokeWidth={2} />
+            <p className="text-xl leading-tight">Whatsapp</p>
           </button>
         </Link>
       </div>

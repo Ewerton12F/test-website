@@ -91,18 +91,18 @@ export default function Profile() {
         <div className="mt-10 flex items-center justify-center ">
           <button
             className="
-                  flex items-center justify-center gap-4 rounded-xl border px-10 
-                  py-5 transition-all duration-300 hover:border-secondary 
+                  flex items-center justify-center gap-4 rounded-xl border px-7 
+                  py-3 transition-all duration-300 hover:border-secondary 
                   hover:bg-secondary hover:text-primary
-          "
+            "
           >
             <Link
               href="http://lattes.cnpq.br/1009858417414235"
-              className="pt-[0.5px] font-lexend text-lg leading-tight min-[375px]:text-xl"
+              className="pt-[1px] font-lexend text-lg leading-tight min-[375px]:text-xl"
             >
               Curriculo Lattes
             </Link>
-            <IconExternalLink size={32} stroke={2} />
+            <IconExternalLink size={26} stroke={2} />
           </button>
         </div>
       </div>
