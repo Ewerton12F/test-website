@@ -5,7 +5,7 @@ import ServiceItem from './ServiceItem';
 import ServiceItemSkel from './ServiceItem_skel';
 
 import useFetch from '@/hooks/useFetch';
-import { Grid, Navigation, Pagination } from 'swiper';
+import { Autoplay, Grid, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -22,30 +22,44 @@ export default function ServicesList() {
   return (
     <>
       <Swiper
-        slidesPerView={1}
-        navigation={false}
-        spaceBetween={10}
-        grid={{ rows: 1 }}
+        slidesPerView={'auto'}
+        navigation={true}
+        spaceBetween={24}
+        centeredSlides={false}
         breakpoints={{
           768: {
-            slidesPerView: 2,
-            grid: { rows: 2, fill: 'row' },
-            spaceBetween: 40
+            slidesPerView: 2
+          },
+          992: {
+            slidesPerView: 3
+          },
+          1500: {
+            slidesPerView: 4
+          },
+          2000: {
+            slidesPerView: 5
+          },
+          2500: {
+            slidesPerView: 6
+          },
+          3000: {
+            slidesPerView: 7
+          },
+          3500: {
+            slidesPerView: 8
+          },
+          4000: {
+            slidesPerView: 9
+          },
+          4500: {
+            slidesPerView: 10
           }
         }}
-        pagination={{
-          clickable: true,
-          dynamicBullets: true
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false
         }}
-        modules={[Grid, Navigation, Pagination]}
-        style={{
-          // @ts-expect-error TODO
-          '--swiper-pagination-color': '#FFCA42',
-          '--swiper-pagination-bullet-inactive-color': '#fff',
-          '--swiper-pagination-bullet-inactive-opacity': '1',
-          '--swiper-pagination-bullet-size': '12px',
-          '--swiper-pagination-bullet-horizontal-gap': '6px'
-        }}
+        modules={[Autoplay, Grid, Navigation]}
       >
         {isFetching &&
           [1, 2, 3, 4].map((skel) => (

@@ -9,16 +9,21 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: 'var(--font-dmsd)',
+        dm: 'var(--font-dm)',
         cardo: 'var(--font-cardo)',
         jost: 'var(--font-jost)',
         oswald: 'var(--font-oswald)',
         lexend: 'var(--font-lexend)',
-        quattrocento: 'var(--font-quattrocento)'
+        quattrocento: 'var(--font-quattrocento)',
+        volk: 'var(--font-volk)'
       },
       colors: {
-        primary: '#020E52',
-        pshadow: '#020E52',
+        primary: '#1B3764',
+        grayblue: '#4D6080',
+        graybluedark: '#071B3B',
+        pshadow: '#F6F8FC',
         secondary: '#FFCA42',
+        secondarydark: '#FFB700',
         paper: '#F2D6AE',
         zap: '#25D366'
       },
@@ -37,7 +42,13 @@ module.exports = {
           }
         }
       }
-    }
+    },
+    screens: {
+      'sm': '480px',
+      'md': '768px',
+      'lg': '992px',
+      'xl': '1280px',
+    },
   },
   plugins: []
 };

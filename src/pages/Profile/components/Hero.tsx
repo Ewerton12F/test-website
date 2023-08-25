@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
-import Contact from '../Contact/Contact';
+import Contact from '@/components/Main/Contact/Contact';
 
 export default function Hero() {
   return (
     <header
       className="
-                mb-14 mt-10 px-4 text-left transition-all duration-300 
+                mt-12 px-4 text-left transition-all duration-300 
                 sm:mt-14 sm:px-6 md:mt-20 md:text-center 
                 lg:mx-auto lg:mb-8 lg:flex lg:max-w-7xl lg:items-center 
                 lg:gap-8 lg:pt-28 lg:text-left
@@ -19,7 +19,7 @@ export default function Hero() {
                   font-dm font-bold uppercase tracking-[0.2rem] text-secondary
         "
         >
-          Dr. Róbson Batista
+          Sobre o Dr. Róbson
         </h1>
         <h2
           id="hero-subtitle"
@@ -30,7 +30,7 @@ export default function Hero() {
                   lg:leading-[70px]
         "
         >
-          Psicólogo, Psicanalista e Doutor em Filosofia
+          A missão por trás do Dr. Róbson
         </h2>
         <p
           className="

@@ -1,109 +1,60 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
-import { IconExternalLink } from '@tabler/icons-react';
+import About_Button from './About_button';
 
 export default function Profile() {
   return (
-    <section
-      id="profile"
-      className="
-                border-y-2 border-zinc-600 
-                bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))]
-                from-gray-900 to-gray-600"
-    >
-      <div className="mx-5 py-10 md:mx-auto md:w-10/12 md:max-w-7xl md:py-14">
-        <div className="lg:hidden">
-          <h2 className="font-serif text-3xl md:text-4xl">
-            Sobre o Psicanalista
-          </h2>
-          <hr
+    <section id="profile">
+      <div
+        className="
+                  mx-auto px-4 py-16 transition-all 
+                  duration-300 
+                  sm:px-6 md:max-w-[620px] md:py-32 md:text-center
+                  lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-center lg:gap-12
+                  lg:px-6 lg:py-44 lg:text-left
+        "
+      >
+        <div className="">
+          <h2
             className="
-          mb-5 h-1 w-[265px] border-2 border-secondary md:mb-5 
-          md:mt-3 md:w-[317px]
-          "
-          />
-        </div>
-        <div className="grid grid-cols-1 md:gap-10 lg:grid-cols-2">
-          <Image
-            className="mx-auto shadow-lg lg:mx-0"
-            src="/profile-photo.jpeg"
-            width={7000}
-            height={7000}
-            alt="Dr. Róbson Batista - Psicólogo | Psicanalista"
-          />
-          <div className="mt-5 md:mt-0">
-            <div className="hidden lg:block">
-              <h2 className="font-serif text-3xl md:text-4xl">
-                Sobre o Psicanalista
-              </h2>
-              <hr
-                className="
-                  mb-5 h-1 w-[265px] border-2 border-secondary
-                  lg:mt-2 lg:w-[315px]
-              "
-              />
-            </div>
-            <p className="font-jost text-lg md:my-0 md:text-xl">
-              Róbson Batista é psicólogo, psicanalista e doutor em filosofia
-              pela Universidade Federal do Rio Grande do Norte. Especialista em
-              adultos, atende em Natal-RN.
-            </p>
-            <ul className="my-5 text-lg md:text-lg">
-              <li className="mb-2.5 font-cardo">
-                Graduação em Psicologia:
-                <br />
-                <span className="italic">
-                  “Freud e a História da Razão Ocidental”
-                </span>
-              </li>
-              <li className="mb-2.5 font-cardo">
-                Bacharelado em Filosofia:
-                <br />
-                <span className="italic">
-                  “A Emergência do Sujeito Ficcional”
-                </span>
-              </li>
-              <li className="mb-2.5 font-cardo">
-                Mestrado em Filosofia:
-                <br />
-                <span className="italic">
-                  “Para uma Metapsicologia Freudiana da Experiência Estética”
-                </span>
-              </li>
-              <li className="mb-2.5 font-cardo">
-                Doutorado em Filosofia:
-                <br />
-                <span className="italic">
-                  “O Jogo de Foucault: Experiências do Pensamento e Verdade”
-                </span>
-              </li>
-            </ul>
-            <p className="font-jost text-lg md:my-0 md:text-xl">
-              Estudioso de história do pensamento ocidental, estética
-              filosófica, literatura, ética e psicanálise, dedica-se também ao
-              estudo da relação entre psicanálise e filosofia, psicanálise e
-              epistemologia, psicanálise e filosofia da ciência e psicanálise e
-              arte.
-            </p>
-          </div>
-        </div>
-        <div className="mt-10 flex items-center justify-center ">
-          <button
-            className="
-                  flex items-center justify-center gap-4 rounded-xl border px-7 
-                  py-3 transition-all duration-300 hover:border-secondary 
-                  hover:bg-secondary hover:text-primary
+                      mb-2 font-dm font-bold uppercase tracking-widest 
+                      text-secondarydark 
             "
           >
-            <Link
-              href="http://lattes.cnpq.br/1009858417414235"
-              className="pt-[1px] font-lexend text-lg leading-tight min-[375px]:text-xl"
-            >
-              Curriculo Lattes
-            </Link>
-            <IconExternalLink size={26} stroke={2} />
-          </button>
+            Sobre mim
+          </h2>
+          <h3
+            className="
+                      mb-4 font-serif text-[22px] leading-8 text-graybluedark 
+                      transition-all duration-300 sm:text-[26px] md:text-[32px]
+                      lg:text-[38px] lg:leading-[2.75rem]
+                      "
+          >
+            Um Psicanalista dedicado com a missão de ajudar
+          </h3>
+          <p className="font-jost text-lg leading-8 text-grayblue">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+            quidem assumenda! Quod illo ab voluptatem magnam. Quisquam
+            dignissimos ab culpa excepturi cupiditate nobis. Molestiae, mollitia
+            laboriosam dignissimos dolore tenetur quibusdam!
+          </p>
+          <About_Button />
+        </div>
+        <div
+          className="
+                    mt-10 flex justify-start md:mt-16 md:justify-center 
+                    lg:order-first lg:mt-0
+          "
+        >
+          <div className="max-w-[600px]">
+            <Image
+              className="shadow-lg"
+              src="/profile-photo.jpeg"
+              width={7000}
+              height={7000}
+              alt="Dr. Róbson Batista - Psicólogo | Psicanalista"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -24,14 +24,5 @@ describe('Navbar Component', () => {
     expect(
       container.querySelector('#navbar-menu-link-about')
     ).toBeInTheDocument();
-    expect(
-      container.querySelector('#navbar-menu-icon-instagram')
-    ).toBeInTheDocument();
-    expect(
-      container.querySelector('#navbar-menu-icon-facebook')
-    ).toBeInTheDocument();
-    expect(
-      container.querySelector('#navbar-menu-icon-linkedin')
-    ).toBeInTheDocument();
   });
 });

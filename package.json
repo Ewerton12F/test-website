@@ -19,7 +19,6 @@
     "style:prettier-write": "prettier --write 'src/**/*.{ts,tsx}'",
     "pre-commit": "npm run style:eslint && npm run style:prettier-write && npm run style:prettier && npm run lint",
     "test": "jest --passWithNoTests",
-    "test:watch": "jest --watch",
     "test:staged": "test --findRelatedTests",
     "test:coverage": "jest --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls"

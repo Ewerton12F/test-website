@@ -47,213 +47,261 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-sky-600 to-primary">
-      <section>
-        <div className="mx-5 grid grid-cols-1 gap-7 py-7 md:mx-auto md:w-10/12 md:max-w-7xl md:grid-cols-2 xl:flex xl:justify-between xl:gap-0">
-          <div className="">
+    <footer className="bg-graybluedark">
+      <div
+        className="
+                  mx-auto grid grid-cols-1 gap-10 px-4 pb-6 pt-10 
+                  sm:px-6 sm:pt-14 md:pb-10 lg:max-w-7xl lg:gap-16 lg:pb-16
+        "
+      >
+        <div className="">
+          <div
+            className="
+                      mb-6 grid grid-cols-1 
+                      md:mb-10 md:grid-cols-2 md:items-center 
+                      lg:mb-14
+            "
+          >
             <Link id="navbar-link-home" href="/">
-              <h2 className="mb-3 flex flex-col items-start font-oswald text-[2.35rem]">
-                Róbson
-                <hr className="w-[6.15rem]" />
-                <span className="font-serif text-xl text-secondary">
-                  Psicanálise
-                </span>
-              </h2>
+              <div className="flex gap-4 md:mt-4">
+                <p className="font-volk text-[70px] leading-none text-secondary">
+                  Ψ
+                </p>
+                <div>
+                  <h2
+                    className="
+                            mb-1.5 flex flex-col items-start font-dm font-bold 
+                            uppercase tracking-[0.1em]
+                  "
+                  >
+                    Dr. Róbson Batista
+                  </h2>
+                  <hr className="w-48" />
+                  <span className="font-serif text-lg text-secondary">
+                    Psicologia & Psicanálise
+                  </span>
+                </div>
+              </div>
             </Link>
-            <ul className="flex gap-1 xl:mb-5">
-              <li>
-                <Link
-                  href={`https://wa.me//5584996152546`}
-                  target="_blank"
-                  className="
-                            flex w-fit items-center justify-center
-                            rounded-md border border-white p-3 text-white 
-                            transition-all duration-300 
-                            hover:border-secondary hover:bg-secondary
-                            hover:text-primary
-                  "
-                >
-                  <IconBrandWhatsapp size={26} stroke={2} />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`https://www.instagram.com/consultorio_de_psicanalise/`}
-                  target="_blank"
-                  className="
-                            flex w-fit items-center justify-center
-                            rounded-md border border-white p-3 text-white 
-                            transition-all duration-300 
-                            hover:border-secondary hover:bg-secondary
-                            hover:text-primary
-                  "
-                >
-                  <IconBrandInstagram size={26} stroke={2} />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`https://www.facebook.com/robsonhbatista/`}
-                  target="_blank"
-                  className="
-                                flex w-fit items-center justify-center
-                                rounded-md border border-white p-3 text-white 
-                                transition-all duration-300 
-                                hover:border-secondary hover:bg-secondary
-                                hover:text-primary
-                             "
-                >
-                  <IconBrandFacebook size={26} stroke={2} />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`https://www.linkedin.com/in/robsonhbatista/`}
-                  target="_blank"
-                  className="
-                                flex w-fit items-center justify-center
-                                rounded-md border border-white p-3 text-white 
-                                transition-all duration-300 
-                                hover:border-secondary hover:bg-secondary
-                                hover:text-primary
-                             "
-                >
-                  <IconBrandLinkedin size={26} stroke={2} />
-                </Link>
-              </li>
-            </ul>
-            <dl className="hidden xl:block">
-              <dt>
-                <h3 className="mb-3 font-serif text-3xl text-secondary">
-                  Horários
-                </h3>
-              </dt>
-              <dd>
-                <ul className="flex flex-col gap-1.5">
-                  <li className="flex gap-1.5 align-bottom">
-                    <dt>
-                      <h4 className="font-jost text-xl">Seg. à Sex.:</h4>
-                    </dt>
-                    <dd>
-                      <p className="font-jost text-lg">10h / 20h</p>
-                    </dd>
-                  </li>
-                  <li className="flex gap-1.5">
-                    <dt>
-                      <h4 className="font-jost text-xl">Sáb.:</h4>
-                    </dt>
-                    <dd>
-                      <p className="font-jost text-lg"> 8h / 12h</p>
-                    </dd>
-                  </li>
-                </ul>
-              </dd>
-            </dl>
+            <p
+              className="
+                        my-2 text-left font-jost leading-8 opacity-90  
+                        sm:max-w-[420px] lg:max-w-full lg:pl-3
+                        "
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              repellat hic deleniti sequi dolorum labore, dolorem perspiciatis
+              dolore exercitationem.
+            </p>
           </div>
-          <div>
-            <dl className="xl:hidden">
-              <dt>
-                <h3 className="mb-3 font-serif text-3xl text-secondary">
-                  Horários
-                </h3>
-              </dt>
-              <dd>
-                <ul className="flex flex-col gap-1.5">
-                  <li className="flex gap-1.5 align-bottom">
-                    <dt>
-                      <h4 className="font-jost text-xl">Seg. à Sex.:</h4>
-                    </dt>
-                    <dd>
-                      <p className="font-jost text-lg">10h / 20h</p>
-                    </dd>
-                  </li>
-                  <li className="flex gap-1.5">
-                    <dt>
-                      <h4 className="font-jost text-xl">Sáb.:</h4>
-                    </dt>
-                    <dd>
-                      <p className="font-jost text-lg"> 8h / 12h</p>
-                    </dd>
-                  </li>
-                </ul>
-              </dd>
-            </dl>
+          <hr className="opacity-50 transition-all duration-300 sm:mb-4 sm:mt-10"></hr>
+        </div>
+        <div
+          className="
+                    grid grid-cols-1 gap-y-12 
+                    md:grid-cols-2 
+                    lg:grid-cols-3 lg:gap-x-4
+          "
+        >
+          <div className="md:order-1">
+            <div>
+              <dl>
+                <dt>
+                  <h3
+                    className="
+                            mb-6 font-serif text-xl text-secondary 
+                            sm:text-2xl
+                  "
+                  >
+                    Horários
+                  </h3>
+                </dt>
+                <dd>
+                  <ul className="flex flex-col gap-6">
+                    <li className="flex gap-2 align-bottom">
+                      <dt>
+                        <h4 className="text-md font-jost opacity-90">
+                          Segunda - Sexta
+                        </h4>
+                      </dt>
+                      <hr className="w-10 self-center border-dashed opacity-50" />
+                      <dd>
+                        <p className="text-md font-jost opacity-90">
+                          10h / 20h
+                        </p>
+                      </dd>
+                    </li>
+                    <li className="flex gap-2">
+                      <dt>
+                        <h4 className="text-md font-jost opacity-90">Sábado</h4>
+                      </dt>
+                      <hr className="w-24 self-center border-dashed opacity-50" />
+                      <dd>
+                        <p className="text-md font-jost opacity-90">8h / 12h</p>
+                      </dd>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div className="mt-20 hidden md:order-2 lg:block">
+              <dl>
+                <dt>
+                  <h3
+                    className="
+                          mb-6 font-serif text-xl text-secondary 
+                          sm:text-2xl
+                "
+                  >
+                    Siga-me
+                  </h3>
+                </dt>
+                <dd>
+                  <ul className="flex justify-start gap-2 md:gap-6">
+                    <li>
+                      <Link
+                        href={`https://wa.me//5584996152546`}
+                        target="_blank"
+                        className="
+                              flex w-fit items-center justify-center
+                              bg-white bg-opacity-10 p-3 text-white 
+                              transition-all duration-300 
+                              hover:border-secondary hover:bg-secondary
+                              hover:text-primary
+                    "
+                      >
+                        <IconBrandWhatsapp size={30} stroke={1.5} />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href={`https://www.instagram.com/consultorio_de_psicanalise/`}
+                        target="_blank"
+                        className="
+                              flex w-fit items-center justify-center
+                              bg-white bg-opacity-10 p-3 text-white 
+                              transition-all duration-300 
+                              hover:border-secondary hover:bg-secondary
+                              hover:text-primary
+                    "
+                      >
+                        <IconBrandInstagram size={30} stroke={1.5} />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href={`https://www.facebook.com/robsonhbatista/`}
+                        target="_blank"
+                        className="
+                              flex w-fit items-center justify-center
+                              bg-white bg-opacity-10 p-3 text-white 
+                              transition-all duration-300 
+                              hover:border-secondary hover:bg-secondary
+                              hover:text-primary
+                    "
+                      >
+                        <IconBrandFacebook size={30} stroke={1.5} />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href={`https://www.linkedin.com/in/robsonhbatista/`}
+                        target="_blank"
+                        className="
+                              flex w-fit items-center justify-center
+                              bg-white bg-opacity-10 p-3 text-white 
+                              transition-all duration-300 
+                              hover:border-secondary hover:bg-secondary
+                              hover:text-primary
+                    "
+                      >
+                        <IconBrandLinkedin size={30} stroke={1.5} />
+                      </Link>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
           </div>
-          <div className="xl:mx-10">
+          <div className="md:order-3">
             <dl>
               <dt>
-                <h3 className="mb-3 font-serif text-3xl text-secondary">
+                <h3
+                  className="
+                          mb-6 font-serif text-xl text-secondary 
+                          sm:text-2xl
+                "
+                >
                   Contatos
                 </h3>
               </dt>
               <dd>
-                <ul className="flex flex-col gap-3">
-                  <li className="flex flex-col gap-1">
+                <ul className="flex flex-col gap-6 sm:max-w-[300px]">
+                  <li className="flex flex-col gap-6">
                     <Link
                       href={`https://wa.me//5584996152546`}
                       className="
-                                flex items-center justify-center gap-4 
-                                rounded-md border border-white px-5 py-3 font-lexend
-                                text-white transition-all duration-300 hover:border-secondary
-                                hover:bg-secondary hover:text-primary
-                             "
+                              flex justify-center gap-4 bg-white 
+                              bg-opacity-10 px-5 py-4 font-lexend text-sm 
+                              text-white opacity-90 transition-all 
+                              duration-300
+                    "
                     >
                       (84) 9 9615-2546
                     </Link>
                     <button
                       onClick={handleClickNumber}
                       className="
-                    flex items-center justify-center gap-4 
-                    rounded-md border border-white px-5 py-3 font-lexend
-                    text-white transition-all duration-300 hover:border-secondary
-                    hover:bg-secondary hover:text-primary
-                             "
+                              flex justify-center gap-4 bg-white 
+                              bg-opacity-10 px-5 py-4 font-lexend text-sm 
+                              text-white opacity-90 transition-all 
+                              duration-300
+                    "
                     >
                       {buttonTextNumber ? (
                         <>
-                          <IconClipboardCheck />
+                          <IconClipboardCheck size={20} />
                           <p>Copiado!</p>
                         </>
                       ) : (
                         <>
-                          <IconClipboard />
+                          <IconClipboard size={20} />
                           <p>Copiar número</p>
                         </>
                       )}
                     </button>
                   </li>
-                  <hr></hr>
-                  <li className="flex flex-col gap-1">
+                  <hr className="mx-4 opacity-50"></hr>
+                  <li className="flex flex-col gap-6">
                     <Link
                       href="mailto:robsonbatista.contato@gmail.com"
                       className="
-                                flex items-center justify-center gap-4 
-                                rounded-md border border-white px-5 py-3 
-                                font-lexend text-white transition-all 
-                                duration-300 hover:border-secondary
-                                hover:bg-secondary hover:text-primary 
-                                lg:px-10 
-                      "
+                              flex justify-center gap-4 bg-white 
+                              bg-opacity-10 px-5 py-4 font-lexend text-sm 
+                              text-white opacity-90 transition-all 
+                              duration-300
+                    "
                     >
                       robsonbatista.contato@gmail.com
                     </Link>
                     <button
                       onClick={handleClickEmail}
                       className="
-                    flex items-center justify-center gap-4 
-                    rounded-md border border-white px-5 py-3 font-lexend
-                    text-white transition-all duration-300 hover:border-secondary
-                    hover:bg-secondary hover:text-primary 
-                             "
+                              flex justify-center gap-4 bg-white 
+                              bg-opacity-10 px-5 py-4 font-lexend text-sm 
+                              text-white transition-all duration-300 
+                              hover:border-secondary hover:bg-secondary
+                              hover:text-primary 
+                    "
                     >
                       {buttonTextEmail ? (
                         <>
-                          <IconClipboardCheck />
+                          <IconClipboardCheck size={20} />
                           <p>Copiado!</p>
                         </>
                       ) : (
                         <>
-                          <IconClipboard />
+                          <IconClipboard size={20} />
                           <p>Copiar email</p>
                         </>
                       )}
@@ -263,24 +311,29 @@ export default function Footer() {
               </dd>
             </dl>
           </div>
-          <div>
+          <div className="md:order-4">
             <dl>
               <dt>
-                <h3 className="mb-3 font-serif text-3xl text-secondary">
+                <h3
+                  className="
+                          mb-6 font-serif text-xl text-secondary 
+                          sm:text-2xl
+                "
+                >
                   Localização
                 </h3>
               </dt>
               <dd>
-                <li className="flex flex-col gap-1">
+                <li className="flex flex-col gap-6 sm:max-w-[300px]">
                   <Link
                     href="https://goo.gl/maps/em7M7zXhgEzdMKXa7"
                     target="_blank"
                     className="
-                              flex items-center justify-center gap-4 rounded-md
-                              border border-white px-5 py-3 font-lexend text-white transition-all
-                              duration-300 hover:border-secondary hover:bg-secondary 
-                              hover:text-primary lg:px-10 
-                  "
+                              flex justify-center bg-white 
+                              bg-opacity-10 px-5 py-6 font-lexend text-sm 
+                              text-white opacity-90 transition-all 
+                              duration-300
+                    "
                   >
                     OTC - Office Tower Center, (sala 1513).
                     <br />
@@ -291,20 +344,20 @@ export default function Footer() {
                   <button
                     onClick={handleClickAdress}
                     className="
-                    flex items-center justify-center gap-4 rounded-md
-                    border border-white px-5 py-3 font-lexend text-white
-                    transition-all duration-300 hover:border-secondary 
-                    hover:bg-secondary hover:text-primary 
-                             "
+                              flex justify-center gap-4 bg-white 
+                              bg-opacity-10 px-5 py-4 font-lexend text-sm 
+                              text-white opacity-90 transition-all 
+                              duration-300
+                    "
                   >
                     {buttonTextAdress ? (
                       <>
-                        <IconClipboardCheck />
+                        <IconClipboardCheck size={20} />
                         <p>Copiado!</p>
                       </>
                     ) : (
                       <>
-                        <IconClipboard />
+                        <IconClipboard size={20} />
                         <p>Copiar endereço</p>
                       </>
                     )}
@@ -313,37 +366,104 @@ export default function Footer() {
               </dd>
             </dl>
           </div>
-        </div>
-      </section>
-      <hr
-        className="mx-5 animate-text bg-gradient-to-r from-teal-500
-        via-purple-500 to-orange-500 
-                      bg-clip-text font-jost 
-                      text-base text-transparent 
-                      duration-300 md:mx-auto
-                      md:w-10/12 md:max-w-7xl"
-      ></hr>
-      <section>
-        <div className="mx-auto w-full max-w-screen-xl py-5">
-          <div className="flex flex-col items-center justify-between">
-            <Link
-              href="https://www.devton.tech/"
-              target="_blank"
-              className="
-                      animate-text bg-gradient-to-r 
-                      from-teal-300 
-                      via-purple-300 
-                      to-green-300
-                      bg-clip-text font-jost text-base
-                      text-transparent transition-all duration-300
-                      hover:text-white 
-              "
-            >
-              Designed & Developed by Ewerton
-            </Link>
+          <div className="md:order-2 lg:hidden">
+            <dl>
+              <dt>
+                <h3
+                  className="
+                          mb-6 font-serif text-xl text-secondary 
+                          sm:text-2xl
+                "
+                >
+                  Siga-me
+                </h3>
+              </dt>
+              <dd>
+                <ul className="flex justify-start gap-2 md:gap-6">
+                  <li>
+                    <Link
+                      href={`https://wa.me//5584996152546`}
+                      target="_blank"
+                      className="
+                              flex w-fit items-center justify-center
+                              bg-white bg-opacity-10 p-3 text-white 
+                              transition-all duration-300 
+                              hover:border-secondary hover:bg-secondary
+                              hover:text-primary
+                    "
+                    >
+                      <IconBrandWhatsapp size={30} stroke={1.5} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={`https://www.instagram.com/consultorio_de_psicanalise/`}
+                      target="_blank"
+                      className="
+                              flex w-fit items-center justify-center
+                              bg-white bg-opacity-10 p-3 text-white 
+                              transition-all duration-300 
+                              hover:border-secondary hover:bg-secondary
+                              hover:text-primary
+                    "
+                    >
+                      <IconBrandInstagram size={30} stroke={1.5} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={`https://www.facebook.com/robsonhbatista/`}
+                      target="_blank"
+                      className="
+                              flex w-fit items-center justify-center
+                              bg-white bg-opacity-10 p-3 text-white 
+                              transition-all duration-300 
+                              hover:border-secondary hover:bg-secondary
+                              hover:text-primary
+                    "
+                    >
+                      <IconBrandFacebook size={30} stroke={1.5} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={`https://www.linkedin.com/in/robsonhbatista/`}
+                      target="_blank"
+                      className="
+                              flex w-fit items-center justify-center
+                              bg-white bg-opacity-10 p-3 text-white 
+                              transition-all duration-300 
+                              hover:border-secondary hover:bg-secondary
+                              hover:text-primary
+                    "
+                    >
+                      <IconBrandLinkedin size={30} stroke={1.5} />
+                    </Link>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
           </div>
         </div>
-      </section>
+      </div>
+      <hr className="mt-8 opacity-50"></hr>
+      <div className="mx-auto px-4 py-6 sm:px-6 md:py-8 lg:md:py-10 lg:max-w-7xl">
+        <Link
+          href="https://www.devton.tech/"
+          target="_blank"
+          className="
+                    animate-text bg-gradient-to-r from-teal-300 
+                    via-purple-300 to-green-300 bg-clip-text font-jost 
+                    font-light opacity-50 transition-all 
+                    duration-300
+                    hover:font-medium
+                    hover:text-transparent
+                    hover:opacity-100
+          "
+        >
+          Designed & Developed by Ewerton
+        </Link>
+      </div>
     </footer>
   );
 }
