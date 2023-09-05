@@ -19,7 +19,7 @@ module.exports = {
       },
       colors: {
         primary: '#1B3764',
-        grayblue: '#4D6080',
+        grayblue: '#73829C',
         graybluedark: '#071B3B',
         pshadow: '#F6F8FC',
         secondary: '#FFCA42',

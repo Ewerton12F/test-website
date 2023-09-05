@@ -1,5 +1,7 @@
+import Experience from './components/Experience';
 import Hero from './components/Hero';
 import SecondBlock from './components/SecondBlock';
+import Specialities from './components/Specialities';
 import Values from './components/Values';
 import Navbar from '@/components/Navbar/Navbar';
 
@@ -18,6 +20,8 @@ export default function Main() {
         <SecondBlock />
       </main>
       <Values />
+      <Experience />
+      <Specialities />
     </>
   );
 }
