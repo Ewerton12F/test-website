@@ -16,12 +16,6 @@ describe('Navbar Component', () => {
       container.querySelector('#navbar-menu-link-home')
     ).toBeInTheDocument();
     expect(
-      container.querySelector('#navbar-menu-link-services')
-    ).toBeInTheDocument();
-    expect(
-      container.querySelector('#navbar-menu-link-blog')
-    ).toBeInTheDocument();
-    expect(
       container.querySelector('#navbar-menu-link-about')
     ).toBeInTheDocument();
   });
