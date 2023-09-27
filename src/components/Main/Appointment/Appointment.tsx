@@ -19,7 +19,7 @@ export default function Appointment() {
                           text-secondary
                 "
               >
-                Agende uma consulta
+                Contato e agendamentos
               </h2>
               <h3
                 className="
@@ -31,9 +31,9 @@ export default function Appointment() {
                 Agende hoje uma consulta virtual ou presencial
               </h3>
               <p className="mb-8 font-jost text-lg leading-8 opacity-90">
-                Iure ullam odit voluptatibus, distinctio, fugiat iusto, vel
-                labore doloribus laudantium eligendi totam dicta dolor! Quis
-                delectus fugit error. In, velit eligendi.
+                As entrevistas preliminares e sessões ocorrem de modo
+                presencial, virtual ou híbrido. Para mais informações, consultar
+                disponibilidade de horários e agendar, entre em contato.
               </p>
               <AContact />
             </div>
@@ -41,7 +41,7 @@ export default function Appointment() {
         </div>
         <div
           className="
-                    h-96 bg-[url('/image-cta-doctor-template-p-500.jpeg')] 
+                    h-96 bg-[url('/services_Avaliação_Clínica.png')] 
                     bg-cover bg-center lg:h-full
           "
         ></div>

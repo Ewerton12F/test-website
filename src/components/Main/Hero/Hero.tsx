@@ -19,7 +19,7 @@ export default function Hero() {
                   font-dm font-bold uppercase tracking-[0.2rem] text-secondary
         "
         >
-          Dr. Róbson Batista
+          Róbson Batista
         </h1>
         <h2
           id="hero-subtitle"
@@ -38,10 +38,9 @@ export default function Hero() {
                   md:mt-8 md:max-w-[620px] 
         "
         >
-          Estudioso de história do pensamento ocidental, estética filosófica,
-          literatura, ética e psicanálise, dedica-se também ao estudo da relação
-          entre psicanálise e filosofia, epistemologia, filosofia da ciência e
-          arte.
+          Autor da dissertação de mestrado “Para uma metapsicologia freudiana da
+          experiência estética” (2014) e da tese de doutorado “O jogo de
+          Foucault: da verdade do desejo à coragem da verdade” (2022).
         </p>
         <Contact />
       </div>

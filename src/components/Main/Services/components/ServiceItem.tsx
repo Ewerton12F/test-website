@@ -40,8 +40,8 @@ export default function ServiceItem({ service }: ServiceItemProps) {
         >
           {service.smalldesc}
         </p>
-        <div className="pb-14">
-          <Link
+        <div className="pb-10">
+          {/* <Link
             href={'/'}
             className="
                     font-dm uppercase tracking-widest
@@ -49,7 +49,7 @@ export default function ServiceItem({ service }: ServiceItemProps) {
         "
           >
             Saiba mais
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

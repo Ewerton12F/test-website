@@ -48,7 +48,7 @@ export default function Experience() {
               "
             >
               <p className="mx-auto font-dm font-thin uppercase tracking-widest">
-                Agende uma consulta
+                Entre em contato
               </p>
             </button>
           </div>
@@ -65,7 +65,7 @@ export default function Experience() {
                       tracking-wide text-primary
             "
                 >
-                  2012 - 2014
+                  APNB (2009)
                 </h2>
                 <h3
                   className="
@@ -74,13 +74,13 @@ export default function Experience() {
                       lg:text-[38px] lg:leading-[2.75rem]
                       "
                 >
-                  Bacharel em Psi.
+                  Formação em Teoria e Prática Psicanalítica
                 </h3>
-                <p className="font-jost text-lg leading-8 text-grayblue">
+                {/* <p className="font-jost text-lg leading-8 text-grayblue">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
                   quidem assumenda! Quod illo ab voluptatem magnam. Quod illo ab
                   voluptatem magnam.
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="bg-white px-5 py-11 sm:px-10 sm:py-12">
@@ -91,7 +91,7 @@ export default function Experience() {
                       tracking-wide text-primary
             "
                 >
-                  2012 - 2014
+                  APNB (2009)
                 </h2>
                 <h3
                   className="
@@ -100,13 +100,13 @@ export default function Experience() {
                       lg:text-[38px] lg:leading-[2.75rem]
                       "
                 >
-                  Bacharel em Psi.
+                  Graduação em Psicologia
                 </h3>
-                <p className="font-jost text-lg leading-8 text-grayblue">
+                {/* <p className="font-jost text-lg leading-8 text-grayblue">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
                   quidem assumenda! Quod illo ab voluptatem magnam. Quod illo ab
                   voluptatem magnam.
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="bg-white px-5 py-11 sm:px-10 sm:py-12">
@@ -117,7 +117,7 @@ export default function Experience() {
                       tracking-wide text-primary
             "
                 >
-                  2012 - 2014
+                  UFRN (2013)
                 </h2>
                 <h3
                   className="
@@ -126,13 +126,13 @@ export default function Experience() {
                       lg:text-[38px] lg:leading-[2.75rem]
                       "
                 >
-                  Bacharel em Psi.
+                  Bacharelado em Filosofia
                 </h3>
-                <p className="font-jost text-lg leading-8 text-grayblue">
+                {/* <p className="font-jost text-lg leading-8 text-grayblue">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
                   quidem assumenda! Quod illo ab voluptatem magnam. Quod illo ab
                   voluptatem magnam.
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="bg-white px-5 py-11 sm:px-10 sm:py-12">
@@ -143,7 +143,7 @@ export default function Experience() {
                       tracking-wide text-primary
             "
                 >
-                  2012 - 2014
+                  UFRN (2014)
                 </h2>
                 <h3
                   className="
@@ -152,13 +152,91 @@ export default function Experience() {
                       lg:text-[38px] lg:leading-[2.75rem]
                       "
                 >
-                  Bacharel em Psi.
+                  Mestrado em Filosofia
                 </h3>
-                <p className="font-jost text-lg leading-8 text-grayblue">
+                {/* <p className="font-jost text-lg leading-8 text-grayblue">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
                   quidem assumenda! Quod illo ab voluptatem magnam. Quod illo ab
                   voluptatem magnam.
-                </p>
+                </p> */}
+              </div>
+            </div>
+            <div className="bg-white px-5 py-11 sm:px-10 sm:py-12">
+              <div className="mx-auto max-w-3xl">
+                <h2
+                  className="
+                      font-serif text-lg uppercase leading-5
+                      tracking-wide text-primary
+            "
+                >
+                  UFRN (2022)
+                </h2>
+                <h3
+                  className="
+                      mb-3 font-serif text-[20px] leading-8 text-graybluedark 
+                      transition-all duration-300 sm:text-[22px] md:text-[32px]
+                      lg:text-[38px] lg:leading-[2.75rem]
+                      "
+                >
+                  Doutorado em Filosofia
+                </h3>
+                {/* <p className="font-jost text-lg leading-8 text-grayblue">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  quidem assumenda! Quod illo ab voluptatem magnam. Quod illo ab
+                  voluptatem magnam.
+                </p> */}
+              </div>
+            </div>
+            <div className="bg-white px-5 py-11 sm:px-10 sm:py-12">
+              <div className="mx-auto max-w-3xl">
+                <h2
+                  className="
+                      font-serif text-lg uppercase leading-5
+                      tracking-wide text-primary
+            "
+                >
+                  Facuminas (2023)
+                </h2>
+                <h3
+                  className="
+                      mb-3 font-serif text-[20px] leading-8 text-graybluedark 
+                      transition-all duration-300 sm:text-[22px] md:text-[32px]
+                      lg:text-[38px] lg:leading-[2.75rem]
+                      "
+                >
+                  Especialização em Avaliação Psicológica
+                </h3>
+                {/* <p className="font-jost text-lg leading-8 text-grayblue">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  quidem assumenda! Quod illo ab voluptatem magnam. Quod illo ab
+                  voluptatem magnam.
+                </p> */}
+              </div>
+            </div>
+            <div className="bg-white px-5 py-11 sm:px-10 sm:py-12">
+              <div className="mx-auto max-w-3xl">
+                <h2
+                  className="
+                      font-serif text-lg uppercase leading-5
+                      tracking-wide text-primary
+            "
+                >
+                  Facuminas (2023)
+                </h2>
+                <h3
+                  className="
+                      mb-3 font-serif text-[20px] leading-8 text-graybluedark 
+                      transition-all duration-300 sm:text-[22px] md:text-[32px]
+                      lg:text-[38px] lg:leading-[2.75rem]
+                      "
+                >
+                  Especialização em Neuropsicologia
+                </h3>
+                {/* <p className="font-jost text-lg leading-8 text-grayblue">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  quidem assumenda! Quod illo ab voluptatem magnam. Quod illo ab
+                  voluptatem magnam.
+                </p> */}
               </div>
             </div>
           </div>

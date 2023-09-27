@@ -30,7 +30,7 @@ export default function Hero() {
                   lg:leading-[70px]
         "
         >
-          A missão por trás do Dr. Róbson
+          Sou fascinado por singularidades
         </h2>
         <p
           className="
@@ -38,10 +38,10 @@ export default function Hero() {
                   md:mt-8 md:max-w-[620px] 
         "
         >
-          Estudioso de história do pensamento ocidental, estética filosófica,
-          literatura, ética e psicanálise, dedica-se também ao estudo da relação
-          entre psicanálise e filosofia, epistemologia, filosofia da ciência e
-          arte.
+          Róbson Henrique de Almeida Batista (nascido em 17 de agosto de 1988) é
+          um psicólogo, psicanalista, filósofo e ensaísta brasileiro. Concluiu
+          sua primeira formação clínica em Teoria e Prática Psicanalítica pela
+          Associação Psicanalítica Neofreudiana do Brasil em 2009.
         </p>
         <Contact />
       </div>
@@ -49,7 +49,7 @@ export default function Hero() {
         <div className="max-w-[600px]">
           <Image
             className="shadow-lg"
-            src="/profile-photo.jpeg"
+            src="/3_avaliacao_psicologica.jpeg"
             width={7000}
             height={7000}
             alt="Dr. Róbson Batista - Psicólogo & Psicanalista"

@@ -13,7 +13,7 @@ export default function AContact() {
         "
       >
         <p className="mx-auto font-dm font-thin uppercase tracking-widest">
-          Agende uma consulta
+          Entre em contato
         </p>
       </button>
     </Link>

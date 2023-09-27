@@ -50,8 +50,8 @@ export default function Footer() {
     <footer className="bg-graybluedark">
       <div
         className="
-                  mx-auto grid grid-cols-1 gap-10 px-4 pb-6 pt-10 
-                  sm:px-6 sm:pt-14 md:pb-10 lg:max-w-7xl lg:gap-16 lg:pb-16
+                  mx-auto grid grid-cols-1 gap-10 px-4 pb-6 pt-14
+                  sm:px-6 md:pb-10 lg:max-w-7xl lg:gap-16 lg:pb-16
         "
       >
         <div className="">
@@ -64,9 +64,6 @@ export default function Footer() {
           >
             <Link id="navbar-link-home" href="/">
               <div className="flex gap-4 md:mt-4">
-                <p className="font-volk text-[70px] leading-none text-secondary">
-                  Ψ
-                </p>
                 <div>
                   <h2
                     className="
@@ -74,7 +71,7 @@ export default function Footer() {
                             uppercase tracking-[0.1em]
                   "
                   >
-                    Dr. Róbson Batista
+                    Róbson Batista
                   </h2>
                   <hr className="w-48" />
                   <span className="font-serif text-lg text-secondary">
@@ -89,9 +86,10 @@ export default function Footer() {
                         sm:max-w-[420px] lg:max-w-full lg:pl-3
                         "
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              repellat hic deleniti sequi dolorum labore, dolorem perspiciatis
-              dolore exercitationem.
+              Estudioso de história do pensamento ocidental, estética
+              filosófica, literatura, ética e psicanálise, dedica-se também ao
+              estudo da relação entre psicanálise e filosofia, epistemologia,
+              filosofia da ciência e arte.
             </p>
           </div>
           <hr className="opacity-50 transition-all duration-300 sm:mb-4 sm:mt-10"></hr>

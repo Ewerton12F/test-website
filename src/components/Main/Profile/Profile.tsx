@@ -30,13 +30,11 @@ export default function Profile() {
                       lg:text-[38px] lg:leading-[2.75rem]
                       "
           >
-            Um Psicanalista dedicado com a missão de ajudar
+            Sou fascinado por singularidades
           </h3>
           <p className="font-jost text-lg leading-8 text-grayblue">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-            quidem assumenda! Quod illo ab voluptatem magnam. Quisquam
-            dignissimos ab culpa excepturi cupiditate nobis. Molestiae, mollitia
-            laboriosam dignissimos dolore tenetur quibusdam!
+            Onde situar a psicanálise senão entre as ciências, as filosofias e
+            as artes sem que, não obstante, com elas confundi-la?
           </p>
           <About_Button />
         </div>
@@ -49,7 +47,7 @@ export default function Profile() {
           <div className="max-w-[600px]">
             <Image
               className="shadow-lg"
-              src="/profile-photo.jpeg"
+              src="/3_avaliacao_psicologica.jpeg"
               width={7000}
               height={7000}
               alt="Dr. Róbson Batista - Psicólogo | Psicanalista"

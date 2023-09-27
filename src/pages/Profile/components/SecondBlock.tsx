@@ -35,10 +35,15 @@ export default function SecondBlock() {
               Um Psicanalista dedicado com a missão de ajudar
             </h3>
             <p className="font-jost text-lg leading-8 text-grayblue">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-              quidem assumenda! Quod illo ab voluptatem magnam. Quisquam
-              dignissimos ab culpa excepturi cupiditate nobis. Molestiae,
-              mollitia laboriosam dignissimos dolore tenetur quibusdam!
+              Se graduou em Psicologia pela Universidade Potiguar em 2012 (com a
+              monografia “Freud e a Razão Moderna”) e em Filosofia pela
+              Universidade Federal do Rio Grande do Norte em 2013 (com a
+              monografia “A emersão do sujeito ficcional”). Obteve título de
+              Mestre em Filosofia em 2014 (com a dissertação “Para uma
+              metapsicologia freudiana da experiência estética”) e de Doutor em
+              Filosofia em 2022 (com a tese “O jogo de Foucault: da verdade do
+              desejo à coragem da verdade”) pela Universidade Federal do Rio
+              Grande.
             </p>
           </div>
           <div
@@ -71,13 +76,24 @@ export default function SecondBlock() {
                       lg:text-[38px] lg:leading-[2.75rem]
                       "
             >
-              Um Psicanalista dedicado com a missão de ajudar
+              Formação sólida e 12 anos de experiência clínica
             </h3>
             <p className="font-jost text-lg leading-8 text-grayblue">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-              quidem assumenda! Quod illo ab voluptatem magnam. Quisquam
-              dignissimos ab culpa excepturi cupiditate nobis. Molestiae,
-              mollitia laboriosam dignissimos dolore tenetur quibusdam!
+              Ademais, se especializou em Avaliação Psicológica e em
+              Neuropsicologia em 2023 pela Facuminas (com os respectivos
+              artigos: “Uma análise crítica da prática da avaliação psicológica
+              no Brasil” e “Uma revisão dos critérios psicodiagnósticos do
+              Transtorno de Déficit de Atenção e Hiperatividade”). Sua prática
+              clínica como psicólogo consiste no planejamento e execução de
+              avaliações psicológicas e neuropsicológicas de baixa, média e alta
+              complexidade de adolescentes e adultos. Como psicanalista, conduz
+              análises pessoais e diversas psicoterapias de orientação
+              psicanalítica, tais como acompanhamento individual, de casal e de
+              grupos. Como filósofo, já se dedicou aos seguintes campos:
+              história da filosofia, das ideias e dos sistemas de pensamento,
+              epistemologia, filosofia da ciência, filosofia da psicanálise,
+              estética filosófica, filosofia da literatura, filosofia antiga,
+              filosofia contemporânea, dentre outros.
             </p>
           </div>
           <div

@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Main from '@/pages/BlogPost1/Main';
+
 export default function page() {
   return (
     <div>
-      <div className="text-black">blog</div>;
+      <Main />
     </div>
   );
 }

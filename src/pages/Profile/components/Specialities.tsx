@@ -25,7 +25,7 @@ export default function Specialities() {
                 </h2>
                 <h3
                   className="
-                          font-serif text-[22px] leading-8 text-black  
+                          font-serif text-[22px] leading-8 text-black 
                           transition-all duration-300 sm:text-[26px] md:text-[32px]
                           lg:max-w-[600px] lg:text-[38px] lg:leading-[2.75rem]
                 "
@@ -33,9 +33,9 @@ export default function Specialities() {
                   Experiência em multiplas áreas clínicas
                 </h3>
               </div>
-              <AllServicesButton />
+              {/* <AllServicesButton /> */}
             </div>
-            <div className="flex flex-col gap-6 lg:flex-row">
+            <div className="flex flex-col gap-6 lg:grid lg:grid-cols-3">
               <div
                 className={`
                           flex flex-col border border-zinc-300 bg-white px-5 
@@ -53,25 +53,28 @@ export default function Specialities() {
                 <div>
                   <h4
                     className={`
-                            mt-5 flex items-center justify-start
-                            font-serif text-xl capitalize leading-tight
-                            text-graybluedark sm:text-[22px] 
-                            md:mt-0 md:text-[26px] lg:justify-center
+                            mt-5 flex items-center justify-start font-serif
+                            text-xl capitalize leading-tight text-graybluedark
+                            sm:text-[22px] md:mt-0 md:text-[26px]
+                            lg:mb-8 lg:h-16 lg:justify-center
                   `}
                   >
-                    Psia
+                    Psicanálise
                   </h4>
                   <p
                     className={`
-                            mb-5 mt-2 flex items-start justify-start 
-                            font-jost text-lg normal-case text-grayblue
+                            mb-14 mt-2 flex items-start justify-start font-jost 
+                            text-lg normal-case text-grayblue md:mb-0
                             lg:leading-8
                   `}
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit, odit facilis recusandae incidunt natus beatae atque.
+                    A Psicanálise é um método de investigação dos processos
+                    mentais e de tratamento dos sofrimentos psíquicos amplamente
+                    difundido no Brasil e em grande parte do mundo. Os
+                    psicanalistas brasileiros costumam ser também psicólogos,
+                    psiquiatras ou filósofos.
                   </p>
-                  <div className="pb-14 sm:pb-16 md:pb-0">
+                  {/* <div className="pb-14 sm:pb-16 md:pb-0">
                     <Link
                       href={'/'}
                       className="
@@ -81,7 +84,7 @@ export default function Specialities() {
                     >
                       Saiba mais
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div
@@ -101,25 +104,27 @@ export default function Specialities() {
                 <div>
                   <h4
                     className={`
-                            mt-5 flex items-center justify-start
-                            font-serif text-xl capitalize leading-tight
-                            text-graybluedark sm:text-[22px] 
-                            md:mt-0 md:text-[26px] lg:justify-center
+                            mt-5 flex items-center justify-start font-serif
+                            text-xl capitalize leading-tight text-graybluedark
+                            sm:text-[22px] md:mt-0 md:text-[26px]
+                            lg:mb-8 lg:h-16 lg:justify-center
                   `}
                   >
-                    Psia
+                    Avaliação Psicológica
                   </h4>
                   <p
                     className={`
-                            mb-5 mt-2 flex items-start justify-start 
-                            font-jost text-lg normal-case text-grayblue
+                            mb-14 mt-2 flex items-start justify-start font-jost 
+                            text-lg normal-case text-grayblue md:mb-0
                             lg:leading-8
                   `}
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit, odit facilis recusandae incidunt natus beatae atque.
+                    Avaliação Psicológica é um procedimento constituído por um
+                    conjunto organizado de princípios teóricos, métodos e
+                    técnicas de investigação da personalidade e do estado
+                    psicológico de uma pessoa.
                   </p>
-                  <div className="pb-14 sm:pb-16 md:pb-0">
+                  {/* <div className="pb-14 sm:pb-16 md:pb-0">
                     <Link
                       href={'/'}
                       className="
@@ -129,7 +134,7 @@ export default function Specialities() {
                     >
                       Saiba mais
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div
@@ -149,25 +154,27 @@ export default function Specialities() {
                 <div>
                   <h4
                     className={`
-                            mt-5 flex items-center justify-start
-                            font-serif text-xl capitalize leading-tight
-                            text-graybluedark sm:text-[22px] 
-                            md:mt-0 md:text-[26px] lg:justify-center
+                            mt-5 flex items-center justify-start font-serif
+                            text-xl capitalize leading-tight text-graybluedark
+                            sm:text-[22px] md:mt-0 md:text-[26px]
+                            lg:mb-8 lg:h-16 lg:justify-center
                   `}
                   >
-                    Psia
+                    Avaliação Neuropsicológica
                   </h4>
                   <p
                     className={`
-                            mb-5 mt-2 flex items-start justify-start 
-                            font-jost text-lg normal-case text-grayblue
+                            mb-14 mt-2 flex items-start justify-start font-jost 
+                            text-lg normal-case text-grayblue md:mb-0
                             lg:leading-8
                   `}
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit, odit facilis recusandae incidunt natus beatae atque.
+                    Avaliação Neuropsicológica é um procedimento através do qual
+                    examina-se as funções cognitivas de um sujeito, tais como
+                    atenção, memória e linguagem, além de aspectos sociais,
+                    emocionais e funcionais.
                   </p>
-                  <div className="pb-14 sm:pb-16 md:pb-0">
+                  {/* <div className="pb-14 sm:pb-16 md:pb-0">
                     <Link
                       href={'/'}
                       className="
@@ -177,7 +184,7 @@ export default function Specialities() {
                     >
                       Saiba mais
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

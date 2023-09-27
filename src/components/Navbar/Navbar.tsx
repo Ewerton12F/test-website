@@ -20,7 +20,7 @@ export default function Navbar() {
                     : ''
                 }
                 mx-auto flex items-center
-                justify-between overflow-hidden pt-2 md:pt-6 lg:max-w-7xl
+                justify-between overflow-hidden pt-6 md:pt-6 lg:max-w-7xl
       `}
     >
       <div className="">
@@ -29,13 +29,22 @@ export default function Navbar() {
           className="flex items-center gap-3 px-4 transition-all duration-300 sm:px-6"
           href="/"
         >
-          <p className="pt-3 font-volk text-[70px] leading-none text-secondary">
-            Ψ
-          </p>
-          <span className="flex items-baseline font-serif text-[39px] text-pshadow">
-            <p>Psi</p>
-            <p className="text-secondary">.</p>
-          </span>
+          <div className="flex gap-4 md:mt-4">
+            <div>
+              <h2
+                className="
+                            mb-1.5 flex flex-col items-center font-dm font-bold 
+                            uppercase tracking-[0.1em]
+                  "
+              >
+                Róbson Batista
+              </h2>
+              <hr className="w-48" />
+              <span className="font-serif text-lg text-secondary">
+                Psicologia & Psicanálise
+              </span>
+            </div>
+          </div>
         </Link>
       </div>
       <div className="flex gap-4 lg:hidden">
@@ -50,7 +59,7 @@ export default function Navbar() {
             "
           >
             <p className="mx-auto font-dm font-thin uppercase tracking-widest">
-              Agende agora
+              Entre em contato
             </p>
           </button>
         </Link>
@@ -82,9 +91,9 @@ export default function Navbar() {
                       ? 'duration-800 absolute transition-all'
                       : 'hidden lg:flex'
                   }
-                  right-0 top-[90px] z-[2] flex h-[100vh] w-4/5 flex-col
-                  bg-zinc-900 bg-opacity-70 p-6 text-left backdrop-blur-md 
-                  sm:static
+                  right-0 top-[80px] z-[2] flex h-[100vh] w-full flex-col
+                  bg-zinc-900 bg-opacity-70 p-6 
+                  text-left backdrop-blur-md sm:static
                   sm:top-0 sm:z-auto sm:mx-auto sm:h-0 sm:w-full sm:flex-row
                   sm:items-center sm:justify-between sm:py-0
         `}
@@ -107,7 +116,7 @@ export default function Navbar() {
               Home
             </Link>
           </li>
-          <li className="my-5 sm:mx-0 sm:mr-5">
+          {/* <li className="my-5 sm:mx-0 sm:mr-5">
             <Link
               onClick={() => {
                 setOpen(!open);
@@ -123,7 +132,7 @@ export default function Navbar() {
             >
               Serviços
             </Link>
-          </li>
+          </li> */}
           <li className="my-5 sm:mx-0 sm:mr-5">
             <Link
               onClick={() => {
@@ -141,7 +150,7 @@ export default function Navbar() {
               Perfil
             </Link>
           </li>
-          <li className="my-5 sm:mx-0 sm:mr-5">
+          {/* <li className="my-5 sm:mx-0 sm:mr-5">
             <Link
               onClick={() => {
                 setOpen(!open);
@@ -157,7 +166,7 @@ export default function Navbar() {
             >
               Blog
             </Link>
-          </li>
+          </li> */}
         </ul>
         <div>
           <Link href={`/contateme`}>
@@ -170,7 +179,7 @@ export default function Navbar() {
             "
             >
               <p className="mx-auto font-dm font-thin uppercase tracking-widest">
-                Agende agora
+                Entre em contato
               </p>
             </button>
           </Link>

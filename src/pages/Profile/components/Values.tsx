@@ -46,10 +46,10 @@ export default function Values() {
             </div>
             <div>
               <h2 className="mb-2 font-serif text-[26px] leading-8 text-black">
-                16 anos de pesquisa em psicanálise
+                Produção acadêmica na área
               </h2>
               <p className="text-grayblue">
-                Iniciou sua formação em psicanálise em 2007
+                Autor de duas obras sobre Filosofia e Psicanálise.
               </p>
             </div>
           </div>
@@ -73,7 +73,10 @@ export default function Values() {
               <h2 className="mb-2 font-serif text-[26px] leading-8 text-black">
                 12 anos de experiência clínica
               </h2>
-              <p className="text-grayblue">Atua como psicanalista desde 2011</p>
+              <p className="text-grayblue">
+                Prolífico trabalho clínico como psicólogo e psicanalista de
+                adolescentes a adultos.
+              </p>
             </div>
           </div>
         </div>

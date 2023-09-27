@@ -29,7 +29,7 @@ export default function Services() {
           </div>
           <ServicesList />
         </div>
-        <BrowseServicesButton />
+        {/* <BrowseServicesButton /> */}
       </div>
     </section>
   );

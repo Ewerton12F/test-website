@@ -10,9 +10,10 @@ export default function Main() {
     <>
       <main
         className={`
-      bg-gradient-to-b from-primary from-35% to-pshadow to-0% 
-                  sm:from-40%
-                  md:from-45%
+      bg-gradient-to-b from-primary from-30% to-pshadow to-0% 
+                  sm:from-30%
+                  md:from-35%
+                  lg:from-40%
       `}
       >
         <Navbar />
