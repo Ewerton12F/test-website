@@ -12,6 +12,8 @@ import {
 } from 'next/font/google';
 import Script from 'next/script';
 
+import Footer from '@/components/Footer/Footer';
+
 const cardo = Cardo({
   weight: '400',
   subsets: ['latin'],
@@ -90,6 +92,7 @@ export default function RootLayout({
           width="0"
         ></iframe>
         {children}
+        <Footer />
       </body>
     </html>
   );

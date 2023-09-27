@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { useRef, useState } from 'react';
-import { FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
 
 import animationData from '../../assets/menu-to-close.json';
 
@@ -17,56 +16,90 @@ export default function Navbar() {
       className={`
                 ${
                   open
-                    ? 'bg-zinc-900 bg-opacity-70 transition-all duration-300 md:bg-opacity-0'
+                    ? 'bg-zinc-900 bg-opacity-70 transition-all duration-300 lg:bg-opacity-0'
                     : ''
                 }
-                flex items-center justify-between overflow-hidden
-                py-2.5 md:mx-auto md:my-14 md:w-11/12 md:max-w-7xl
+                mx-auto flex items-center
+                justify-between overflow-hidden pt-6 md:pt-6 lg:max-w-7xl
       `}
     >
-      <div className="md:hidden ">
+      <div className="">
         <Link
           id="navbar-link-home"
-          className="flex items-baseline p-5"
+          className="flex items-center gap-3 px-4 transition-all duration-300 sm:px-6"
           href="/"
         >
-          <h1 className="font-oswald text-xl min-[600px]:text-2xl">Róbson</h1>
-          <p className="mx-1 text-xl min-[600px]:text-2xl">|</p>
-          <span className="font-serif text-xl text-secondary min-[600px]:text-2xl">
-            Psicanálise
-          </span>
+          <div className="flex gap-4 md:mt-4">
+            <div>
+              <h2
+                className="
+                            mb-1.5 flex flex-col items-center font-dm font-bold 
+                            uppercase tracking-[0.1em]
+                  "
+              >
+                Róbson Batista
+              </h2>
+              <hr className="w-48" />
+              <span className="font-serif text-lg text-secondary">
+                Psicologia & Psicanálise
+              </span>
+            </div>
+          </div>
         </Link>
       </div>
-      <button id="navbar-hamburger-menu" className="p-5 md:hidden">
-        <Lottie
-          onClick={() => {
-            setOpen(!open);
-            menuRef.current?.setDirection(open ? -1 : 1);
-            menuRef.current?.play();
-          }}
-          lottieRef={menuRef}
-          loop={false}
-          autoplay={false}
-          animationData={animationData}
-          style={{ height: '25px', width: '25px' }}
-        />
-      </button>
+      <div className="flex gap-4 lg:hidden">
+        <Link href={`/contateme`}>
+          <button
+            className="
+                  hidden w-full cursor-pointer 
+                  border-2 border-secondary bg-secondary px-10
+                  py-4 font-lexend text-primary underline-offset-2
+                  transition-all duration-300 md:block 
+                  
+            "
+          >
+            <p className="mx-auto font-dm font-thin uppercase tracking-widest">
+              Entre em contato
+            </p>
+          </button>
+        </Link>
+        <button
+          id="navbar-hamburger-menu"
+          className="
+                    mr-4 bg-white bg-opacity-20 p-2.5 transition-all
+                    duration-300 sm:mr-6
+          "
+        >
+          <Lottie
+            onClick={() => {
+              setOpen(!open);
+              menuRef.current?.setDirection(open ? -1 : 1);
+              menuRef.current?.play();
+            }}
+            lottieRef={menuRef}
+            loop={false}
+            autoplay={false}
+            animationData={animationData}
+            style={{ height: '35px', width: '35px' }}
+          />
+        </button>
+      </div>
       <div
         className={`
                   ${
                     open
                       ? 'duration-800 absolute transition-all'
-                      : 'hidden md:flex'
+                      : 'hidden lg:flex'
                   }
-                  right-0 top-[90px] z-[2] flex h-[100vh] w-4/5 flex-col
-                  bg-zinc-900 bg-opacity-70 p-5 text-left backdrop-blur-md 
-                  min-[375px]:py-10 md:static
-                  md:top-0 md:z-auto md:mx-auto md:h-0 md:w-full md:flex-row
-                  md:items-center md:justify-between md:py-0
+                  right-0 top-[80px] z-[2] flex h-[100vh] w-full flex-col
+                  bg-zinc-900 bg-opacity-70 p-6 
+                  text-left backdrop-blur-md sm:static
+                  sm:top-0 sm:z-auto sm:mx-auto sm:h-0 sm:w-full sm:flex-row
+                  sm:items-center sm:justify-between sm:py-0
         `}
       >
-        <ul className="flex flex-col font-lexend md:flex-row">
-          <li className="my-5 md:mx-0 md:mr-5">
+        <ul className="flex flex-col font-lexend sm:flex-row">
+          <li className="my-5 sm:mx-0 sm:mr-5">
             <Link
               onClick={() => {
                 setOpen(!open);
@@ -77,13 +110,13 @@ export default function Navbar() {
               href="/"
               className="
                       p-5 px-2.5 text-2xl duration-300 hover:text-secondary
-                      min-[375px]:text-3xl md:text-xl
+                      min-[375px]:text-3xl sm:text-xl lg:text-lg
             "
             >
               Home
             </Link>
           </li>
-          <li className="my-5 md:mx-0 md:mr-5">
+          {/* <li className="my-5 sm:mx-0 sm:mr-5">
             <Link
               onClick={() => {
                 setOpen(!open);
@@ -91,16 +124,16 @@ export default function Navbar() {
                 menuRef.current?.play();
               }}
               id="navbar-menu-link-services"
-              href="#services"
+              href="/servicos"
               className="
                       p-5 px-2.5 text-2xl duration-300 hover:text-secondary
-                      min-[375px]:text-3xl md:text-xl
+                      min-[375px]:text-3xl sm:text-xl lg:text-lg
             "
             >
               Serviços
             </Link>
-          </li>
-          <li className="my-5 md:mx-0 md:mr-5">
+          </li> */}
+          <li className="my-5 sm:mx-0 sm:mr-5">
             <Link
               onClick={() => {
                 setOpen(!open);
@@ -108,16 +141,16 @@ export default function Navbar() {
                 menuRef.current?.play();
               }}
               id="navbar-menu-link-blog"
-              href="#profile"
+              href="/perfil"
               className="
                       p-5 px-2.5 text-2xl duration-300 hover:text-secondary
-                      min-[375px]:text-3xl md:text-xl
+                      min-[375px]:text-3xl sm:text-xl lg:text-lg
             "
             >
               Perfil
             </Link>
           </li>
-          <li className="my-5 md:mx-0 md:mr-5">
+          {/* <li className="my-5 sm:mx-0 sm:mr-5">
             <Link
               onClick={() => {
                 setOpen(!open);
@@ -125,48 +158,32 @@ export default function Navbar() {
                 menuRef.current?.play();
               }}
               id="navbar-menu-link-about"
-              href="#blog"
+              href="/blog"
               className="
                       p-5 px-2.5 text-2xl duration-300 hover:text-secondary
-                      min-[375px]:text-3xl md:text-xl
+                      min-[375px]:text-3xl sm:text-xl lg:text-lg
             "
             >
               Blog
             </Link>
-          </li>
+          </li> */}
         </ul>
-        <ul className="flex min-[375px]:mt-10 md:mt-0">
-          <li className="p-5  md:mx-0">
-            <Link
-              id="navbar-menu-icon-instagram"
-              className="duration-300 hover:text-secondary"
-              href="https://www.instagram.com/consultorio_de_psicanalise/"
-              target="_blank"
+        <div>
+          <Link href={`/contateme`}>
+            <button
+              className="
+                  hidden w-full cursor-pointer 
+                  border-2 border-secondary bg-secondary px-10
+                  py-4 font-lexend text-primary underline-offset-2
+                  transition-all duration-300 md:block 
+            "
             >
-              <FaInstagram className="text-2xl min-[375px]:text-4xl md:text-2xl" />
-            </Link>
-          </li>
-          <li className="p-5  md:mx-0">
-            <Link
-              id="navbar-menu-icon-facebook"
-              className="duration-300 hover:text-secondary"
-              href="https://www.facebook.com/robsonhbatista/"
-              target="_blank"
-            >
-              <FaFacebook className="text-2xl min-[375px]:text-4xl md:text-2xl" />
-            </Link>
-          </li>
-          <li className="p-5  md:mx-0">
-            <Link
-              id="navbar-menu-icon-linkedin"
-              className="duration-300 hover:text-secondary"
-              href="https://www.linkedin.com/in/robsonhbatista/"
-              target="_blank"
-            >
-              <FaLinkedin className="text-2xl min-[375px]:text-4xl md:text-2xl" />
-            </Link>
-          </li>
-        </ul>
+              <p className="mx-auto font-dm font-thin uppercase tracking-widest">
+                Entre em contato
+              </p>
+            </button>
+          </Link>
+        </div>
       </div>
     </nav>
   );

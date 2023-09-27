@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Link from 'next/link';
 
 import { Service } from '../../../../../types';
 
@@ -8,52 +8,49 @@ type ServiceItemProps = {
 
 export default function ServiceItem({ service }: ServiceItemProps) {
   return (
-    <div
-      className={`
-                group relative h-96 overflow-hidden rounded-xl 
-                border border-zinc-500 bg-cover bg-center transition-all 
-                duration-300 hover:border-white hover:shadow-xl 
-                min-[375px]:h-[500px]
-      `}
-    >
-      <Image
-        className="h-full w-full object-cover"
-        src={`/services/services_${service.title}.png`}
-        width={500}
-        height={500}
-        alt="Picture of the author"
-      />
+    <div>
       <div
         className={`
-                  absolute bottom-[0px] h-[136px] w-full bg-gradient-to-t 
-                  from-zinc-900 drop-shadow-lg transition-all 
-                  hover:backdrop-blur-lg hover:backdrop-brightness-50 
-                  group-hover:h-full min-[375px]:h-36 min-[425px]:h-40
-                  md:h-[144px] md:justify-center lg:h-[160px] lg:gap-2 lg:px-5
+                  border border-zinc-300 bg-white px-4 
+                  text-center sm:px-8 
         `}
       >
+        <div
+          className="
+                  mx-auto mt-10 h-24 w-24 bg-primary opacity-30 
+                  md:mt-14 md:h-28 md:w-28
+        "
+        ></div>
         <h4
           className={`
-                    mt-10 flex h-14 items-center px-5 pr-52 text-left font-jost
-                    text-2xl capitalize leading-tight group-hover:h-fit 
-                    min-[375px]:h-16 min-[375px]:text-3xl min-[425px]:h-20 
-                    min-[425px]:text-4xl min-[600px]:px-10 min-[600px]:pr-80 
-                    md:h-16 md:text-3xl lg:h-20 lg:text-4xl
+                    mt-5 flex h-10 items-center justify-center
+                    font-serif text-xl capitalize leading-tight
+                    text-graybluedark sm:text-[22px] 
+                    md:mt-7 md:h-16 md:text-[26px]
             `}
         >
           {service.title}
         </h4>
         <p
           className={`
-                    mt-5 px-5 text-left font-jost text-sm normal-case 
-                    text-zinc-200 opacity-0 transition-all duration-300 
-                    group-hover:opacity-100 min-[375px]:text-lg
-                    min-[425px]:text-xl min-[525px]:text-2xl min-[600px]:px-10 
-                    md:text-xl lg:text-2xl
+                    mb-4 mt-3 flex h-32 items-start justify-center font-jost 
+                    text-lg normal-case text-grayblue 
+                    sm:h-24 md:h-32 lg:h-40
           `}
         >
-          {service.largedesc}
+          {service.smalldesc}
         </p>
+        <div className="pb-10">
+          {/* <Link
+            href={'/'}
+            className="
+                    font-dm uppercase tracking-widest
+                  text-primary underline underline-offset-8
+        "
+          >
+            Saiba mais
+          </Link> */}
+        </div>
       </div>
     </div>
   );

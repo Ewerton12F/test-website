@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
-import Contact from '../Contact/Contact';
+import Contact from '@/components/Main/Contact/Contact';
 
 export default function Hero() {
   return (
     <header
       className="
-                mb-14 mt-10 px-4 text-left transition-all duration-300 
+                mt-12 px-4 text-left transition-all duration-300 
                 sm:mt-14 sm:px-6 md:mt-20 md:text-center 
                 lg:mx-auto lg:mb-8 lg:flex lg:max-w-7xl lg:items-center 
                 lg:gap-8 lg:pt-28 lg:text-left
@@ -19,7 +19,7 @@ export default function Hero() {
                   font-dm font-bold uppercase tracking-[0.2rem] text-secondary
         "
         >
-          Róbson Batista
+          Sobre o Dr. Róbson
         </h1>
         <h2
           id="hero-subtitle"
@@ -30,7 +30,7 @@ export default function Hero() {
                   lg:leading-[70px]
         "
         >
-          Psicólogo, Psicanalista e Doutor em Filosofia
+          Sou fascinado por singularidades
         </h2>
         <p
           className="
@@ -38,9 +38,10 @@ export default function Hero() {
                   md:mt-8 md:max-w-[620px] 
         "
         >
-          Autor da dissertação de mestrado “Para uma metapsicologia freudiana da
-          experiência estética” (2014) e da tese de doutorado “O jogo de
-          Foucault: da verdade do desejo à coragem da verdade” (2022).
+          Róbson Henrique de Almeida Batista (nascido em 17 de agosto de 1988) é
+          um psicólogo, psicanalista, filósofo e ensaísta brasileiro. Concluiu
+          sua primeira formação clínica em Teoria e Prática Psicanalítica pela
+          Associação Psicanalítica Neofreudiana do Brasil em 2009.
         </p>
         <Contact />
       </div>
@@ -48,7 +49,7 @@ export default function Hero() {
         <div className="max-w-[600px]">
           <Image
             className="shadow-lg"
-            src="/profile-photo.jpeg"
+            src="/3_avaliacao_psicologica.jpeg"
             width={7000}
             height={7000}
             alt="Dr. Róbson Batista - Psicólogo & Psicanalista"

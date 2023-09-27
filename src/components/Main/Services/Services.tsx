@@ -1,40 +1,35 @@
+import BrowseServicesButton from './components/BrowseServicesButton';
 import ServicesList from './components/ServicesList';
 
 export default function Services() {
   return (
-    <section
-      id="services"
-      className="
-                bg-black px-5 pb-14 text-center
-                drop-shadow-xl md:mx-auto md:px-10 md:pb-16
-      "
-    >
-      <div className="py-12 md:py-16">
-        <h2
-          className="
-                    font-serif text-3xl text-white 
-                    min-[600px]:text-4xl
+    <section id="services">
+      <div className="bg-pshadow py-16 md:py-32 lg:py-44 ">
+        <div className="px-4 text-left drop-shadow-xl sm:px-6 ">
+          <div className="mx-auto lg:max-w-7xl xl:px-6">
+            <div className="pb-12 sm:pb-16">
+              <h2
+                className="
+                    mb-2 font-dm text-base font-bold uppercase
+                    tracking-widest text-primary
           "
-        >
-          Serviços Oferecidos
-        </h2>
-        <hr
-          className="
-                    mx-auto mb-2.5 h-1 w-[265px] border-2 border-secondary
-                    min-[600px]:mt-1 min-[600px]:w-[315px] md:mb-5 md:mt-3
-        "
-        />
-        <p
-          className="
-                    font-jost text-[14px] text-white 
-                    min-[600px]:text-lg md:my-2 md:text-lg
+              >
+                Serviços
+              </h2>
+              <h3
+                className="
+                    font-serif text-[22px] leading-8 text-black  
+                    transition-all duration-300 sm:text-[26px] md:text-[32px]
+                    lg:max-w-[600px] lg:text-[38px] lg:leading-[2.75rem]
           "
-        >
-          Arraste para o lado para ver mais
-        </p>
-      </div>
-      <div className="md:mx-auto md:max-w-7xl">
-        <ServicesList />
+              >
+                Experiência em multiplas áreas clínicas
+              </h3>
+            </div>
+          </div>
+          <ServicesList />
+        </div>
+        {/* <BrowseServicesButton /> */}
       </div>
     </section>
   );
